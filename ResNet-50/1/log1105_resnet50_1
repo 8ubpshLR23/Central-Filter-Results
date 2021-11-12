@@ -1,0 +1,1143 @@
+[2021-11-04 00:43:33] args:Namespace(ablation_id=0, arch='resnet_50', batch_size=64, compress_rate='[0.]+[0.1,0.1,0.2]*1+[0.5,0.5,0.2]*2+[0.1,0.1,0.2]*1+[0.5,0.5,0.2]*3+[0.1,0.1,0.2]*1+[0.5,0.5,0.2]*5+[0.1,0.1,0.1]+[0.2,0.2,0.1]*2', data_dir='/home/featurize/data', dataset='ImageNet', epochs=2, from_scratch=False, gpu=0, input_size=224, job_dir='/home/featurize/work/CCCrank5', lr=0.001, lr_decay_step='1', momentum=0.9, num_workers=8, pretrained=False, resume='pre_train_model/ImageNet/resnet50.pth', save_id=1, start_cov=0, weight_decay=0.0)
+[2021-11-04 00:43:33] loading checkpoint:pre_train_model/ImageNet/resnet50.pth
+[2021-11-04 00:43:33] loading rank_conv/resnet_50/dis_mtx0.npy
+[2021-11-04 00:43:33] storing rank_conv/resnet_50/rank_conv0.npy
+[2021-11-04 00:43:33] loading ranks form checkpoint...
+[2021-11-04 00:43:33] loading rank_conv/resnet_50/rank_conv0.npy
+[2021-11-04 00:43:33] ===> calc the union_rank of the 3-th Conv per Block
+[2021-11-04 00:43:33] idx_cprate: 0.9900
+[2021-11-04 00:43:33] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:33] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:33] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 00:43:33] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 00:43:33] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 00:43:34] idx_cprate: 0.8900
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 00:43:34] idx_cprate: 0.7900
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 00:43:34] idx_cprate: 0.6900
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:34] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:34] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 00:43:35] idx_cprate: 0.5900
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 00:43:35] idx_cprate: 0.4900
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 00:43:35] ===> pruning layer_id 1 block_id 0
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx1.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv1.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/rank_conv1.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx2.npy
+[2021-11-04 00:43:35] storing rank_conv/resnet_50/rank_conv2.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/rank_conv2.npy
+[2021-11-04 00:43:35] loading rank_conv/resnet_50/dis_mtx3.npy
+[2021-11-04 00:43:36] storing rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:36] loading rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:43:36] loading rank_conv/resnet_50/rank_conv3.npy
+[2021-11-04 00:45:05] validate Loss: 2.1527 Acc@1: 52.35 Acc@5: 76.52 time: 89.0228
+[2021-11-04 00:45:05] adjusting filter: layer1.0.conv2.weight
+[2021-11-04 00:45:05] adjusting filter: layer1.0.conv3.weight
+[2021-11-04 00:45:05] adjusting filter: layer1.1.conv1.weight
+[2021-11-04 00:46:24] validate Loss: 1.9837 Acc@1: 55.00 Acc@5: 78.67 time: 78.7861
+[2021-11-04 00:46:24] epoch 0 learning_rate 0.001 
+[2021-11-04 00:52:18] epoch[0](2000/20000) Loss: 1.0604 Acc@1: 74.08 Acc@5: 90.45 time: 353.5538
+[2021-11-04 00:58:08] epoch[0](4000/20000) Loss: 1.0793 Acc@1: 73.76 Acc@5: 90.22 time: 350.7626
+[2021-11-04 01:03:59] epoch[0](6000/20000) Loss: 1.0877 Acc@1: 73.55 Acc@5: 90.13 time: 350.8320
+[2021-11-04 01:09:50] epoch[0](8000/20000) Loss: 1.0947 Acc@1: 73.41 Acc@5: 90.05 time: 350.9357
+[2021-11-04 01:15:41] epoch[0](10000/20000) Loss: 1.0988 Acc@1: 73.33 Acc@5: 90.02 time: 350.7984
+[2021-11-04 01:21:32] epoch[0](12000/20000) Loss: 1.1036 Acc@1: 73.20 Acc@5: 89.96 time: 350.8310
+[2021-11-04 01:27:23] epoch[0](14000/20000) Loss: 1.1081 Acc@1: 73.09 Acc@5: 89.91 time: 350.8641
+[2021-11-04 01:33:14] epoch[0](16000/20000) Loss: 1.1102 Acc@1: 73.02 Acc@5: 89.89 time: 350.9891
+[2021-11-04 01:39:04] epoch[0](18000/20000) Loss: 1.1133 Acc@1: 72.96 Acc@5: 89.86 time: 350.9146
+[2021-11-04 01:44:56] epoch[0](20000/20000) Loss: 1.1157 Acc@1: 72.90 Acc@5: 89.83 time: 351.1384
+[2021-11-04 01:44:59] train    Loss: 1.1157 Acc@1: 72.90 Acc@5: 89.83 time: 3515.0476
+[2021-11-04 01:46:28] validate Loss: 1.0557 Acc@1: 73.66 Acc@5: 91.80 time: 88.5555
+[2021-11-04 01:46:28] storing checkpoint:/pruned_checkpoint/resnet_50_cov4.pt
+[2021-11-04 01:46:28] epoch 1 learning_rate 0.0001 
+[2021-11-04 01:52:22] epoch[1](2000/20000) Loss: 1.0438 Acc@1: 74.71 Acc@5: 90.72 time: 354.0138
+[2021-11-04 01:58:13] epoch[1](4000/20000) Loss: 1.0270 Acc@1: 75.08 Acc@5: 90.82 time: 351.2157
+[2021-11-04 02:04:04] epoch[1](6000/20000) Loss: 1.0173 Acc@1: 75.31 Acc@5: 90.92 time: 351.0815
+[2021-11-04 02:09:56] epoch[1](8000/20000) Loss: 1.0084 Acc@1: 75.49 Acc@5: 91.03 time: 351.3101
+[2021-11-04 02:15:47] epoch[1](10000/20000) Loss: 1.0014 Acc@1: 75.64 Acc@5: 91.09 time: 351.3735
+[2021-11-04 02:21:38] epoch[1](12000/20000) Loss: 0.9966 Acc@1: 75.74 Acc@5: 91.14 time: 351.3032
+[2021-11-04 02:27:30] epoch[1](14000/20000) Loss: 0.9941 Acc@1: 75.80 Acc@5: 91.17 time: 351.3274
+[2021-11-04 02:33:21] epoch[1](16000/20000) Loss: 0.9915 Acc@1: 75.85 Acc@5: 91.19 time: 351.3663
+[2021-11-04 02:39:12] epoch[1](18000/20000) Loss: 0.9879 Acc@1: 75.92 Acc@5: 91.24 time: 351.3023
+[2021-11-04 02:45:03] epoch[1](20000/20000) Loss: 0.9854 Acc@1: 75.98 Acc@5: 91.27 time: 351.0633
+[2021-11-04 02:45:07] train    Loss: 0.9855 Acc@1: 75.98 Acc@5: 91.27 time: 3518.6893
+[2021-11-04 02:46:36] validate Loss: 0.9656 Acc@1: 76.00 Acc@5: 92.83 time: 88.9769
+[2021-11-04 02:46:36] storing checkpoint:/pruned_checkpoint/resnet_50_cov4.pt
+[2021-11-04 02:46:36] ===> layer_id 1 block_id 0 bestacc 76.0040
+[2021-11-04 02:46:36] ===> pruning layer_id 1 block_id 1
+[2021-11-04 02:46:36] loading checkpoint:/pruned_checkpoint/resnet_50_cov4.pt
+[2021-11-04 02:46:36] loading rank_conv/resnet_50/dis_mtx4.npy
+[2021-11-04 02:46:36] storing rank_conv/resnet_50/rank_conv4.npy
+[2021-11-04 02:46:36] loading rank_conv/resnet_50/rank_conv4.npy
+[2021-11-04 02:46:36] loading rank_conv/resnet_50/dis_mtx5.npy
+[2021-11-04 02:46:36] storing rank_conv/resnet_50/rank_conv5.npy
+[2021-11-04 02:46:36] loading rank_conv/resnet_50/rank_conv5.npy
+[2021-11-04 02:46:36] loading rank_conv/resnet_50/dis_mtx6.npy
+[2021-11-04 02:46:37] storing rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 02:46:37] loading rank_conv/resnet_50/rank_conv6.npy
+[2021-11-04 02:47:55] validate Loss: 1.3289 Acc@1: 67.88 Acc@5: 88.20 time: 78.4370
+[2021-11-04 02:47:55] adjusting filter: layer1.1.conv2.weight
+[2021-11-04 02:47:55] adjusting filter: layer1.1.conv3.weight
+[2021-11-04 02:47:55] adjusting filter: layer1.2.conv1.weight
+[2021-11-04 02:49:15] validate Loss: 1.1299 Acc@1: 72.18 Acc@5: 90.77 time: 79.0053
+[2021-11-04 02:49:15] epoch 0 learning_rate 0.001 
+[2021-11-04 02:55:08] epoch[0](2000/20000) Loss: 1.0942 Acc@1: 73.34 Acc@5: 90.06 time: 353.7477
+[2021-11-04 03:01:00] epoch[0](4000/20000) Loss: 1.0986 Acc@1: 73.27 Acc@5: 90.03 time: 351.1614
+[2021-11-04 03:06:51] epoch[0](6000/20000) Loss: 1.1038 Acc@1: 73.19 Acc@5: 89.92 time: 351.3136
+[2021-11-04 03:12:42] epoch[0](8000/20000) Loss: 1.1098 Acc@1: 73.04 Acc@5: 89.83 time: 351.3059
+[2021-11-04 03:18:34] epoch[0](10000/20000) Loss: 1.1138 Acc@1: 72.93 Acc@5: 89.80 time: 351.4625
+[2021-11-04 03:24:25] epoch[0](12000/20000) Loss: 1.1165 Acc@1: 72.87 Acc@5: 89.78 time: 351.3614
+[2021-11-04 03:30:16] epoch[0](14000/20000) Loss: 1.1184 Acc@1: 72.83 Acc@5: 89.75 time: 351.3415
+[2021-11-04 03:36:08] epoch[0](16000/20000) Loss: 1.1205 Acc@1: 72.78 Acc@5: 89.72 time: 351.3157
+[2021-11-04 03:41:59] epoch[0](18000/20000) Loss: 1.1217 Acc@1: 72.75 Acc@5: 89.70 time: 351.3703
+[2021-11-04 03:47:50] epoch[0](20000/20000) Loss: 1.1234 Acc@1: 72.70 Acc@5: 89.69 time: 351.4241
+[2021-11-04 03:47:54] train    Loss: 1.1233 Acc@1: 72.70 Acc@5: 89.69 time: 3519.1548
+[2021-11-04 03:49:23] validate Loss: 1.0642 Acc@1: 73.69 Acc@5: 91.67 time: 89.6775
+[2021-11-04 03:49:24] storing checkpoint:/pruned_checkpoint/resnet_50_cov7.pt
+[2021-11-04 03:49:24] epoch 1 learning_rate 0.0001 
+[2021-11-04 03:55:18] epoch[1](2000/20000) Loss: 1.0391 Acc@1: 74.72 Acc@5: 90.81 time: 354.0287
+[2021-11-04 04:01:09] epoch[1](4000/20000) Loss: 1.0308 Acc@1: 75.02 Acc@5: 90.83 time: 351.4526
+[2021-11-04 04:07:01] epoch[1](6000/20000) Loss: 1.0181 Acc@1: 75.27 Acc@5: 90.97 time: 351.2580
+[2021-11-04 04:12:52] epoch[1](8000/20000) Loss: 1.0137 Acc@1: 75.39 Acc@5: 91.00 time: 351.1589
+[2021-11-04 04:18:43] epoch[1](10000/20000) Loss: 1.0070 Acc@1: 75.53 Acc@5: 91.08 time: 351.2852
+[2021-11-04 04:24:34] epoch[1](12000/20000) Loss: 1.0021 Acc@1: 75.64 Acc@5: 91.12 time: 351.3069
+[2021-11-04 04:30:26] epoch[1](14000/20000) Loss: 0.9982 Acc@1: 75.71 Acc@5: 91.15 time: 351.2698
+[2021-11-04 04:36:17] epoch[1](16000/20000) Loss: 0.9947 Acc@1: 75.78 Acc@5: 91.19 time: 351.4863
+[2021-11-04 04:42:08] epoch[1](18000/20000) Loss: 0.9913 Acc@1: 75.86 Acc@5: 91.22 time: 351.3772
+[2021-11-04 04:48:00] epoch[1](20000/20000) Loss: 0.9882 Acc@1: 75.92 Acc@5: 91.25 time: 351.3033
+[2021-11-04 04:48:03] train    Loss: 0.9883 Acc@1: 75.92 Acc@5: 91.25 time: 3519.2550
+[2021-11-04 04:49:33] validate Loss: 0.9714 Acc@1: 75.69 Acc@5: 92.73 time: 89.8108
+[2021-11-04 04:49:33] storing checkpoint:/pruned_checkpoint/resnet_50_cov7.pt
+[2021-11-04 04:49:33] ===> layer_id 1 block_id 1 bestacc 75.6920
+[2021-11-04 04:49:33] ===> pruning layer_id 1 block_id 2
+[2021-11-04 04:49:34] loading checkpoint:/pruned_checkpoint/resnet_50_cov7.pt
+[2021-11-04 04:49:34] loading rank_conv/resnet_50/dis_mtx7.npy
+[2021-11-04 04:49:34] storing rank_conv/resnet_50/rank_conv7.npy
+[2021-11-04 04:49:34] loading rank_conv/resnet_50/rank_conv7.npy
+[2021-11-04 04:49:34] loading rank_conv/resnet_50/dis_mtx8.npy
+[2021-11-04 04:49:34] storing rank_conv/resnet_50/rank_conv8.npy
+[2021-11-04 04:49:34] loading rank_conv/resnet_50/rank_conv8.npy
+[2021-11-04 04:49:34] loading rank_conv/resnet_50/dis_mtx9.npy
+[2021-11-04 04:49:34] storing rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 04:49:34] loading rank_conv/resnet_50/rank_conv9.npy
+[2021-11-04 04:50:53] validate Loss: 1.4985 Acc@1: 64.40 Acc@5: 85.88 time: 79.3792
+[2021-11-04 04:50:53] adjusting filter: layer1.2.conv2.weight
+[2021-11-04 04:50:53] adjusting filter: layer1.2.conv3.weight
+[2021-11-04 04:50:54] adjusting filter: layer2.0.conv1.weight
+[2021-11-04 04:52:13] validate Loss: 1.2288 Acc@1: 69.74 Acc@5: 89.41 time: 79.0618
+[2021-11-04 04:52:13] epoch 0 learning_rate 0.001 
+[2021-11-04 04:58:07] epoch[0](2000/20000) Loss: 1.0922 Acc@1: 73.40 Acc@5: 90.14 time: 353.8820
+[2021-11-04 05:03:58] epoch[0](4000/20000) Loss: 1.1014 Acc@1: 73.23 Acc@5: 90.00 time: 351.1256
+[2021-11-04 05:09:49] epoch[0](6000/20000) Loss: 1.1032 Acc@1: 73.18 Acc@5: 89.97 time: 351.1427
+[2021-11-04 05:15:41] epoch[0](8000/20000) Loss: 1.1073 Acc@1: 73.09 Acc@5: 89.91 time: 351.2714
+[2021-11-04 05:21:32] epoch[0](10000/20000) Loss: 1.1102 Acc@1: 73.04 Acc@5: 89.88 time: 351.3133
+[2021-11-04 05:27:23] epoch[0](12000/20000) Loss: 1.1129 Acc@1: 72.97 Acc@5: 89.83 time: 351.0420
+[2021-11-04 05:33:14] epoch[0](14000/20000) Loss: 1.1154 Acc@1: 72.90 Acc@5: 89.80 time: 351.1477
+[2021-11-04 05:39:05] epoch[0](16000/20000) Loss: 1.1181 Acc@1: 72.85 Acc@5: 89.77 time: 351.1060
+[2021-11-04 05:44:56] epoch[0](18000/20000) Loss: 1.1206 Acc@1: 72.78 Acc@5: 89.74 time: 351.0829
+[2021-11-04 05:50:48] epoch[0](20000/20000) Loss: 1.1226 Acc@1: 72.73 Acc@5: 89.71 time: 351.2477
+[2021-11-04 05:50:51] train    Loss: 1.1225 Acc@1: 72.73 Acc@5: 89.71 time: 3517.6951
+[2021-11-04 05:52:21] validate Loss: 1.0747 Acc@1: 73.41 Acc@5: 91.52 time: 89.7704
+[2021-11-04 05:52:21] storing checkpoint:/pruned_checkpoint/resnet_50_cov10.pt
+[2021-11-04 05:52:21] epoch 1 learning_rate 0.0001 
+[2021-11-04 05:58:15] epoch[1](2000/20000) Loss: 1.0414 Acc@1: 74.67 Acc@5: 90.55 time: 354.2528
+[2021-11-04 06:04:07] epoch[1](4000/20000) Loss: 1.0265 Acc@1: 75.00 Acc@5: 90.78 time: 351.2111
+[2021-11-04 06:09:58] epoch[1](6000/20000) Loss: 1.0159 Acc@1: 75.26 Acc@5: 90.88 time: 351.3244
+[2021-11-04 06:15:49] epoch[1](8000/20000) Loss: 1.0107 Acc@1: 75.39 Acc@5: 90.95 time: 351.4114
+[2021-11-04 06:21:40] epoch[1](10000/20000) Loss: 1.0042 Acc@1: 75.54 Acc@5: 91.02 time: 351.1757
+[2021-11-04 06:27:32] epoch[1](12000/20000) Loss: 0.9995 Acc@1: 75.63 Acc@5: 91.09 time: 351.3102
+[2021-11-04 06:33:23] epoch[1](14000/20000) Loss: 0.9960 Acc@1: 75.70 Acc@5: 91.13 time: 351.1211
+[2021-11-04 06:39:14] epoch[1](16000/20000) Loss: 0.9932 Acc@1: 75.76 Acc@5: 91.17 time: 351.2287
+[2021-11-04 06:45:06] epoch[1](18000/20000) Loss: 0.9906 Acc@1: 75.82 Acc@5: 91.20 time: 351.4527
+[2021-11-04 06:50:57] epoch[1](20000/20000) Loss: 0.9888 Acc@1: 75.85 Acc@5: 91.23 time: 351.2085
+[2021-11-04 06:51:00] train    Loss: 0.9888 Acc@1: 75.85 Acc@5: 91.23 time: 3519.0534
+[2021-11-04 06:52:29] validate Loss: 0.9801 Acc@1: 75.52 Acc@5: 92.70 time: 88.6596
+[2021-11-04 06:52:29] storing checkpoint:/pruned_checkpoint/resnet_50_cov10.pt
+[2021-11-04 06:52:29] ===> layer_id 1 block_id 2 bestacc 75.5200
+[2021-11-04 06:52:29] ===> calc the union_rank of the 3-th Conv per Block
+[2021-11-04 06:52:29] idx_cprate: 0.9900
+[2021-11-04 06:52:29] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:30] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:30] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 06:52:31] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 06:52:31] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 06:52:31] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 06:52:31] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 06:52:32] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 06:52:32] idx_cprate: 0.8900
+[2021-11-04 06:52:32] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:32] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:32] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 06:52:33] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 06:52:33] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 06:52:33] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 06:52:33] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 06:52:34] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 06:52:34] idx_cprate: 0.7900
+[2021-11-04 06:52:34] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:34] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:34] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 06:52:35] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 06:52:35] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 06:52:35] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 06:52:35] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 06:52:36] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 06:52:36] idx_cprate: 0.6900
+[2021-11-04 06:52:36] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:36] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:36] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 06:52:37] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 06:52:37] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 06:52:37] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 06:52:37] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 06:52:38] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 06:52:38] idx_cprate: 0.5900
+[2021-11-04 06:52:38] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:39] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:39] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 06:52:40] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 06:52:40] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 06:52:40] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 06:52:40] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 06:52:40] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 06:52:40] idx_cprate: 0.4900
+[2021-11-04 06:52:40] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:41] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:41] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 06:52:42] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 06:52:42] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 06:52:42] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 06:52:42] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 06:52:43] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 06:52:43] ===> pruning layer_id 2 block_id 0
+[2021-11-04 06:52:43] loading checkpoint:/pruned_checkpoint/resnet_50_cov10.pt
+[2021-11-04 06:52:43] loading rank_conv/resnet_50/dis_mtx10.npy
+[2021-11-04 06:52:43] storing rank_conv/resnet_50/rank_conv10.npy
+[2021-11-04 06:52:43] loading rank_conv/resnet_50/rank_conv10.npy
+[2021-11-04 06:52:43] loading rank_conv/resnet_50/dis_mtx11.npy
+[2021-11-04 06:52:43] storing rank_conv/resnet_50/rank_conv11.npy
+[2021-11-04 06:52:43] loading rank_conv/resnet_50/rank_conv11.npy
+[2021-11-04 06:52:43] loading rank_conv/resnet_50/dis_mtx12.npy
+[2021-11-04 06:52:44] storing rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:44] loading rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:52:44] loading rank_conv/resnet_50/rank_conv12.npy
+[2021-11-04 06:54:03] validate Loss: 1.4430 Acc@1: 65.46 Acc@5: 86.55 time: 79.3399
+[2021-11-04 06:54:03] adjusting filter: layer2.0.conv2.weight
+[2021-11-04 06:54:03] adjusting filter: layer2.0.conv3.weight
+[2021-11-04 06:54:04] adjusting filter: layer2.1.conv1.weight
+[2021-11-04 06:55:24] validate Loss: 1.3333 Acc@1: 67.68 Acc@5: 88.01 time: 79.0289
+[2021-11-04 06:55:24] epoch 0 learning_rate 0.001 
+[2021-11-04 07:01:18] epoch[0](2000/20000) Loss: 1.0957 Acc@1: 73.39 Acc@5: 89.97 time: 353.5371
+[2021-11-04 07:07:09] epoch[0](4000/20000) Loss: 1.1015 Acc@1: 73.14 Acc@5: 89.91 time: 350.9417
+[2021-11-04 07:12:59] epoch[0](6000/20000) Loss: 1.1053 Acc@1: 73.07 Acc@5: 89.89 time: 350.6729
+[2021-11-04 07:18:50] epoch[0](8000/20000) Loss: 1.1096 Acc@1: 73.00 Acc@5: 89.84 time: 350.8107
+[2021-11-04 07:24:41] epoch[0](10000/20000) Loss: 1.1118 Acc@1: 72.96 Acc@5: 89.82 time: 350.7821
+[2021-11-04 07:30:32] epoch[0](12000/20000) Loss: 1.1141 Acc@1: 72.90 Acc@5: 89.82 time: 350.7416
+[2021-11-04 07:36:23] epoch[0](14000/20000) Loss: 1.1163 Acc@1: 72.85 Acc@5: 89.79 time: 350.8956
+[2021-11-04 07:42:13] epoch[0](16000/20000) Loss: 1.1186 Acc@1: 72.81 Acc@5: 89.76 time: 350.6631
+[2021-11-04 07:48:04] epoch[0](18000/20000) Loss: 1.1219 Acc@1: 72.74 Acc@5: 89.71 time: 350.7485
+[2021-11-04 07:53:55] epoch[0](20000/20000) Loss: 1.1232 Acc@1: 72.71 Acc@5: 89.70 time: 350.7481
+[2021-11-04 07:53:58] train    Loss: 1.1232 Acc@1: 72.71 Acc@5: 89.70 time: 3513.9194
+[2021-11-04 07:55:28] validate Loss: 1.0751 Acc@1: 73.21 Acc@5: 91.50 time: 89.7539
+[2021-11-04 07:55:28] storing checkpoint:/pruned_checkpoint/resnet_50_cov14.pt
+[2021-11-04 07:55:28] epoch 1 learning_rate 0.0001 
+[2021-11-04 08:01:22] epoch[1](2000/20000) Loss: 1.0459 Acc@1: 74.52 Acc@5: 90.60 time: 353.9573
+[2021-11-04 08:07:13] epoch[1](4000/20000) Loss: 1.0252 Acc@1: 75.00 Acc@5: 90.83 time: 351.1141
+[2021-11-04 08:13:05] epoch[1](6000/20000) Loss: 1.0157 Acc@1: 75.18 Acc@5: 90.98 time: 351.2900
+[2021-11-04 08:18:56] epoch[1](8000/20000) Loss: 1.0103 Acc@1: 75.33 Acc@5: 91.01 time: 351.0257
+[2021-11-04 08:24:47] epoch[1](10000/20000) Loss: 1.0053 Acc@1: 75.48 Acc@5: 91.05 time: 351.0530
+[2021-11-04 08:30:38] epoch[1](12000/20000) Loss: 1.0005 Acc@1: 75.58 Acc@5: 91.11 time: 351.0488
+[2021-11-04 08:36:29] epoch[1](14000/20000) Loss: 0.9978 Acc@1: 75.64 Acc@5: 91.13 time: 351.2562
+[2021-11-04 08:42:20] epoch[1](16000/20000) Loss: 0.9946 Acc@1: 75.71 Acc@5: 91.17 time: 351.0751
+[2021-11-04 08:48:11] epoch[1](18000/20000) Loss: 0.9922 Acc@1: 75.78 Acc@5: 91.18 time: 351.0747
+[2021-11-04 08:54:02] epoch[1](20000/20000) Loss: 0.9909 Acc@1: 75.81 Acc@5: 91.20 time: 351.2676
+[2021-11-04 08:54:06] train    Loss: 0.9909 Acc@1: 75.81 Acc@5: 91.20 time: 3517.5087
+[2021-11-04 08:55:35] validate Loss: 0.9803 Acc@1: 75.68 Acc@5: 92.72 time: 89.1076
+[2021-11-04 08:55:35] storing checkpoint:/pruned_checkpoint/resnet_50_cov14.pt
+[2021-11-04 08:55:35] ===> layer_id 2 block_id 0 bestacc 75.6760
+[2021-11-04 08:55:35] ===> pruning layer_id 2 block_id 1
+[2021-11-04 08:55:36] loading checkpoint:/pruned_checkpoint/resnet_50_cov14.pt
+[2021-11-04 08:55:36] loading rank_conv/resnet_50/dis_mtx13.npy
+[2021-11-04 08:55:36] storing rank_conv/resnet_50/rank_conv13.npy
+[2021-11-04 08:55:36] loading rank_conv/resnet_50/rank_conv13.npy
+[2021-11-04 08:55:36] loading rank_conv/resnet_50/dis_mtx14.npy
+[2021-11-04 08:55:36] storing rank_conv/resnet_50/rank_conv14.npy
+[2021-11-04 08:55:36] loading rank_conv/resnet_50/rank_conv14.npy
+[2021-11-04 08:55:36] loading rank_conv/resnet_50/dis_mtx15.npy
+[2021-11-04 08:55:37] storing rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 08:55:37] loading rank_conv/resnet_50/rank_conv15.npy
+[2021-11-04 08:56:56] validate Loss: 1.9201 Acc@1: 56.44 Acc@5: 80.02 time: 78.9614
+[2021-11-04 08:56:56] adjusting filter: layer2.1.conv2.weight
+[2021-11-04 08:56:56] adjusting filter: layer2.1.conv3.weight
+[2021-11-04 08:56:57] adjusting filter: layer2.2.conv1.weight
+[2021-11-04 08:58:17] validate Loss: 1.6498 Acc@1: 61.18 Acc@5: 83.78 time: 79.1543
+[2021-11-04 08:58:17] epoch 0 learning_rate 0.001 
+[2021-11-04 09:04:11] epoch[0](2000/20000) Loss: 1.1190 Acc@1: 72.86 Acc@5: 89.73 time: 353.8216
+[2021-11-04 09:10:02] epoch[0](4000/20000) Loss: 1.1245 Acc@1: 72.75 Acc@5: 89.64 time: 350.9412
+[2021-11-04 09:15:53] epoch[0](6000/20000) Loss: 1.1194 Acc@1: 72.79 Acc@5: 89.73 time: 351.0579
+[2021-11-04 09:21:44] epoch[0](8000/20000) Loss: 1.1218 Acc@1: 72.77 Acc@5: 89.68 time: 351.0297
+[2021-11-04 09:27:35] epoch[0](10000/20000) Loss: 1.1238 Acc@1: 72.73 Acc@5: 89.64 time: 351.0382
+[2021-11-04 09:33:26] epoch[0](12000/20000) Loss: 1.1241 Acc@1: 72.71 Acc@5: 89.64 time: 350.9103
+[2021-11-04 09:39:17] epoch[0](14000/20000) Loss: 1.1252 Acc@1: 72.67 Acc@5: 89.62 time: 351.0812
+[2021-11-04 09:45:08] epoch[0](16000/20000) Loss: 1.1258 Acc@1: 72.65 Acc@5: 89.62 time: 350.9983
+[2021-11-04 09:50:59] epoch[0](18000/20000) Loss: 1.1267 Acc@1: 72.62 Acc@5: 89.62 time: 350.9680
+[2021-11-04 09:56:50] epoch[0](20000/20000) Loss: 1.1274 Acc@1: 72.60 Acc@5: 89.61 time: 351.1592
+[2021-11-04 09:56:54] train    Loss: 1.1274 Acc@1: 72.60 Acc@5: 89.61 time: 3516.3504
+[2021-11-04 09:58:23] validate Loss: 1.0685 Acc@1: 73.45 Acc@5: 91.60 time: 89.5589
+[2021-11-04 09:58:24] storing checkpoint:/pruned_checkpoint/resnet_50_cov17.pt
+[2021-11-04 09:58:24] epoch 1 learning_rate 0.0001 
+[2021-11-04 10:04:17] epoch[1](2000/20000) Loss: 1.0338 Acc@1: 74.75 Acc@5: 90.63 time: 353.5138
+[2021-11-04 10:10:08] epoch[1](4000/20000) Loss: 1.0209 Acc@1: 75.12 Acc@5: 90.81 time: 350.9898
+[2021-11-04 10:15:59] epoch[1](6000/20000) Loss: 1.0151 Acc@1: 75.30 Acc@5: 90.84 time: 350.9419
+[2021-11-04 10:21:50] epoch[1](8000/20000) Loss: 1.0099 Acc@1: 75.42 Acc@5: 90.90 time: 351.0644
+[2021-11-04 10:27:41] epoch[1](10000/20000) Loss: 1.0068 Acc@1: 75.48 Acc@5: 90.94 time: 351.0324
+[2021-11-04 10:33:32] epoch[1](12000/20000) Loss: 1.0012 Acc@1: 75.62 Acc@5: 91.01 time: 350.9047
+[2021-11-04 10:39:23] epoch[1](14000/20000) Loss: 0.9968 Acc@1: 75.72 Acc@5: 91.06 time: 351.3289
+[2021-11-04 10:45:15] epoch[1](16000/20000) Loss: 0.9942 Acc@1: 75.78 Acc@5: 91.09 time: 351.1250
+[2021-11-04 10:51:06] epoch[1](18000/20000) Loss: 0.9907 Acc@1: 75.84 Acc@5: 91.15 time: 351.0390
+[2021-11-04 10:56:56] epoch[1](20000/20000) Loss: 0.9886 Acc@1: 75.89 Acc@5: 91.18 time: 350.5795
+[2021-11-04 10:57:00] train    Loss: 0.9887 Acc@1: 75.88 Acc@5: 91.18 time: 3515.8850
+[2021-11-04 10:58:30] validate Loss: 0.9849 Acc@1: 75.61 Acc@5: 92.69 time: 90.2948
+[2021-11-04 10:58:30] storing checkpoint:/pruned_checkpoint/resnet_50_cov17.pt
+[2021-11-04 10:58:30] ===> layer_id 2 block_id 1 bestacc 75.6100
+[2021-11-04 10:58:30] ===> pruning layer_id 2 block_id 2
+[2021-11-04 10:58:31] loading checkpoint:/pruned_checkpoint/resnet_50_cov17.pt
+[2021-11-04 10:58:31] loading rank_conv/resnet_50/dis_mtx16.npy
+[2021-11-04 10:58:31] storing rank_conv/resnet_50/rank_conv16.npy
+[2021-11-04 10:58:31] loading rank_conv/resnet_50/rank_conv16.npy
+[2021-11-04 10:58:31] loading rank_conv/resnet_50/dis_mtx17.npy
+[2021-11-04 10:58:31] storing rank_conv/resnet_50/rank_conv17.npy
+[2021-11-04 10:58:31] loading rank_conv/resnet_50/rank_conv17.npy
+[2021-11-04 10:58:31] loading rank_conv/resnet_50/dis_mtx18.npy
+[2021-11-04 10:58:31] storing rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 10:58:31] loading rank_conv/resnet_50/rank_conv18.npy
+[2021-11-04 10:59:51] validate Loss: 1.3257 Acc@1: 68.29 Acc@5: 88.49 time: 79.6728
+[2021-11-04 10:59:51] adjusting filter: layer2.2.conv2.weight
+[2021-11-04 10:59:51] adjusting filter: layer2.2.conv3.weight
+[2021-11-04 10:59:53] adjusting filter: layer2.3.conv1.weight
+[2021-11-04 11:01:14] validate Loss: 1.2408 Acc@1: 69.92 Acc@5: 89.59 time: 80.1848
+[2021-11-04 11:01:14] epoch 0 learning_rate 0.001 
+[2021-11-04 11:07:07] epoch[0](2000/20000) Loss: 1.1172 Acc@1: 72.78 Acc@5: 89.66 time: 353.1310
+[2021-11-04 11:12:57] epoch[0](4000/20000) Loss: 1.1186 Acc@1: 72.78 Acc@5: 89.67 time: 350.5491
+[2021-11-04 11:18:48] epoch[0](6000/20000) Loss: 1.1224 Acc@1: 72.75 Acc@5: 89.63 time: 350.8095
+[2021-11-04 11:24:39] epoch[0](8000/20000) Loss: 1.1244 Acc@1: 72.72 Acc@5: 89.63 time: 350.7756
+[2021-11-04 11:30:30] epoch[0](10000/20000) Loss: 1.1248 Acc@1: 72.67 Acc@5: 89.64 time: 350.6134
+[2021-11-04 11:36:20] epoch[0](12000/20000) Loss: 1.1259 Acc@1: 72.63 Acc@5: 89.64 time: 350.7389
+[2021-11-04 11:42:11] epoch[0](14000/20000) Loss: 1.1284 Acc@1: 72.58 Acc@5: 89.60 time: 350.7393
+[2021-11-04 11:48:02] epoch[0](16000/20000) Loss: 1.1284 Acc@1: 72.59 Acc@5: 89.59 time: 350.6997
+[2021-11-04 11:53:53] epoch[0](18000/20000) Loss: 1.1289 Acc@1: 72.56 Acc@5: 89.59 time: 350.7894
+[2021-11-04 11:59:43] epoch[0](20000/20000) Loss: 1.1304 Acc@1: 72.54 Acc@5: 89.57 time: 350.5421
+[2021-11-04 11:59:46] train    Loss: 1.1305 Acc@1: 72.54 Acc@5: 89.57 time: 3512.7436
+[2021-11-04 12:01:17] validate Loss: 1.0772 Acc@1: 73.37 Acc@5: 91.56 time: 90.5925
+[2021-11-04 12:01:17] storing checkpoint:/pruned_checkpoint/resnet_50_cov20.pt
+[2021-11-04 12:01:17] epoch 1 learning_rate 0.0001 
+[2021-11-04 12:07:11] epoch[1](2000/20000) Loss: 1.0467 Acc@1: 74.45 Acc@5: 90.60 time: 353.1487
+[2021-11-04 12:13:01] epoch[1](4000/20000) Loss: 1.0300 Acc@1: 74.87 Acc@5: 90.76 time: 350.5756
+[2021-11-04 12:18:52] epoch[1](6000/20000) Loss: 1.0216 Acc@1: 75.07 Acc@5: 90.84 time: 350.6908
+[2021-11-04 12:24:42] epoch[1](8000/20000) Loss: 1.0141 Acc@1: 75.23 Acc@5: 90.93 time: 350.5605
+[2021-11-04 12:30:33] epoch[1](10000/20000) Loss: 1.0080 Acc@1: 75.38 Acc@5: 90.99 time: 350.5680
+[2021-11-04 12:36:24] epoch[1](12000/20000) Loss: 1.0034 Acc@1: 75.51 Acc@5: 91.02 time: 350.7771
+[2021-11-04 12:42:14] epoch[1](14000/20000) Loss: 1.0000 Acc@1: 75.59 Acc@5: 91.06 time: 350.5130
+[2021-11-04 12:48:05] epoch[1](16000/20000) Loss: 0.9964 Acc@1: 75.69 Acc@5: 91.09 time: 350.7999
+[2021-11-04 12:53:56] epoch[1](18000/20000) Loss: 0.9935 Acc@1: 75.75 Acc@5: 91.13 time: 350.6779
+[2021-11-04 12:59:46] epoch[1](20000/20000) Loss: 0.9904 Acc@1: 75.83 Acc@5: 91.16 time: 350.2723
+[2021-11-04 12:59:49] train    Loss: 0.9903 Acc@1: 75.83 Acc@5: 91.16 time: 3511.9072
+[2021-11-04 13:01:16] validate Loss: 0.9846 Acc@1: 75.45 Acc@5: 92.59 time: 86.6791
+[2021-11-04 13:01:16] storing checkpoint:/pruned_checkpoint/resnet_50_cov20.pt
+[2021-11-04 13:01:16] ===> layer_id 2 block_id 2 bestacc 75.4460
+[2021-11-04 13:01:16] ===> pruning layer_id 2 block_id 3
+[2021-11-04 13:01:17] loading checkpoint:/pruned_checkpoint/resnet_50_cov20.pt
+[2021-11-04 13:01:17] loading rank_conv/resnet_50/dis_mtx19.npy
+[2021-11-04 13:01:17] storing rank_conv/resnet_50/rank_conv19.npy
+[2021-11-04 13:01:17] loading rank_conv/resnet_50/rank_conv19.npy
+[2021-11-04 13:01:17] loading rank_conv/resnet_50/dis_mtx20.npy
+[2021-11-04 13:01:17] storing rank_conv/resnet_50/rank_conv20.npy
+[2021-11-04 13:01:17] loading rank_conv/resnet_50/rank_conv20.npy
+[2021-11-04 13:01:17] loading rank_conv/resnet_50/dis_mtx21.npy
+[2021-11-04 13:01:17] storing rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 13:01:17] loading rank_conv/resnet_50/rank_conv21.npy
+[2021-11-04 13:02:35] validate Loss: 1.4927 Acc@1: 65.45 Acc@5: 86.01 time: 77.3375
+[2021-11-04 13:02:35] adjusting filter: layer2.3.conv2.weight
+[2021-11-04 13:02:35] adjusting filter: layer2.3.conv3.weight
+[2021-11-04 13:02:36] adjusting filter: layer3.0.conv1.weight
+[2021-11-04 13:03:55] validate Loss: 1.4453 Acc@1: 66.01 Acc@5: 86.74 time: 77.0035
+[2021-11-04 13:03:55] epoch 0 learning_rate 0.001 
+[2021-11-04 13:09:48] epoch[0](2000/20000) Loss: 1.1038 Acc@1: 73.14 Acc@5: 89.94 time: 352.3945
+[2021-11-04 13:15:38] epoch[0](4000/20000) Loss: 1.1193 Acc@1: 72.79 Acc@5: 89.69 time: 349.9779
+[2021-11-04 13:21:28] epoch[0](6000/20000) Loss: 1.1230 Acc@1: 72.69 Acc@5: 89.66 time: 350.0230
+[2021-11-04 13:27:18] epoch[0](8000/20000) Loss: 1.1259 Acc@1: 72.65 Acc@5: 89.61 time: 350.0387
+[2021-11-04 13:33:08] epoch[0](10000/20000) Loss: 1.1260 Acc@1: 72.63 Acc@5: 89.63 time: 350.0885
+[2021-11-04 13:38:57] epoch[0](12000/20000) Loss: 1.1283 Acc@1: 72.59 Acc@5: 89.59 time: 349.7702
+[2021-11-04 13:44:47] epoch[0](14000/20000) Loss: 1.1304 Acc@1: 72.53 Acc@5: 89.57 time: 349.7612
+[2021-11-04 13:50:37] epoch[0](16000/20000) Loss: 1.1306 Acc@1: 72.53 Acc@5: 89.58 time: 349.7152
+[2021-11-04 13:56:27] epoch[0](18000/20000) Loss: 1.1320 Acc@1: 72.49 Acc@5: 89.56 time: 349.9700
+[2021-11-04 14:02:17] epoch[0](20000/20000) Loss: 1.1322 Acc@1: 72.48 Acc@5: 89.56 time: 349.8554
+[2021-11-04 14:02:20] train    Loss: 1.1322 Acc@1: 72.48 Acc@5: 89.56 time: 3504.9100
+[2021-11-04 14:03:47] validate Loss: 1.0855 Acc@1: 73.14 Acc@5: 91.41 time: 86.5267
+[2021-11-04 14:03:47] storing checkpoint:/pruned_checkpoint/resnet_50_cov23.pt
+[2021-11-04 14:03:47] epoch 1 learning_rate 0.0001 
+[2021-11-04 14:09:40] epoch[1](2000/20000) Loss: 1.0451 Acc@1: 74.54 Acc@5: 90.57 time: 352.6137
+[2021-11-04 14:15:29] epoch[1](4000/20000) Loss: 1.0303 Acc@1: 74.91 Acc@5: 90.74 time: 349.8915
+[2021-11-04 14:21:19] epoch[1](6000/20000) Loss: 1.0187 Acc@1: 75.21 Acc@5: 90.87 time: 349.7598
+[2021-11-04 14:27:09] epoch[1](8000/20000) Loss: 1.0120 Acc@1: 75.33 Acc@5: 90.93 time: 349.9228
+[2021-11-04 14:32:59] epoch[1](10000/20000) Loss: 1.0068 Acc@1: 75.45 Acc@5: 90.97 time: 349.9164
+[2021-11-04 14:38:49] epoch[1](12000/20000) Loss: 1.0042 Acc@1: 75.52 Acc@5: 91.00 time: 349.8341
+[2021-11-04 14:44:38] epoch[1](14000/20000) Loss: 1.0013 Acc@1: 75.57 Acc@5: 91.03 time: 349.6029
+[2021-11-04 14:50:29] epoch[1](16000/20000) Loss: 0.9977 Acc@1: 75.65 Acc@5: 91.06 time: 350.1875
+[2021-11-04 14:56:18] epoch[1](18000/20000) Loss: 0.9958 Acc@1: 75.70 Acc@5: 91.10 time: 349.7987
+[2021-11-04 15:02:08] epoch[1](20000/20000) Loss: 0.9930 Acc@1: 75.77 Acc@5: 91.12 time: 349.9975
+[2021-11-04 15:02:12] train    Loss: 0.9930 Acc@1: 75.77 Acc@5: 91.12 time: 3504.8449
+[2021-11-04 15:03:39] validate Loss: 0.9989 Acc@1: 75.40 Acc@5: 92.41 time: 87.3094
+[2021-11-04 15:03:39] storing checkpoint:/pruned_checkpoint/resnet_50_cov23.pt
+[2021-11-04 15:03:39] ===> layer_id 2 block_id 3 bestacc 75.3960
+[2021-11-04 15:03:39] ===> calc the union_rank of the 3-th Conv per Block
+[2021-11-04 15:03:39] idx_cprate: 0.9900
+[2021-11-04 15:03:39] loading rank_conv/resnet_50/dis_mtx24.npy
+[2021-11-04 15:03:41] storing rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:03:41] loading rank_conv/resnet_50/dis_mtx27.npy
+[2021-11-04 15:03:43] storing rank_conv/resnet_50/rank_conv27.npy
+[2021-11-04 15:03:43] loading rank_conv/resnet_50/dis_mtx30.npy
+[2021-11-04 15:03:46] storing rank_conv/resnet_50/rank_conv30.npy
+[2021-11-04 15:03:46] loading rank_conv/resnet_50/dis_mtx33.npy
+[2021-11-04 15:03:47] storing rank_conv/resnet_50/rank_conv33.npy
+[2021-11-04 15:03:47] loading rank_conv/resnet_50/dis_mtx36.npy
+[2021-11-04 15:03:51] storing rank_conv/resnet_50/rank_conv36.npy
+[2021-11-04 15:03:51] loading rank_conv/resnet_50/dis_mtx39.npy
+[2021-11-04 15:03:54] storing rank_conv/resnet_50/rank_conv39.npy
+[2021-11-04 15:03:54] idx_cprate: 0.8900
+[2021-11-04 15:03:54] loading rank_conv/resnet_50/dis_mtx24.npy
+[2021-11-04 15:03:57] storing rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:03:57] loading rank_conv/resnet_50/dis_mtx27.npy
+[2021-11-04 15:03:59] storing rank_conv/resnet_50/rank_conv27.npy
+[2021-11-04 15:03:59] loading rank_conv/resnet_50/dis_mtx30.npy
+[2021-11-04 15:04:01] storing rank_conv/resnet_50/rank_conv30.npy
+[2021-11-04 15:04:01] loading rank_conv/resnet_50/dis_mtx33.npy
+[2021-11-04 15:04:04] storing rank_conv/resnet_50/rank_conv33.npy
+[2021-11-04 15:04:04] loading rank_conv/resnet_50/dis_mtx36.npy
+[2021-11-04 15:04:06] storing rank_conv/resnet_50/rank_conv36.npy
+[2021-11-04 15:04:06] loading rank_conv/resnet_50/dis_mtx39.npy
+[2021-11-04 15:04:09] storing rank_conv/resnet_50/rank_conv39.npy
+[2021-11-04 15:04:09] idx_cprate: 0.7900
+[2021-11-04 15:04:09] loading rank_conv/resnet_50/dis_mtx24.npy
+[2021-11-04 15:04:12] storing rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:04:12] loading rank_conv/resnet_50/dis_mtx27.npy
+[2021-11-04 15:04:15] storing rank_conv/resnet_50/rank_conv27.npy
+[2021-11-04 15:04:15] loading rank_conv/resnet_50/dis_mtx30.npy
+[2021-11-04 15:04:18] storing rank_conv/resnet_50/rank_conv30.npy
+[2021-11-04 15:04:18] loading rank_conv/resnet_50/dis_mtx33.npy
+[2021-11-04 15:04:20] storing rank_conv/resnet_50/rank_conv33.npy
+[2021-11-04 15:04:20] loading rank_conv/resnet_50/dis_mtx36.npy
+[2021-11-04 15:04:22] storing rank_conv/resnet_50/rank_conv36.npy
+[2021-11-04 15:04:22] loading rank_conv/resnet_50/dis_mtx39.npy
+[2021-11-04 15:04:24] storing rank_conv/resnet_50/rank_conv39.npy
+[2021-11-04 15:04:24] idx_cprate: 0.6900
+[2021-11-04 15:04:24] loading rank_conv/resnet_50/dis_mtx24.npy
+[2021-11-04 15:04:26] storing rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:04:26] loading rank_conv/resnet_50/dis_mtx27.npy
+[2021-11-04 15:04:29] storing rank_conv/resnet_50/rank_conv27.npy
+[2021-11-04 15:04:29] loading rank_conv/resnet_50/dis_mtx30.npy
+[2021-11-04 15:04:32] storing rank_conv/resnet_50/rank_conv30.npy
+[2021-11-04 15:04:32] loading rank_conv/resnet_50/dis_mtx33.npy
+[2021-11-04 15:04:34] storing rank_conv/resnet_50/rank_conv33.npy
+[2021-11-04 15:04:34] loading rank_conv/resnet_50/dis_mtx36.npy
+[2021-11-04 15:04:37] storing rank_conv/resnet_50/rank_conv36.npy
+[2021-11-04 15:04:37] loading rank_conv/resnet_50/dis_mtx39.npy
+[2021-11-04 15:04:38] storing rank_conv/resnet_50/rank_conv39.npy
+[2021-11-04 15:04:38] ===> pruning layer_id 3 block_id 0
+[2021-11-04 15:04:39] loading checkpoint:/pruned_checkpoint/resnet_50_cov23.pt
+[2021-11-04 15:04:39] loading rank_conv/resnet_50/dis_mtx22.npy
+[2021-11-04 15:04:39] storing rank_conv/resnet_50/rank_conv22.npy
+[2021-11-04 15:04:39] loading rank_conv/resnet_50/rank_conv22.npy
+[2021-11-04 15:04:39] loading rank_conv/resnet_50/dis_mtx23.npy
+[2021-11-04 15:04:39] storing rank_conv/resnet_50/rank_conv23.npy
+[2021-11-04 15:04:39] loading rank_conv/resnet_50/rank_conv23.npy
+[2021-11-04 15:04:39] loading rank_conv/resnet_50/dis_mtx24.npy
+[2021-11-04 15:04:41] storing rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:04:41] loading rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:04:41] loading rank_conv/resnet_50/rank_conv24.npy
+[2021-11-04 15:05:56] validate Loss: 1.6764 Acc@1: 60.76 Acc@5: 83.49 time: 74.4699
+[2021-11-04 15:05:56] adjusting filter: layer3.0.conv2.weight
+[2021-11-04 15:05:57] adjusting filter: layer3.0.conv3.weight
+[2021-11-04 15:06:00] adjusting filter: layer3.1.conv1.weight
+[2021-11-04 15:07:18] validate Loss: 1.4158 Acc@1: 66.00 Acc@5: 86.93 time: 73.6920
+[2021-11-04 15:07:18] epoch 0 learning_rate 0.001 
+[2021-11-04 15:13:11] epoch[0](2000/20000) Loss: 1.1606 Acc@1: 71.70 Acc@5: 89.24 time: 353.3220
+[2021-11-04 15:19:03] epoch[0](4000/20000) Loss: 1.1603 Acc@1: 71.78 Acc@5: 89.22 time: 351.8676
+[2021-11-04 15:24:55] epoch[0](6000/20000) Loss: 1.1567 Acc@1: 71.88 Acc@5: 89.24 time: 351.9166
+[2021-11-04 15:30:47] epoch[0](8000/20000) Loss: 1.1571 Acc@1: 71.87 Acc@5: 89.24 time: 352.0525
+[2021-11-04 15:36:38] epoch[0](10000/20000) Loss: 1.1557 Acc@1: 71.89 Acc@5: 89.24 time: 350.9141
+[2021-11-04 15:42:28] epoch[0](12000/20000) Loss: 1.1559 Acc@1: 71.88 Acc@5: 89.25 time: 350.4260
+[2021-11-04 15:48:19] epoch[0](14000/20000) Loss: 1.1555 Acc@1: 71.88 Acc@5: 89.26 time: 350.4170
+[2021-11-04 15:54:09] epoch[0](16000/20000) Loss: 1.1561 Acc@1: 71.88 Acc@5: 89.25 time: 350.4172
+[2021-11-04 15:59:59] epoch[0](18000/20000) Loss: 1.1572 Acc@1: 71.88 Acc@5: 89.23 time: 350.4758
+[2021-11-04 16:05:50] epoch[0](20000/20000) Loss: 1.1559 Acc@1: 71.91 Acc@5: 89.25 time: 350.3803
+[2021-11-04 16:05:53] train    Loss: 1.1560 Acc@1: 71.91 Acc@5: 89.25 time: 3515.5023
+[2021-11-04 16:07:19] validate Loss: 1.1030 Acc@1: 72.84 Acc@5: 91.26 time: 85.6722
+[2021-11-04 16:07:19] storing checkpoint:/pruned_checkpoint/resnet_50_cov27.pt
+[2021-11-04 16:07:19] epoch 1 learning_rate 0.0001 
+[2021-11-04 16:13:12] epoch[1](2000/20000) Loss: 1.0575 Acc@1: 74.34 Acc@5: 90.44 time: 352.6281
+[2021-11-04 16:19:02] epoch[1](4000/20000) Loss: 1.0443 Acc@1: 74.55 Acc@5: 90.57 time: 349.8513
+[2021-11-04 16:24:51] epoch[1](6000/20000) Loss: 1.0351 Acc@1: 74.80 Acc@5: 90.64 time: 349.7410
+[2021-11-04 16:30:41] epoch[1](8000/20000) Loss: 1.0295 Acc@1: 74.95 Acc@5: 90.72 time: 349.8566
+[2021-11-04 16:36:31] epoch[1](10000/20000) Loss: 1.0228 Acc@1: 75.06 Acc@5: 90.80 time: 349.9873
+[2021-11-04 16:42:21] epoch[1](12000/20000) Loss: 1.0190 Acc@1: 75.18 Acc@5: 90.83 time: 349.7597
+[2021-11-04 16:48:11] epoch[1](14000/20000) Loss: 1.0148 Acc@1: 75.27 Acc@5: 90.88 time: 349.9924
+[2021-11-04 16:54:01] epoch[1](16000/20000) Loss: 1.0128 Acc@1: 75.32 Acc@5: 90.91 time: 349.9087
+[2021-11-04 16:59:51] epoch[1](18000/20000) Loss: 1.0097 Acc@1: 75.39 Acc@5: 90.93 time: 349.9740
+[2021-11-04 17:05:41] epoch[1](20000/20000) Loss: 1.0073 Acc@1: 75.44 Acc@5: 90.96 time: 349.8558
+[2021-11-04 17:05:44] train    Loss: 1.0073 Acc@1: 75.44 Acc@5: 90.96 time: 3504.8725
+[2021-11-04 17:07:09] validate Loss: 1.0080 Acc@1: 75.23 Acc@5: 92.28 time: 84.9365
+[2021-11-04 17:07:09] storing checkpoint:/pruned_checkpoint/resnet_50_cov27.pt
+[2021-11-04 17:07:09] ===> layer_id 3 block_id 0 bestacc 75.2320
+[2021-11-04 17:07:09] ===> pruning layer_id 3 block_id 1
+[2021-11-04 17:07:10] loading checkpoint:/pruned_checkpoint/resnet_50_cov27.pt
+[2021-11-04 17:07:10] loading rank_conv/resnet_50/dis_mtx25.npy
+[2021-11-04 17:07:10] storing rank_conv/resnet_50/rank_conv25.npy
+[2021-11-04 17:07:10] loading rank_conv/resnet_50/rank_conv25.npy
+[2021-11-04 17:07:10] loading rank_conv/resnet_50/dis_mtx26.npy
+[2021-11-04 17:07:10] storing rank_conv/resnet_50/rank_conv26.npy
+[2021-11-04 17:07:10] loading rank_conv/resnet_50/rank_conv26.npy
+[2021-11-04 17:07:10] loading rank_conv/resnet_50/dis_mtx27.npy
+[2021-11-04 17:07:13] storing rank_conv/resnet_50/rank_conv27.npy
+[2021-11-04 17:07:13] loading rank_conv/resnet_50/rank_conv27.npy
+[2021-11-04 17:08:29] validate Loss: 1.4175 Acc@1: 66.16 Acc@5: 86.72 time: 75.8181
+[2021-11-04 17:08:29] adjusting filter: layer3.1.conv2.weight
+[2021-11-04 17:08:30] adjusting filter: layer3.1.conv3.weight
+[2021-11-04 17:08:35] adjusting filter: layer3.2.conv1.weight
+[2021-11-04 17:09:54] validate Loss: 1.3087 Acc@1: 68.37 Acc@5: 88.31 time: 75.1494
+[2021-11-04 17:09:54] epoch 0 learning_rate 0.001 
+[2021-11-04 17:15:46] epoch[0](2000/20000) Loss: 1.1860 Acc@1: 71.28 Acc@5: 88.84 time: 352.4031
+[2021-11-04 17:21:36] epoch[0](4000/20000) Loss: 1.1837 Acc@1: 71.30 Acc@5: 88.88 time: 349.9953
+[2021-11-04 17:27:26] epoch[0](6000/20000) Loss: 1.1834 Acc@1: 71.33 Acc@5: 88.90 time: 349.8868
+[2021-11-04 17:33:16] epoch[0](8000/20000) Loss: 1.1818 Acc@1: 71.36 Acc@5: 88.92 time: 350.1801
+[2021-11-04 17:39:06] epoch[0](10000/20000) Loss: 1.1796 Acc@1: 71.42 Acc@5: 88.95 time: 349.8544
+[2021-11-04 17:44:56] epoch[0](12000/20000) Loss: 1.1783 Acc@1: 71.45 Acc@5: 88.97 time: 349.8139
+[2021-11-04 17:50:46] epoch[0](14000/20000) Loss: 1.1776 Acc@1: 71.46 Acc@5: 88.98 time: 349.7403
+[2021-11-04 17:56:35] epoch[0](16000/20000) Loss: 1.1763 Acc@1: 71.48 Acc@5: 89.01 time: 349.8114
+[2021-11-04 18:02:25] epoch[0](18000/20000) Loss: 1.1762 Acc@1: 71.49 Acc@5: 89.02 time: 349.8270
+[2021-11-04 18:08:15] epoch[0](20000/20000) Loss: 1.1759 Acc@1: 71.49 Acc@5: 89.02 time: 349.6482
+[2021-11-04 18:08:18] train    Loss: 1.1759 Acc@1: 71.49 Acc@5: 89.02 time: 3504.4706
+[2021-11-04 18:09:46] validate Loss: 1.1104 Acc@1: 72.77 Acc@5: 91.08 time: 87.5398
+[2021-11-04 18:09:46] storing checkpoint:/pruned_checkpoint/resnet_50_cov30.pt
+[2021-11-04 18:09:46] epoch 1 learning_rate 0.0001 
+[2021-11-04 18:15:39] epoch[1](2000/20000) Loss: 1.0822 Acc@1: 73.65 Acc@5: 90.11 time: 353.1633
+[2021-11-04 18:21:30] epoch[1](4000/20000) Loss: 1.0660 Acc@1: 74.09 Acc@5: 90.29 time: 350.4660
+[2021-11-04 18:27:20] epoch[1](6000/20000) Loss: 1.0560 Acc@1: 74.35 Acc@5: 90.38 time: 350.5682
+[2021-11-04 18:33:11] epoch[1](8000/20000) Loss: 1.0463 Acc@1: 74.57 Acc@5: 90.49 time: 350.4708
+[2021-11-04 18:39:01] epoch[1](10000/20000) Loss: 1.0403 Acc@1: 74.69 Acc@5: 90.56 time: 350.7145
+[2021-11-04 18:44:52] epoch[1](12000/20000) Loss: 1.0351 Acc@1: 74.81 Acc@5: 90.63 time: 350.4081
+[2021-11-04 18:50:42] epoch[1](14000/20000) Loss: 1.0298 Acc@1: 74.91 Acc@5: 90.70 time: 350.4879
+[2021-11-04 18:56:32] epoch[1](16000/20000) Loss: 1.0273 Acc@1: 74.97 Acc@5: 90.72 time: 350.1676
+[2021-11-04 19:02:23] epoch[1](18000/20000) Loss: 1.0249 Acc@1: 75.02 Acc@5: 90.74 time: 350.3900
+[2021-11-04 19:08:14] epoch[1](20000/20000) Loss: 1.0223 Acc@1: 75.09 Acc@5: 90.78 time: 350.7256
+[2021-11-04 19:08:17] train    Loss: 1.0223 Acc@1: 75.09 Acc@5: 90.78 time: 3510.8954
+[2021-11-04 19:09:45] validate Loss: 1.0198 Acc@1: 74.84 Acc@5: 92.18 time: 87.6680
+[2021-11-04 19:09:45] storing checkpoint:/pruned_checkpoint/resnet_50_cov30.pt
+[2021-11-04 19:09:45] ===> layer_id 3 block_id 1 bestacc 74.8440
+[2021-11-04 19:09:45] ===> pruning layer_id 3 block_id 2
+[2021-11-04 19:09:45] loading checkpoint:/pruned_checkpoint/resnet_50_cov30.pt
+[2021-11-04 19:09:46] loading rank_conv/resnet_50/dis_mtx28.npy
+[2021-11-04 19:09:46] storing rank_conv/resnet_50/rank_conv28.npy
+[2021-11-04 19:09:46] loading rank_conv/resnet_50/rank_conv28.npy
+[2021-11-04 19:09:46] loading rank_conv/resnet_50/dis_mtx29.npy
+[2021-11-04 19:09:46] storing rank_conv/resnet_50/rank_conv29.npy
+[2021-11-04 19:09:46] loading rank_conv/resnet_50/rank_conv29.npy
+[2021-11-04 19:09:46] loading rank_conv/resnet_50/dis_mtx30.npy
+[2021-11-04 19:09:48] storing rank_conv/resnet_50/rank_conv30.npy
+[2021-11-04 19:09:48] loading rank_conv/resnet_50/rank_conv30.npy
+[2021-11-04 19:11:05] validate Loss: 1.4821 Acc@1: 65.47 Acc@5: 86.42 time: 77.1720
+[2021-11-04 19:11:05] adjusting filter: layer3.2.conv2.weight
+[2021-11-04 19:11:07] adjusting filter: layer3.2.conv3.weight
+[2021-11-04 19:11:12] adjusting filter: layer3.3.conv1.weight
+[2021-11-04 19:12:32] validate Loss: 1.3660 Acc@1: 67.73 Acc@5: 87.86 time: 76.9177
+[2021-11-04 19:12:32] epoch 0 learning_rate 0.001 
+[2021-11-04 19:18:25] epoch[0](2000/20000) Loss: 1.1876 Acc@1: 71.19 Acc@5: 88.89 time: 352.9772
+[2021-11-04 19:24:16] epoch[0](4000/20000) Loss: 1.1845 Acc@1: 71.28 Acc@5: 88.91 time: 350.3677
+[2021-11-04 19:30:06] epoch[0](6000/20000) Loss: 1.1852 Acc@1: 71.30 Acc@5: 88.91 time: 350.4014
+[2021-11-04 19:35:56] epoch[0](8000/20000) Loss: 1.1873 Acc@1: 71.23 Acc@5: 88.89 time: 350.4714
+[2021-11-04 19:41:47] epoch[0](10000/20000) Loss: 1.1873 Acc@1: 71.23 Acc@5: 88.88 time: 350.3003
+[2021-11-04 19:47:37] epoch[0](12000/20000) Loss: 1.1888 Acc@1: 71.20 Acc@5: 88.86 time: 350.0871
+[2021-11-04 19:53:27] epoch[0](14000/20000) Loss: 1.1887 Acc@1: 71.20 Acc@5: 88.86 time: 350.4596
+[2021-11-04 19:59:18] epoch[0](16000/20000) Loss: 1.1890 Acc@1: 71.21 Acc@5: 88.85 time: 350.5594
+[2021-11-04 20:05:08] epoch[0](18000/20000) Loss: 1.1902 Acc@1: 71.19 Acc@5: 88.83 time: 350.5459
+[2021-11-04 20:10:59] epoch[0](20000/20000) Loss: 1.1897 Acc@1: 71.19 Acc@5: 88.84 time: 350.1429
+[2021-11-04 20:11:02] train    Loss: 1.1897 Acc@1: 71.19 Acc@5: 88.84 time: 3509.6259
+[2021-11-04 20:12:27] validate Loss: 1.1307 Acc@1: 72.39 Acc@5: 91.02 time: 84.8688
+[2021-11-04 20:12:27] storing checkpoint:/pruned_checkpoint/resnet_50_cov33.pt
+[2021-11-04 20:12:27] epoch 1 learning_rate 0.0001 
+[2021-11-04 20:18:19] epoch[1](2000/20000) Loss: 1.0911 Acc@1: 73.52 Acc@5: 89.98 time: 352.3369
+[2021-11-04 20:24:09] epoch[1](4000/20000) Loss: 1.0758 Acc@1: 73.88 Acc@5: 90.15 time: 349.8050
+[2021-11-04 20:29:59] epoch[1](6000/20000) Loss: 1.0679 Acc@1: 74.06 Acc@5: 90.22 time: 349.7604
+[2021-11-04 20:35:49] epoch[1](8000/20000) Loss: 1.0591 Acc@1: 74.25 Acc@5: 90.32 time: 349.9262
+[2021-11-04 20:41:39] epoch[1](10000/20000) Loss: 1.0528 Acc@1: 74.39 Acc@5: 90.39 time: 349.9407
+[2021-11-04 20:47:29] epoch[1](12000/20000) Loss: 1.0464 Acc@1: 74.53 Acc@5: 90.46 time: 349.6480
+[2021-11-04 20:53:18] epoch[1](14000/20000) Loss: 1.0429 Acc@1: 74.61 Acc@5: 90.51 time: 349.7194
+[2021-11-04 20:59:08] epoch[1](16000/20000) Loss: 1.0396 Acc@1: 74.70 Acc@5: 90.53 time: 349.9339
+[2021-11-04 21:04:58] epoch[1](18000/20000) Loss: 1.0362 Acc@1: 74.77 Acc@5: 90.58 time: 349.9536
+[2021-11-04 21:10:48] epoch[1](20000/20000) Loss: 1.0335 Acc@1: 74.82 Acc@5: 90.61 time: 349.9440
+[2021-11-04 21:10:51] train    Loss: 1.0334 Acc@1: 74.82 Acc@5: 90.61 time: 3504.2935
+[2021-11-04 21:12:18] validate Loss: 1.0325 Acc@1: 74.52 Acc@5: 92.07 time: 86.9135
+[2021-11-04 21:12:19] storing checkpoint:/pruned_checkpoint/resnet_50_cov33.pt
+[2021-11-04 21:12:19] ===> layer_id 3 block_id 2 bestacc 74.5160
+[2021-11-04 21:12:19] ===> pruning layer_id 3 block_id 3
+[2021-11-04 21:12:19] loading checkpoint:/pruned_checkpoint/resnet_50_cov33.pt
+[2021-11-04 21:12:19] loading rank_conv/resnet_50/dis_mtx31.npy
+[2021-11-04 21:12:19] storing rank_conv/resnet_50/rank_conv31.npy
+[2021-11-04 21:12:19] loading rank_conv/resnet_50/rank_conv31.npy
+[2021-11-04 21:12:19] loading rank_conv/resnet_50/dis_mtx32.npy
+[2021-11-04 21:12:20] storing rank_conv/resnet_50/rank_conv32.npy
+[2021-11-04 21:12:20] loading rank_conv/resnet_50/rank_conv32.npy
+[2021-11-04 21:12:20] loading rank_conv/resnet_50/dis_mtx33.npy
+[2021-11-04 21:12:22] storing rank_conv/resnet_50/rank_conv33.npy
+[2021-11-04 21:12:22] loading rank_conv/resnet_50/rank_conv33.npy
+[2021-11-04 21:13:38] validate Loss: 1.2774 Acc@1: 69.68 Acc@5: 89.12 time: 76.1569
+[2021-11-04 21:13:38] adjusting filter: layer3.3.conv2.weight
+[2021-11-04 21:13:40] adjusting filter: layer3.3.conv3.weight
+[2021-11-04 21:13:45] adjusting filter: layer3.4.conv1.weight
+[2021-11-04 21:15:02] validate Loss: 1.2609 Acc@1: 69.61 Acc@5: 89.18 time: 74.1273
+[2021-11-04 21:15:02] epoch 0 learning_rate 0.001 
+[2021-11-04 21:20:55] epoch[0](2000/20000) Loss: 1.2009 Acc@1: 70.97 Acc@5: 88.62 time: 352.3247
+[2021-11-04 21:26:44] epoch[0](4000/20000) Loss: 1.2025 Acc@1: 70.88 Acc@5: 88.67 time: 349.6592
+[2021-11-04 21:32:34] epoch[0](6000/20000) Loss: 1.2049 Acc@1: 70.83 Acc@5: 88.62 time: 349.8425
+[2021-11-04 21:38:24] epoch[0](8000/20000) Loss: 1.2047 Acc@1: 70.85 Acc@5: 88.62 time: 349.6974
+[2021-11-04 21:44:14] epoch[0](10000/20000) Loss: 1.2045 Acc@1: 70.86 Acc@5: 88.62 time: 349.7290
+[2021-11-04 21:50:04] epoch[0](12000/20000) Loss: 1.2040 Acc@1: 70.86 Acc@5: 88.64 time: 349.8020
+[2021-11-04 21:55:53] epoch[0](14000/20000) Loss: 1.2045 Acc@1: 70.86 Acc@5: 88.63 time: 349.6113
+[2021-11-04 22:01:43] epoch[0](16000/20000) Loss: 1.2034 Acc@1: 70.89 Acc@5: 88.65 time: 349.5760
+[2021-11-04 22:07:32] epoch[0](18000/20000) Loss: 1.2038 Acc@1: 70.89 Acc@5: 88.64 time: 349.2021
+[2021-11-04 22:13:21] epoch[0](20000/20000) Loss: 1.2036 Acc@1: 70.89 Acc@5: 88.64 time: 349.5177
+[2021-11-04 22:13:25] train    Loss: 1.2036 Acc@1: 70.89 Acc@5: 88.64 time: 3502.2766
+[2021-11-04 22:14:51] validate Loss: 1.1447 Acc@1: 72.11 Acc@5: 90.76 time: 85.8185
+[2021-11-04 22:14:51] storing checkpoint:/pruned_checkpoint/resnet_50_cov36.pt
+[2021-11-04 22:14:51] epoch 1 learning_rate 0.0001 
+[2021-11-04 22:20:43] epoch[1](2000/20000) Loss: 1.1060 Acc@1: 73.09 Acc@5: 89.73 time: 352.1709
+[2021-11-04 22:26:33] epoch[1](4000/20000) Loss: 1.0889 Acc@1: 73.56 Acc@5: 89.94 time: 349.4418
+[2021-11-04 22:32:22] epoch[1](6000/20000) Loss: 1.0787 Acc@1: 73.76 Acc@5: 90.07 time: 349.5224
+[2021-11-04 22:38:12] epoch[1](8000/20000) Loss: 1.0716 Acc@1: 73.94 Acc@5: 90.13 time: 349.6183
+[2021-11-04 22:44:02] epoch[1](10000/20000) Loss: 1.0647 Acc@1: 74.08 Acc@5: 90.25 time: 350.2743
+[2021-11-04 22:49:53] epoch[1](12000/20000) Loss: 1.0605 Acc@1: 74.18 Acc@5: 90.30 time: 350.7524
+[2021-11-04 22:55:43] epoch[1](14000/20000) Loss: 1.0568 Acc@1: 74.29 Acc@5: 90.35 time: 350.7320
+[2021-11-04 23:01:34] epoch[1](16000/20000) Loss: 1.0535 Acc@1: 74.35 Acc@5: 90.39 time: 350.5734
+[2021-11-04 23:07:25] epoch[1](18000/20000) Loss: 1.0499 Acc@1: 74.45 Acc@5: 90.43 time: 350.6168
+[2021-11-04 23:13:15] epoch[1](20000/20000) Loss: 1.0478 Acc@1: 74.50 Acc@5: 90.46 time: 350.5517
+[2021-11-04 23:13:18] train    Loss: 1.0478 Acc@1: 74.50 Acc@5: 90.46 time: 3507.5597
+[2021-11-04 23:14:44] validate Loss: 1.0371 Acc@1: 74.42 Acc@5: 92.07 time: 85.6105
+[2021-11-04 23:14:44] storing checkpoint:/pruned_checkpoint/resnet_50_cov36.pt
+[2021-11-04 23:14:44] ===> layer_id 3 block_id 3 bestacc 74.4200
+[2021-11-04 23:14:44] ===> pruning layer_id 3 block_id 4
+[2021-11-04 23:14:45] loading checkpoint:/pruned_checkpoint/resnet_50_cov36.pt
+[2021-11-04 23:14:45] loading rank_conv/resnet_50/dis_mtx34.npy
+[2021-11-04 23:14:45] storing rank_conv/resnet_50/rank_conv34.npy
+[2021-11-04 23:14:45] loading rank_conv/resnet_50/rank_conv34.npy
+[2021-11-04 23:14:45] loading rank_conv/resnet_50/dis_mtx35.npy
+[2021-11-04 23:14:45] storing rank_conv/resnet_50/rank_conv35.npy
+[2021-11-04 23:14:45] loading rank_conv/resnet_50/rank_conv35.npy
+[2021-11-04 23:14:45] loading rank_conv/resnet_50/dis_mtx36.npy
+[2021-11-04 23:14:48] storing rank_conv/resnet_50/rank_conv36.npy
+[2021-11-04 23:14:48] loading rank_conv/resnet_50/rank_conv36.npy
+[2021-11-04 23:16:04] validate Loss: 1.4078 Acc@1: 67.15 Acc@5: 87.54 time: 76.1605
+[2021-11-04 23:16:04] adjusting filter: layer3.4.conv2.weight
+[2021-11-04 23:16:05] adjusting filter: layer3.4.conv3.weight
+[2021-11-04 23:16:10] adjusting filter: layer3.5.conv1.weight
+[2021-11-04 23:17:30] validate Loss: 1.3386 Acc@1: 68.36 Acc@5: 88.38 time: 75.9423
+[2021-11-04 23:17:30] epoch 0 learning_rate 0.001 
+[2021-11-04 23:23:23] epoch[0](2000/20000) Loss: 1.2204 Acc@1: 70.51 Acc@5: 88.36 time: 353.1206
+[2021-11-04 23:29:13] epoch[0](4000/20000) Loss: 1.2222 Acc@1: 70.49 Acc@5: 88.38 time: 350.5111
+[2021-11-04 23:35:04] epoch[0](6000/20000) Loss: 1.2252 Acc@1: 70.42 Acc@5: 88.34 time: 350.8433
+[2021-11-04 23:40:55] epoch[0](8000/20000) Loss: 1.2254 Acc@1: 70.42 Acc@5: 88.33 time: 350.8817
+[2021-11-04 23:46:46] epoch[0](10000/20000) Loss: 1.2225 Acc@1: 70.47 Acc@5: 88.38 time: 350.8898
+[2021-11-04 23:52:37] epoch[0](12000/20000) Loss: 1.2224 Acc@1: 70.46 Acc@5: 88.39 time: 350.4955
+[2021-11-04 23:58:27] epoch[0](14000/20000) Loss: 1.2235 Acc@1: 70.44 Acc@5: 88.37 time: 350.6345
+[2021-11-05 00:04:18] epoch[0](16000/20000) Loss: 1.2227 Acc@1: 70.46 Acc@5: 88.38 time: 350.7695
+[2021-11-05 00:10:09] epoch[0](18000/20000) Loss: 1.2229 Acc@1: 70.46 Acc@5: 88.39 time: 350.5951
+[2021-11-05 00:15:59] epoch[0](20000/20000) Loss: 1.2224 Acc@1: 70.46 Acc@5: 88.40 time: 350.2617
+[2021-11-05 00:16:02] train    Loss: 1.2225 Acc@1: 70.46 Acc@5: 88.40 time: 3512.3262
+[2021-11-05 00:17:27] validate Loss: 1.1570 Acc@1: 71.68 Acc@5: 90.43 time: 84.5095
+[2021-11-05 00:17:27] storing checkpoint:/pruned_checkpoint/resnet_50_cov39.pt
+[2021-11-05 00:17:27] epoch 1 learning_rate 0.0001 
+[2021-11-05 00:23:19] epoch[1](2000/20000) Loss: 1.1220 Acc@1: 72.76 Acc@5: 89.60 time: 352.4104
+[2021-11-05 00:29:09] epoch[1](4000/20000) Loss: 1.1007 Acc@1: 73.26 Acc@5: 89.81 time: 349.7410
+[2021-11-05 00:34:59] epoch[1](6000/20000) Loss: 1.0902 Acc@1: 73.51 Acc@5: 89.93 time: 349.5617
+[2021-11-05 00:40:48] epoch[1](8000/20000) Loss: 1.0837 Acc@1: 73.64 Acc@5: 90.03 time: 349.5331
+[2021-11-05 00:46:38] epoch[1](10000/20000) Loss: 1.0805 Acc@1: 73.74 Acc@5: 90.05 time: 349.6429
+[2021-11-05 00:52:27] epoch[1](12000/20000) Loss: 1.0755 Acc@1: 73.83 Acc@5: 90.11 time: 349.5360
+[2021-11-05 00:58:17] epoch[1](14000/20000) Loss: 1.0719 Acc@1: 73.92 Acc@5: 90.16 time: 349.8293
+[2021-11-05 01:04:07] epoch[1](16000/20000) Loss: 1.0698 Acc@1: 73.98 Acc@5: 90.17 time: 349.7470
+[2021-11-05 01:09:57] epoch[1](18000/20000) Loss: 1.0672 Acc@1: 74.03 Acc@5: 90.20 time: 349.8253
+[2021-11-05 01:15:47] epoch[1](20000/20000) Loss: 1.0644 Acc@1: 74.12 Acc@5: 90.24 time: 349.6981
+[2021-11-05 01:15:50] train    Loss: 1.0643 Acc@1: 74.12 Acc@5: 90.24 time: 3502.8338
+[2021-11-05 01:17:15] validate Loss: 1.0527 Acc@1: 74.05 Acc@5: 91.73 time: 85.0258
+[2021-11-05 01:17:15] storing checkpoint:/pruned_checkpoint/resnet_50_cov39.pt
+[2021-11-05 01:17:15] ===> layer_id 3 block_id 4 bestacc 74.0500
+[2021-11-05 01:17:15] ===> pruning layer_id 3 block_id 5
+[2021-11-05 01:17:16] loading checkpoint:/pruned_checkpoint/resnet_50_cov39.pt
+[2021-11-05 01:17:16] loading rank_conv/resnet_50/dis_mtx37.npy
+[2021-11-05 01:17:16] storing rank_conv/resnet_50/rank_conv37.npy
+[2021-11-05 01:17:16] loading rank_conv/resnet_50/rank_conv37.npy
+[2021-11-05 01:17:16] loading rank_conv/resnet_50/dis_mtx38.npy
+[2021-11-05 01:17:16] storing rank_conv/resnet_50/rank_conv38.npy
+[2021-11-05 01:17:16] loading rank_conv/resnet_50/rank_conv38.npy
+[2021-11-05 01:17:16] loading rank_conv/resnet_50/dis_mtx39.npy
+[2021-11-05 01:17:19] storing rank_conv/resnet_50/rank_conv39.npy
+[2021-11-05 01:17:19] loading rank_conv/resnet_50/rank_conv39.npy
+[2021-11-05 01:18:34] validate Loss: 1.3990 Acc@1: 67.09 Acc@5: 87.54 time: 75.3701
+[2021-11-05 01:18:34] adjusting filter: layer3.5.conv2.weight
+[2021-11-05 01:18:36] adjusting filter: layer3.5.conv3.weight
+[2021-11-05 01:18:41] adjusting filter: layer4.0.conv1.weight
+[2021-11-05 01:20:03] validate Loss: 1.4625 Acc@1: 65.88 Acc@5: 86.76 time: 75.7192
+[2021-11-05 01:20:03] epoch 0 learning_rate 0.001 
+[2021-11-05 01:25:56] epoch[0](2000/20000) Loss: 1.2510 Acc@1: 69.88 Acc@5: 87.99 time: 352.6710
+[2021-11-05 01:31:46] epoch[0](4000/20000) Loss: 1.2516 Acc@1: 69.84 Acc@5: 88.05 time: 349.5829
+[2021-11-05 01:37:35] epoch[0](6000/20000) Loss: 1.2504 Acc@1: 69.85 Acc@5: 88.05 time: 349.7176
+[2021-11-05 01:43:25] epoch[0](8000/20000) Loss: 1.2515 Acc@1: 69.82 Acc@5: 88.01 time: 349.6054
+[2021-11-05 01:49:15] epoch[0](10000/20000) Loss: 1.2509 Acc@1: 69.83 Acc@5: 88.04 time: 349.6379
+[2021-11-05 01:55:04] epoch[0](12000/20000) Loss: 1.2505 Acc@1: 69.81 Acc@5: 88.04 time: 349.6876
+[2021-11-05 02:00:54] epoch[0](14000/20000) Loss: 1.2488 Acc@1: 69.85 Acc@5: 88.06 time: 349.6678
+[2021-11-05 02:06:44] epoch[0](16000/20000) Loss: 1.2488 Acc@1: 69.87 Acc@5: 88.05 time: 349.6176
+[2021-11-05 02:12:33] epoch[0](18000/20000) Loss: 1.2479 Acc@1: 69.90 Acc@5: 88.07 time: 349.7826
+[2021-11-05 02:18:23] epoch[0](20000/20000) Loss: 1.2473 Acc@1: 69.91 Acc@5: 88.07 time: 349.5973
+[2021-11-05 02:18:26] train    Loss: 1.2472 Acc@1: 69.91 Acc@5: 88.07 time: 3502.8575
+[2021-11-05 02:19:50] validate Loss: 1.1675 Acc@1: 71.65 Acc@5: 90.42 time: 84.0969
+[2021-11-05 02:19:51] storing checkpoint:/pruned_checkpoint/resnet_50_cov42.pt
+[2021-11-05 02:19:51] epoch 1 learning_rate 0.0001 
+[2021-11-05 02:25:43] epoch[1](2000/20000) Loss: 1.1414 Acc@1: 72.31 Acc@5: 89.31 time: 352.0957
+[2021-11-05 02:31:33] epoch[1](4000/20000) Loss: 1.1281 Acc@1: 72.74 Acc@5: 89.47 time: 349.6938
+[2021-11-05 02:37:22] epoch[1](6000/20000) Loss: 1.1158 Acc@1: 73.00 Acc@5: 89.64 time: 349.6190
+[2021-11-05 02:43:12] epoch[1](8000/20000) Loss: 1.1083 Acc@1: 73.16 Acc@5: 89.75 time: 349.7040
+[2021-11-05 02:49:02] epoch[1](10000/20000) Loss: 1.1033 Acc@1: 73.26 Acc@5: 89.81 time: 349.6998
+[2021-11-05 02:54:51] epoch[1](12000/20000) Loss: 1.0973 Acc@1: 73.37 Acc@5: 89.88 time: 349.6324
+[2021-11-05 03:00:41] epoch[1](14000/20000) Loss: 1.0933 Acc@1: 73.48 Acc@5: 89.93 time: 349.5612
+[2021-11-05 03:06:30] epoch[1](16000/20000) Loss: 1.0899 Acc@1: 73.56 Acc@5: 89.98 time: 349.4545
+[2021-11-05 03:12:20] epoch[1](18000/20000) Loss: 1.0874 Acc@1: 73.62 Acc@5: 90.00 time: 349.6101
+[2021-11-05 03:18:10] epoch[1](20000/20000) Loss: 1.0844 Acc@1: 73.67 Acc@5: 90.03 time: 349.8064
+[2021-11-05 03:18:13] train    Loss: 1.0844 Acc@1: 73.67 Acc@5: 90.03 time: 3502.1826
+[2021-11-05 03:19:37] validate Loss: 1.0586 Acc@1: 73.82 Acc@5: 91.55 time: 84.3047
+[2021-11-05 03:19:38] storing checkpoint:/pruned_checkpoint/resnet_50_cov42.pt
+[2021-11-05 03:19:38] ===> layer_id 3 block_id 5 bestacc 73.8200
+[2021-11-05 03:19:38] ===> calc the union_rank of the 3-th Conv per Block
+[2021-11-05 03:19:38] idx_cprate: 0.9900
+[2021-11-05 03:19:38] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:19:48] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:19:48] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:19:55] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:19:55] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:20:04] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:20:04] idx_cprate: 0.8900
+[2021-11-05 03:20:04] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:20:14] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:20:14] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:20:21] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:20:21] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:20:31] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:20:31] idx_cprate: 0.7900
+[2021-11-05 03:20:31] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:20:39] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:20:39] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:20:49] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:20:49] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:20:58] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:20:58] idx_cprate: 0.6900
+[2021-11-05 03:20:58] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:21:08] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:21:08] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:21:18] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:21:18] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:21:29] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:21:29] idx_cprate: 0.5900
+[2021-11-05 03:21:30] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:21:38] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:21:38] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:21:46] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:21:46] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:21:55] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:21:55] idx_cprate: 0.4900
+[2021-11-05 03:21:55] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:22:03] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:22:03] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:22:14] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:22:14] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:22:26] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:22:26] idx_cprate: 0.3900
+[2021-11-05 03:22:26] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:22:34] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:22:34] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 03:22:42] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 03:22:42] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 03:22:53] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 03:22:53] ===> pruning layer_id 4 block_id 0
+[2021-11-05 03:22:53] loading checkpoint:/pruned_checkpoint/resnet_50_cov42.pt
+[2021-11-05 03:22:53] loading rank_conv/resnet_50/dis_mtx40.npy
+[2021-11-05 03:22:54] storing rank_conv/resnet_50/rank_conv40.npy
+[2021-11-05 03:22:54] loading rank_conv/resnet_50/rank_conv40.npy
+[2021-11-05 03:22:54] loading rank_conv/resnet_50/dis_mtx41.npy
+[2021-11-05 03:22:54] storing rank_conv/resnet_50/rank_conv41.npy
+[2021-11-05 03:22:54] loading rank_conv/resnet_50/rank_conv41.npy
+[2021-11-05 03:22:54] loading rank_conv/resnet_50/dis_mtx42.npy
+[2021-11-05 03:23:03] storing rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:23:03] loading rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:23:03] loading rank_conv/resnet_50/rank_conv42.npy
+[2021-11-05 03:24:18] validate Loss: 1.2593 Acc@1: 68.88 Acc@5: 89.12 time: 75.2263
+[2021-11-05 03:24:18] adjusting filter: layer4.0.conv2.weight
+[2021-11-05 03:24:22] adjusting filter: layer4.0.conv3.weight
+[2021-11-05 03:24:37] adjusting filter: layer4.1.conv1.weight
+[2021-11-05 03:26:05] validate Loss: 1.2475 Acc@1: 69.31 Acc@5: 89.14 time: 75.2182
+[2021-11-05 03:26:05] epoch 0 learning_rate 0.001 
+[2021-11-05 03:31:58] epoch[0](2000/20000) Loss: 1.2490 Acc@1: 69.91 Acc@5: 88.01 time: 352.3348
+[2021-11-05 03:37:47] epoch[0](4000/20000) Loss: 1.2486 Acc@1: 69.93 Acc@5: 88.03 time: 349.3574
+[2021-11-05 03:43:37] epoch[0](6000/20000) Loss: 1.2536 Acc@1: 69.81 Acc@5: 88.01 time: 349.5765
+[2021-11-05 03:49:26] epoch[0](8000/20000) Loss: 1.2514 Acc@1: 69.84 Acc@5: 88.03 time: 349.6086
+[2021-11-05 03:55:16] epoch[0](10000/20000) Loss: 1.2509 Acc@1: 69.83 Acc@5: 88.04 time: 349.4924
+[2021-11-05 04:01:05] epoch[0](12000/20000) Loss: 1.2523 Acc@1: 69.79 Acc@5: 88.03 time: 349.5566
+[2021-11-05 04:06:55] epoch[0](14000/20000) Loss: 1.2512 Acc@1: 69.79 Acc@5: 88.04 time: 349.3751
+[2021-11-05 04:12:44] epoch[0](16000/20000) Loss: 1.2529 Acc@1: 69.78 Acc@5: 88.02 time: 349.6653
+[2021-11-05 04:18:34] epoch[0](18000/20000) Loss: 1.2528 Acc@1: 69.79 Acc@5: 88.03 time: 349.6893
+[2021-11-05 04:24:23] epoch[0](20000/20000) Loss: 1.2528 Acc@1: 69.78 Acc@5: 88.04 time: 349.4881
+[2021-11-05 04:24:27] train    Loss: 1.2527 Acc@1: 69.78 Acc@5: 88.04 time: 3501.4689
+[2021-11-05 04:25:51] validate Loss: 1.1597 Acc@1: 71.42 Acc@5: 90.46 time: 84.5804
+[2021-11-05 04:25:52] storing checkpoint:/pruned_checkpoint/resnet_50_cov46.pt
+[2021-11-05 04:25:52] epoch 1 learning_rate 0.0001 
+[2021-11-05 04:31:44] epoch[1](2000/20000) Loss: 1.1563 Acc@1: 72.01 Acc@5: 89.16 time: 352.3752
+[2021-11-05 04:37:34] epoch[1](4000/20000) Loss: 1.1343 Acc@1: 72.55 Acc@5: 89.43 time: 349.6623
+[2021-11-05 04:43:23] epoch[1](6000/20000) Loss: 1.1249 Acc@1: 72.77 Acc@5: 89.55 time: 349.5661
+[2021-11-05 04:49:13] epoch[1](8000/20000) Loss: 1.1187 Acc@1: 72.87 Acc@5: 89.63 time: 349.5526
+[2021-11-05 04:55:03] epoch[1](10000/20000) Loss: 1.1152 Acc@1: 72.95 Acc@5: 89.68 time: 349.7166
+[2021-11-05 05:00:52] epoch[1](12000/20000) Loss: 1.1086 Acc@1: 73.12 Acc@5: 89.74 time: 349.5133
+[2021-11-05 05:06:42] epoch[1](14000/20000) Loss: 1.1046 Acc@1: 73.22 Acc@5: 89.79 time: 349.4523
+[2021-11-05 05:12:31] epoch[1](16000/20000) Loss: 1.1008 Acc@1: 73.30 Acc@5: 89.83 time: 349.8914
+[2021-11-05 05:18:21] epoch[1](18000/20000) Loss: 1.0974 Acc@1: 73.37 Acc@5: 89.87 time: 349.7182
+[2021-11-05 05:24:11] epoch[1](20000/20000) Loss: 1.0952 Acc@1: 73.42 Acc@5: 89.89 time: 349.4846
+[2021-11-05 05:24:14] train    Loss: 1.0952 Acc@1: 73.42 Acc@5: 89.89 time: 3502.2289
+[2021-11-05 05:25:39] validate Loss: 1.0621 Acc@1: 73.66 Acc@5: 91.68 time: 84.7698
+[2021-11-05 05:25:39] storing checkpoint:/pruned_checkpoint/resnet_50_cov46.pt
+[2021-11-05 05:25:39] ===> layer_id 4 block_id 0 bestacc 73.6560
+[2021-11-05 05:25:39] ===> pruning layer_id 4 block_id 1
+[2021-11-05 05:25:39] loading checkpoint:/pruned_checkpoint/resnet_50_cov46.pt
+[2021-11-05 05:25:39] loading rank_conv/resnet_50/dis_mtx43.npy
+[2021-11-05 05:25:40] storing rank_conv/resnet_50/rank_conv43.npy
+[2021-11-05 05:25:40] loading rank_conv/resnet_50/rank_conv43.npy
+[2021-11-05 05:25:40] loading rank_conv/resnet_50/dis_mtx44.npy
+[2021-11-05 05:25:41] storing rank_conv/resnet_50/rank_conv44.npy
+[2021-11-05 05:25:41] loading rank_conv/resnet_50/rank_conv44.npy
+[2021-11-05 05:25:41] loading rank_conv/resnet_50/dis_mtx45.npy
+[2021-11-05 05:25:49] storing rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 05:25:49] loading rank_conv/resnet_50/rank_conv45.npy
+[2021-11-05 05:27:04] validate Loss: 1.2439 Acc@1: 69.57 Acc@5: 89.57 time: 75.1536
+[2021-11-05 05:27:04] adjusting filter: layer4.1.conv2.weight
+[2021-11-05 05:27:08] adjusting filter: layer4.1.conv3.weight
+[2021-11-05 05:27:25] adjusting filter: layer4.2.conv1.weight
+[2021-11-05 05:28:54] validate Loss: 1.3127 Acc@1: 69.22 Acc@5: 89.31 time: 75.6324
+[2021-11-05 05:28:54] epoch 0 learning_rate 0.001 
+[2021-11-05 05:34:46] epoch[0](2000/20000) Loss: 1.2785 Acc@1: 69.28 Acc@5: 87.86 time: 352.5410
+[2021-11-05 05:40:36] epoch[0](4000/20000) Loss: 1.2812 Acc@1: 69.23 Acc@5: 87.82 time: 349.4645
+[2021-11-05 05:46:25] epoch[0](6000/20000) Loss: 1.2824 Acc@1: 69.17 Acc@5: 87.78 time: 349.4431
+[2021-11-05 05:52:15] epoch[0](8000/20000) Loss: 1.2804 Acc@1: 69.20 Acc@5: 87.78 time: 349.7447
+[2021-11-05 05:58:05] epoch[0](10000/20000) Loss: 1.2791 Acc@1: 69.26 Acc@5: 87.80 time: 349.6209
+[2021-11-05 06:03:54] epoch[0](12000/20000) Loss: 1.2803 Acc@1: 69.23 Acc@5: 87.78 time: 349.4536
+[2021-11-05 06:09:44] epoch[0](14000/20000) Loss: 1.2808 Acc@1: 69.23 Acc@5: 87.77 time: 349.6491
+[2021-11-05 06:15:33] epoch[0](16000/20000) Loss: 1.2812 Acc@1: 69.22 Acc@5: 87.76 time: 349.6952
+[2021-11-05 06:21:23] epoch[0](18000/20000) Loss: 1.2814 Acc@1: 69.21 Acc@5: 87.76 time: 349.6905
+[2021-11-05 06:27:13] epoch[0](20000/20000) Loss: 1.2802 Acc@1: 69.23 Acc@5: 87.76 time: 349.5320
+[2021-11-05 06:27:16] train    Loss: 1.2801 Acc@1: 69.23 Acc@5: 87.77 time: 3502.1730
+[2021-11-05 06:28:40] validate Loss: 1.1630 Acc@1: 71.37 Acc@5: 90.42 time: 84.1696
+[2021-11-05 06:28:40] storing checkpoint:/pruned_checkpoint/resnet_50_cov49.pt
+[2021-11-05 06:28:40] epoch 1 learning_rate 0.0001 
+[2021-11-05 06:34:33] epoch[1](2000/20000) Loss: 1.1893 Acc@1: 71.26 Acc@5: 88.79 time: 352.1709
+[2021-11-05 06:40:22] epoch[1](4000/20000) Loss: 1.1704 Acc@1: 71.70 Acc@5: 89.07 time: 349.4186
+[2021-11-05 06:46:12] epoch[1](6000/20000) Loss: 1.1562 Acc@1: 72.05 Acc@5: 89.25 time: 349.5724
+[2021-11-05 06:52:01] epoch[1](8000/20000) Loss: 1.1481 Acc@1: 72.22 Acc@5: 89.36 time: 349.3528
+[2021-11-05 06:57:50] epoch[1](10000/20000) Loss: 1.1410 Acc@1: 72.39 Acc@5: 89.44 time: 349.4225
+[2021-11-05 07:03:40] epoch[1](12000/20000) Loss: 1.1363 Acc@1: 72.50 Acc@5: 89.50 time: 349.5271
+[2021-11-05 07:09:30] epoch[1](14000/20000) Loss: 1.1329 Acc@1: 72.60 Acc@5: 89.54 time: 349.6510
+[2021-11-05 07:15:19] epoch[1](16000/20000) Loss: 1.1297 Acc@1: 72.67 Acc@5: 89.57 time: 349.4109
+[2021-11-05 07:21:08] epoch[1](18000/20000) Loss: 1.1269 Acc@1: 72.73 Acc@5: 89.60 time: 349.3553
+[2021-11-05 07:26:58] epoch[1](20000/20000) Loss: 1.1244 Acc@1: 72.79 Acc@5: 89.63 time: 349.7056
+[2021-11-05 07:27:01] train    Loss: 1.1245 Acc@1: 72.79 Acc@5: 89.63 time: 3500.9030
+[2021-11-05 07:28:27] validate Loss: 1.0647 Acc@1: 73.60 Acc@5: 91.61 time: 85.4888
+[2021-11-05 07:28:27] storing checkpoint:/pruned_checkpoint/resnet_50_cov49.pt
+[2021-11-05 07:28:27] ===> layer_id 4 block_id 1 bestacc 73.5960
+[2021-11-05 07:28:27] ===> pruning layer_id 4 block_id 2
+[2021-11-05 07:28:28] loading checkpoint:/pruned_checkpoint/resnet_50_cov49.pt
+[2021-11-05 07:28:28] loading rank_conv/resnet_50/dis_mtx46.npy
+[2021-11-05 07:28:28] storing rank_conv/resnet_50/rank_conv46.npy
+[2021-11-05 07:28:28] loading rank_conv/resnet_50/rank_conv46.npy
+[2021-11-05 07:28:28] loading rank_conv/resnet_50/dis_mtx47.npy
+[2021-11-05 07:28:29] storing rank_conv/resnet_50/rank_conv47.npy
+[2021-11-05 07:28:29] loading rank_conv/resnet_50/rank_conv47.npy
+[2021-11-05 07:28:29] loading rank_conv/resnet_50/dis_mtx48.npy
+[2021-11-05 07:28:36] storing rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 07:28:36] loading rank_conv/resnet_50/rank_conv48.npy
+[2021-11-05 07:29:52] validate Loss: 1.3673 Acc@1: 66.42 Acc@5: 87.86 time: 75.3883
+[2021-11-05 07:29:52] adjusting filter: layer4.2.conv2.weight
+[2021-11-05 07:29:56] adjusting filter: layer4.2.conv3.weight
+[2021-11-05 07:31:28] validate Loss: 1.3873 Acc@1: 66.70 Acc@5: 87.90 time: 75.7823
+[2021-11-05 07:31:28] epoch 0 learning_rate 0.001 
+[2021-11-05 07:37:20] epoch[0](2000/20000) Loss: 1.3371 Acc@1: 68.39 Acc@5: 87.34 time: 352.2521
+[2021-11-05 07:43:10] epoch[0](4000/20000) Loss: 1.3300 Acc@1: 68.44 Acc@5: 87.32 time: 349.6447
+[2021-11-05 07:48:59] epoch[0](6000/20000) Loss: 1.3294 Acc@1: 68.40 Acc@5: 87.27 time: 349.5364
+[2021-11-05 07:54:49] epoch[0](8000/20000) Loss: 1.3265 Acc@1: 68.42 Acc@5: 87.31 time: 349.5807
+[2021-11-05 08:00:39] epoch[0](10000/20000) Loss: 1.3244 Acc@1: 68.45 Acc@5: 87.33 time: 349.5609
+[2021-11-05 08:06:28] epoch[0](12000/20000) Loss: 1.3227 Acc@1: 68.46 Acc@5: 87.34 time: 349.6424
+[2021-11-05 08:12:18] epoch[0](14000/20000) Loss: 1.3225 Acc@1: 68.44 Acc@5: 87.33 time: 349.7077
+[2021-11-05 08:18:07] epoch[0](16000/20000) Loss: 1.3203 Acc@1: 68.46 Acc@5: 87.35 time: 349.5051
+[2021-11-05 08:23:57] epoch[0](18000/20000) Loss: 1.3190 Acc@1: 68.47 Acc@5: 87.36 time: 349.8575
+[2021-11-05 08:29:47] epoch[0](20000/20000) Loss: 1.3181 Acc@1: 68.50 Acc@5: 87.36 time: 349.7110
+[2021-11-05 08:29:50] train    Loss: 1.3181 Acc@1: 68.50 Acc@5: 87.36 time: 3502.3017
+[2021-11-05 08:31:15] validate Loss: 1.1731 Acc@1: 71.17 Acc@5: 90.19 time: 84.8058
+[2021-11-05 08:31:15] storing checkpoint:/pruned_checkpoint/resnet_50_cov52.pt
+[2021-11-05 08:31:15] epoch 1 learning_rate 0.0001 
+[2021-11-05 08:37:08] epoch[1](2000/20000) Loss: 1.2178 Acc@1: 70.82 Acc@5: 88.53 time: 352.3373
+[2021-11-05 08:42:57] epoch[1](4000/20000) Loss: 1.2008 Acc@1: 71.22 Acc@5: 88.80 time: 349.6834
+[2021-11-05 08:48:47] epoch[1](6000/20000) Loss: 1.1918 Acc@1: 71.40 Acc@5: 88.87 time: 349.7646
+[2021-11-05 08:54:37] epoch[1](8000/20000) Loss: 1.1825 Acc@1: 71.53 Acc@5: 88.98 time: 349.4853
+[2021-11-05 09:00:26] epoch[1](10000/20000) Loss: 1.1766 Acc@1: 71.67 Acc@5: 89.04 time: 349.5480
+[2021-11-05 09:06:16] epoch[1](12000/20000) Loss: 1.1734 Acc@1: 71.74 Acc@5: 89.08 time: 349.3375
+[2021-11-05 09:12:05] epoch[1](14000/20000) Loss: 1.1695 Acc@1: 71.83 Acc@5: 89.14 time: 349.5968
+[2021-11-05 09:17:55] epoch[1](16000/20000) Loss: 1.1661 Acc@1: 71.89 Acc@5: 89.17 time: 349.5892
+[2021-11-05 09:23:45] epoch[1](18000/20000) Loss: 1.1626 Acc@1: 71.98 Acc@5: 89.21 time: 349.7395
+[2021-11-05 09:29:34] epoch[1](20000/20000) Loss: 1.1600 Acc@1: 72.04 Acc@5: 89.25 time: 349.6093
+[2021-11-05 09:29:37] train    Loss: 1.1600 Acc@1: 72.04 Acc@5: 89.25 time: 3502.0137
+[2021-11-05 09:31:03] validate Loss: 1.0707 Acc@1: 73.40 Acc@5: 91.45 time: 85.4745
+[2021-11-05 09:31:03] storing checkpoint:/pruned_checkpoint/resnet_50_cov52.pt
+[2021-11-05 09:31:03] ===> layer_id 4 block_id 2 bestacc 73.4000
+[2021-11-05 09:31:03] [76.004, 75.692, 75.52, 75.676, 75.61, 75.446, 75.396, 75.232, 74.844, 74.516, 74.42, 74.05, 73.82, 73.656, 73.596, 73.4]
+[2021-11-05 09:31:03] [0.0, 0.1, 0.1, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.1, 0.1, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.1, 0.1, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.5, 0.5, 0.2, 0.1, 0.1, 0.1, 0.2, 0.2, 0.1, 0.2, 0.2, 0.1]
+[2021-11-05 09:31:03] [64, 57, 57, 204, 204, 32, 32, 204, 32, 32, 204, 115, 115, 409, 409, 64, 64, 409, 64, 64, 409, 64, 64, 409, 230, 230, 819, 819, 128, 128, 819, 128, 128, 819, 128, 128, 819, 128, 128, 819, 128, 128, 819, 460, 460, 1843, 1843, 409, 409, 1843, 409, 409, 1843]
+[2021-11-05 09:33:24] ResNet50(
+  (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu): ReLU(inplace=True)
+  (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (layer1): ModuleList(
+    (0): Bottleneck(
+      (conv1): Conv2d(64, 57, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(57, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(57, 57, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(57, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(57, 204, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(64, 204, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (1): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(204, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(32, 204, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(204, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(32, 204, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+  )
+  (layer2): ModuleList(
+    (0): Bottleneck(
+      (conv1): Conv2d(204, 115, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(115, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(115, 115, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(115, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(115, 409, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(204, 409, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(409, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(64, 409, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(409, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(64, 409, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(409, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(64, 409, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+  )
+  (layer3): ModuleList(
+    (0): Bottleneck(
+      (conv1): Conv2d(409, 230, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(230, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(230, 230, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(230, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(230, 819, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(409, 819, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(819, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(128, 819, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(819, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(128, 819, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (3): Bottleneck(
+      (conv1): Conv2d(819, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(128, 819, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (4): Bottleneck(
+      (conv1): Conv2d(819, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(128, 819, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (5): Bottleneck(
+      (conv1): Conv2d(819, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(128, 819, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(819, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+  )
+  (layer4): ModuleList(
+    (0): Bottleneck(
+      (conv1): Conv2d(819, 460, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(460, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(460, 460, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(460, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(460, 1843, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1843, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+      (downsample): Sequential(
+        (0): Conv2d(819, 1843, kernel_size=(1, 1), stride=(2, 2), bias=False)
+        (1): BatchNorm2d(1843, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1843, 409, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(409, 409, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(409, 1843, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1843, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1843, 409, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn1): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu1): ReLU(inplace=True)
+      (conv2): Conv2d(409, 409, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(409, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu2): ReLU(inplace=True)
+      (conv3): Conv2d(409, 1843, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (bn3): BatchNorm2d(1843, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu3): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  (fc): Linear(in_features=1843, out_features=1000, bias=True)
+)
+[2021-11-05 09:33:24] storing pruned_model:/finally_pruned_model/resnet_50_1.pt
+[2021-11-05 09:34:42] validate Loss: 1.0707 Acc@1: 73.40 Acc@5: 91.45 time: 77.6493
+[2021-11-05 09:34:42] finally model  Acc@1: 73.40 Acc@5: 91.45 flops: 2134021533.0 params:16082147.0

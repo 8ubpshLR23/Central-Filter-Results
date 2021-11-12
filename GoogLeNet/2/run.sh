@@ -1,0 +1,26 @@
+python main_win.py \
+--arch googlenet \
+--resume pre_train_model/CIFAR-10/googlenet.pt \
+--compress_rate [0.2]+[0.9]*24+[0.,0.4,0.] \
+--num_workers 2 \
+--epochs 1 \
+--job_dir /home/featurize/work/CCCrank10 \
+--lr 0.001 \
+--save_id 1 \
+--weight_decay 0. \
+--data_dir /home/featurize/data \
+--dataset CIFAR10 \
+--ablation_id 0
+python main_win.py \
+--arch googlenet \
+--from_scratch True \
+--resume finally_pruned_model/googlenet_1024_2_mid.pt \
+--num_workers 2 \
+--epochs 30 \
+--job_dir /home/featurize/work/CCCrank10 \
+--lr 0.01 \
+--lr_decay_step 5,15 \
+--save_id 2 \
+--weight_decay 0.005 \
+--data_dir /home/featurize/data \
+--dataset CIFAR10

@@ -1,0 +1,1308 @@
+[2021-10-26 18:17:18] args:Namespace(ablation_id=1, arch='vgg_16_bn', batch_size=128, compress_rate='[0.3]+[0.2]*4+[0.3]*2+[0.4]+[0.85]*4', data_dir='/home/featurize/data', dataset='CIFAR10', epochs=30, from_scratch=False, gpu=0, input_size=32, job_dir='/home/featurize/work/CCCrank10', lr=0.001, lr_decay_step='5', momentum=0.9, num_workers=6, pretrained=False, resume='pre_train_model/CIFAR-10/vgg_16_bn.pt', save_id=1, start_cov=-1, weight_decay=0.005)
+[2021-10-26 18:17:18] ===> pruning layer 11
+[2021-10-26 18:17:19] loading checkpoint:pre_train_model/CIFAR-10/vgg_16_bn.pt
+[2021-10-26 18:17:19] loading rank_conv/vgg_16_bn/dis_mtx11.npy
+[2021-10-26 18:17:19] storing rank_conv/vgg_16_bn/rank_conv11.npy
+[2021-10-26 18:17:19] loading rank_conv/vgg_16_bn/rank_conv11.npy
+[2021-10-26 18:17:19] epoch 0 learning_rate 0.001 
+[2021-10-26 18:17:31] train    Loss: 0.0019 Acc@1: 99.98 Acc@5: 100.00 time: 12.0091
+[2021-10-26 18:17:33] validate Loss: 0.2899 Acc@1: 93.93 Acc@5: 99.67 time: 1.3553
+[2021-10-26 18:17:33] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov11.pt
+[2021-10-26 18:17:33] epoch 1 learning_rate 0.001 
+[2021-10-26 18:17:45] train    Loss: 0.0025 Acc@1: 99.97 Acc@5: 100.00 time: 11.8075
+[2021-10-26 18:17:46] validate Loss: 0.2800 Acc@1: 94.01 Acc@5: 99.65 time: 1.3720
+[2021-10-26 18:17:46] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov11.pt
+[2021-10-26 18:17:46] epoch 2 learning_rate 0.001 
+[2021-10-26 18:17:58] train    Loss: 0.0025 Acc@1: 99.97 Acc@5: 100.00 time: 11.6564
+[2021-10-26 18:17:59] validate Loss: 0.2721 Acc@1: 93.97 Acc@5: 99.71 time: 1.3665
+[2021-10-26 18:17:59] epoch 3 learning_rate 0.001 
+[2021-10-26 18:18:11] train    Loss: 0.0031 Acc@1: 99.97 Acc@5: 100.00 time: 11.7869
+[2021-10-26 18:18:13] validate Loss: 0.2681 Acc@1: 93.92 Acc@5: 99.74 time: 1.4013
+[2021-10-26 18:18:13] epoch 4 learning_rate 0.001 
+[2021-10-26 18:18:24] train    Loss: 0.0034 Acc@1: 99.99 Acc@5: 100.00 time: 11.8949
+[2021-10-26 18:18:26] validate Loss: 0.2621 Acc@1: 93.98 Acc@5: 99.71 time: 1.3574
+[2021-10-26 18:18:26] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:18:38] train    Loss: 0.0041 Acc@1: 99.97 Acc@5: 100.00 time: 11.7704
+[2021-10-26 18:18:39] validate Loss: 0.2615 Acc@1: 93.97 Acc@5: 99.73 time: 1.4019
+[2021-10-26 18:18:39] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:18:51] train    Loss: 0.0039 Acc@1: 99.98 Acc@5: 100.00 time: 11.7213
+[2021-10-26 18:18:52] validate Loss: 0.2609 Acc@1: 93.98 Acc@5: 99.73 time: 1.3833
+[2021-10-26 18:18:52] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:19:04] train    Loss: 0.0040 Acc@1: 99.99 Acc@5: 100.00 time: 11.9176
+[2021-10-26 18:19:05] validate Loss: 0.2598 Acc@1: 93.99 Acc@5: 99.71 time: 1.3646
+[2021-10-26 18:19:05] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:19:17] train    Loss: 0.0042 Acc@1: 99.99 Acc@5: 100.00 time: 11.8177
+[2021-10-26 18:19:19] validate Loss: 0.2589 Acc@1: 93.98 Acc@5: 99.70 time: 1.3580
+[2021-10-26 18:19:19] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:19:30] train    Loss: 0.0044 Acc@1: 99.97 Acc@5: 100.00 time: 11.7178
+[2021-10-26 18:19:32] validate Loss: 0.2589 Acc@1: 93.88 Acc@5: 99.73 time: 1.4111
+[2021-10-26 18:19:32] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:19:43] train    Loss: 0.0044 Acc@1: 99.98 Acc@5: 100.00 time: 11.7542
+[2021-10-26 18:19:45] validate Loss: 0.2578 Acc@1: 94.01 Acc@5: 99.71 time: 1.3554
+[2021-10-26 18:19:45] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:19:57] train    Loss: 0.0044 Acc@1: 99.98 Acc@5: 100.00 time: 11.8223
+[2021-10-26 18:19:58] validate Loss: 0.2583 Acc@1: 93.90 Acc@5: 99.71 time: 1.3718
+[2021-10-26 18:19:58] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:20:10] train    Loss: 0.0044 Acc@1: 99.98 Acc@5: 100.00 time: 11.7774
+[2021-10-26 18:20:11] validate Loss: 0.2568 Acc@1: 93.98 Acc@5: 99.71 time: 1.3684
+[2021-10-26 18:20:11] epoch 13 learning_rate 0.0001 
+[2021-10-26 18:20:23] train    Loss: 0.0042 Acc@1: 100.00 Acc@5: 100.00 time: 11.7301
+[2021-10-26 18:20:24] validate Loss: 0.2575 Acc@1: 93.98 Acc@5: 99.74 time: 1.3541
+[2021-10-26 18:20:24] epoch 14 learning_rate 0.0001 
+[2021-10-26 18:20:36] train    Loss: 0.0046 Acc@1: 99.98 Acc@5: 100.00 time: 11.7825
+[2021-10-26 18:20:37] validate Loss: 0.2574 Acc@1: 93.94 Acc@5: 99.75 time: 1.3736
+[2021-10-26 18:20:37] epoch 15 learning_rate 0.0001 
+[2021-10-26 18:20:49] train    Loss: 0.0047 Acc@1: 99.98 Acc@5: 100.00 time: 11.8988
+[2021-10-26 18:20:51] validate Loss: 0.2551 Acc@1: 94.03 Acc@5: 99.73 time: 1.3766
+[2021-10-26 18:20:51] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov11.pt
+[2021-10-26 18:20:51] epoch 16 learning_rate 0.0001 
+[2021-10-26 18:21:03] train    Loss: 0.0047 Acc@1: 99.98 Acc@5: 100.00 time: 11.7726
+[2021-10-26 18:21:04] validate Loss: 0.2542 Acc@1: 94.07 Acc@5: 99.74 time: 1.3965
+[2021-10-26 18:21:04] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov11.pt
+[2021-10-26 18:21:04] epoch 17 learning_rate 0.0001 
+[2021-10-26 18:21:16] train    Loss: 0.0049 Acc@1: 99.98 Acc@5: 100.00 time: 11.8729
+[2021-10-26 18:21:18] validate Loss: 0.2534 Acc@1: 93.98 Acc@5: 99.74 time: 1.3834
+[2021-10-26 18:21:18] epoch 18 learning_rate 0.0001 
+[2021-10-26 18:21:29] train    Loss: 0.0051 Acc@1: 99.98 Acc@5: 100.00 time: 11.7645
+[2021-10-26 18:21:31] validate Loss: 0.2559 Acc@1: 93.98 Acc@5: 99.73 time: 1.4040
+[2021-10-26 18:21:31] epoch 19 learning_rate 0.0001 
+[2021-10-26 18:21:42] train    Loss: 0.0051 Acc@1: 99.98 Acc@5: 100.00 time: 11.7401
+[2021-10-26 18:21:44] validate Loss: 0.2534 Acc@1: 93.97 Acc@5: 99.71 time: 1.3980
+[2021-10-26 18:21:44] epoch 20 learning_rate 0.0001 
+[2021-10-26 18:21:56] train    Loss: 0.0051 Acc@1: 99.98 Acc@5: 100.00 time: 11.9030
+[2021-10-26 18:21:57] validate Loss: 0.2538 Acc@1: 93.93 Acc@5: 99.69 time: 1.3706
+[2021-10-26 18:21:57] epoch 21 learning_rate 0.0001 
+[2021-10-26 18:22:09] train    Loss: 0.0051 Acc@1: 99.99 Acc@5: 100.00 time: 11.8713
+[2021-10-26 18:22:10] validate Loss: 0.2526 Acc@1: 93.96 Acc@5: 99.74 time: 1.3938
+[2021-10-26 18:22:10] epoch 22 learning_rate 0.0001 
+[2021-10-26 18:22:22] train    Loss: 0.0051 Acc@1: 99.99 Acc@5: 100.00 time: 11.8257
+[2021-10-26 18:22:24] validate Loss: 0.2524 Acc@1: 93.92 Acc@5: 99.74 time: 1.3792
+[2021-10-26 18:22:24] epoch 23 learning_rate 0.0001 
+[2021-10-26 18:22:35] train    Loss: 0.0054 Acc@1: 99.98 Acc@5: 100.00 time: 11.8833
+[2021-10-26 18:22:37] validate Loss: 0.2526 Acc@1: 93.93 Acc@5: 99.74 time: 1.3381
+[2021-10-26 18:22:37] epoch 24 learning_rate 0.0001 
+[2021-10-26 18:22:49] train    Loss: 0.0055 Acc@1: 99.98 Acc@5: 100.00 time: 11.9396
+[2021-10-26 18:22:50] validate Loss: 0.2508 Acc@1: 93.94 Acc@5: 99.68 time: 1.3987
+[2021-10-26 18:22:50] epoch 25 learning_rate 0.0001 
+[2021-10-26 18:23:02] train    Loss: 0.0054 Acc@1: 99.98 Acc@5: 100.00 time: 11.8112
+[2021-10-26 18:23:03] validate Loss: 0.2504 Acc@1: 93.84 Acc@5: 99.74 time: 1.3548
+[2021-10-26 18:23:03] epoch 26 learning_rate 0.0001 
+[2021-10-26 18:23:15] train    Loss: 0.0055 Acc@1: 99.99 Acc@5: 100.00 time: 11.7303
+[2021-10-26 18:23:16] validate Loss: 0.2494 Acc@1: 93.98 Acc@5: 99.73 time: 1.4012
+[2021-10-26 18:23:16] epoch 27 learning_rate 0.0001 
+[2021-10-26 18:23:28] train    Loss: 0.0056 Acc@1: 99.99 Acc@5: 100.00 time: 11.7669
+[2021-10-26 18:23:30] validate Loss: 0.2506 Acc@1: 93.92 Acc@5: 99.71 time: 1.3977
+[2021-10-26 18:23:30] epoch 28 learning_rate 0.0001 
+[2021-10-26 18:23:41] train    Loss: 0.0058 Acc@1: 99.99 Acc@5: 100.00 time: 11.8385
+[2021-10-26 18:23:43] validate Loss: 0.2485 Acc@1: 93.95 Acc@5: 99.74 time: 1.3359
+[2021-10-26 18:23:43] epoch 29 learning_rate 0.0001 
+[2021-10-26 18:23:55] train    Loss: 0.0058 Acc@1: 99.98 Acc@5: 100.00 time: 11.7500
+[2021-10-26 18:23:56] validate Loss: 0.2489 Acc@1: 93.99 Acc@5: 99.73 time: 1.3754
+[2021-10-26 18:23:56] ===> conv_id 11 bestacc 94.0700
+[2021-10-26 18:23:56] ===> pruning layer 10
+[2021-10-26 18:23:56] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov11.pt
+[2021-10-26 18:23:56] loading rank_conv/vgg_16_bn/dis_mtx10.npy
+[2021-10-26 18:23:57] storing rank_conv/vgg_16_bn/rank_conv10.npy
+[2021-10-26 18:23:57] loading rank_conv/vgg_16_bn/rank_conv10.npy
+[2021-10-26 18:23:57] epoch 0 learning_rate 0.001 
+[2021-10-26 18:24:09] train    Loss: 0.0060 Acc@1: 99.98 Acc@5: 100.00 time: 11.8000
+[2021-10-26 18:24:10] validate Loss: 0.2473 Acc@1: 94.00 Acc@5: 99.74 time: 1.3922
+[2021-10-26 18:24:10] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov10.pt
+[2021-10-26 18:24:10] epoch 1 learning_rate 0.001 
+[2021-10-26 18:24:22] train    Loss: 0.0065 Acc@1: 99.97 Acc@5: 100.00 time: 11.9792
+[2021-10-26 18:24:23] validate Loss: 0.2446 Acc@1: 93.95 Acc@5: 99.72 time: 1.3713
+[2021-10-26 18:24:23] epoch 2 learning_rate 0.001 
+[2021-10-26 18:24:35] train    Loss: 0.0073 Acc@1: 99.99 Acc@5: 100.00 time: 11.9268
+[2021-10-26 18:24:37] validate Loss: 0.2417 Acc@1: 93.84 Acc@5: 99.70 time: 1.3673
+[2021-10-26 18:24:37] epoch 3 learning_rate 0.001 
+[2021-10-26 18:24:49] train    Loss: 0.0081 Acc@1: 99.99 Acc@5: 100.00 time: 11.9482
+[2021-10-26 18:24:50] validate Loss: 0.2396 Acc@1: 93.93 Acc@5: 99.72 time: 1.3541
+[2021-10-26 18:24:50] epoch 4 learning_rate 0.001 
+[2021-10-26 18:25:02] train    Loss: 0.0095 Acc@1: 99.98 Acc@5: 100.00 time: 11.8373
+[2021-10-26 18:25:03] validate Loss: 0.2395 Acc@1: 93.98 Acc@5: 99.68 time: 1.3561
+[2021-10-26 18:25:03] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:25:15] train    Loss: 0.0100 Acc@1: 99.98 Acc@5: 100.00 time: 11.7907
+[2021-10-26 18:25:16] validate Loss: 0.2392 Acc@1: 93.96 Acc@5: 99.67 time: 1.3733
+[2021-10-26 18:25:16] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:25:28] train    Loss: 0.0101 Acc@1: 99.98 Acc@5: 100.00 time: 11.6271
+[2021-10-26 18:25:29] validate Loss: 0.2404 Acc@1: 93.90 Acc@5: 99.71 time: 1.3446
+[2021-10-26 18:25:29] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:25:41] train    Loss: 0.0100 Acc@1: 99.98 Acc@5: 100.00 time: 11.6850
+[2021-10-26 18:25:42] validate Loss: 0.2397 Acc@1: 93.90 Acc@5: 99.69 time: 1.3249
+[2021-10-26 18:25:42] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:25:54] train    Loss: 0.0102 Acc@1: 99.98 Acc@5: 100.00 time: 11.7649
+[2021-10-26 18:25:56] validate Loss: 0.2405 Acc@1: 93.89 Acc@5: 99.71 time: 1.3973
+[2021-10-26 18:25:56] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:26:07] train    Loss: 0.0102 Acc@1: 99.99 Acc@5: 100.00 time: 11.7926
+[2021-10-26 18:26:09] validate Loss: 0.2394 Acc@1: 93.91 Acc@5: 99.68 time: 1.3326
+[2021-10-26 18:26:09] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:26:21] train    Loss: 0.0106 Acc@1: 99.98 Acc@5: 100.00 time: 11.8043
+[2021-10-26 18:26:22] validate Loss: 0.2388 Acc@1: 93.96 Acc@5: 99.72 time: 1.4029
+[2021-10-26 18:26:22] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:26:34] train    Loss: 0.0105 Acc@1: 99.99 Acc@5: 100.00 time: 11.7845
+[2021-10-26 18:26:35] validate Loss: 0.2395 Acc@1: 93.91 Acc@5: 99.68 time: 1.4191
+[2021-10-26 18:26:35] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:26:47] train    Loss: 0.0106 Acc@1: 99.99 Acc@5: 100.00 time: 11.7413
+[2021-10-26 18:26:48] validate Loss: 0.2395 Acc@1: 93.85 Acc@5: 99.70 time: 1.3483
+[2021-10-26 18:26:48] epoch 13 learning_rate 0.0001 
+[2021-10-26 18:27:00] train    Loss: 0.0107 Acc@1: 99.98 Acc@5: 100.00 time: 11.7895
+[2021-10-26 18:27:01] validate Loss: 0.2394 Acc@1: 93.91 Acc@5: 99.70 time: 1.3371
+[2021-10-26 18:27:01] epoch 14 learning_rate 0.0001 
+[2021-10-26 18:27:13] train    Loss: 0.0106 Acc@1: 99.99 Acc@5: 100.00 time: 11.7662
+[2021-10-26 18:27:15] validate Loss: 0.2384 Acc@1: 93.95 Acc@5: 99.70 time: 1.3904
+[2021-10-26 18:27:15] epoch 15 learning_rate 0.0001 
+[2021-10-26 18:27:26] train    Loss: 0.0109 Acc@1: 99.99 Acc@5: 100.00 time: 11.8524
+[2021-10-26 18:27:28] validate Loss: 0.2389 Acc@1: 93.91 Acc@5: 99.71 time: 1.3835
+[2021-10-26 18:27:28] epoch 16 learning_rate 0.0001 
+[2021-10-26 18:27:39] train    Loss: 0.0109 Acc@1: 99.99 Acc@5: 100.00 time: 11.7042
+[2021-10-26 18:27:41] validate Loss: 0.2389 Acc@1: 93.94 Acc@5: 99.74 time: 1.3443
+[2021-10-26 18:27:41] epoch 17 learning_rate 0.0001 
+[2021-10-26 18:27:53] train    Loss: 0.0112 Acc@1: 99.98 Acc@5: 100.00 time: 11.7093
+[2021-10-26 18:27:54] validate Loss: 0.2394 Acc@1: 93.91 Acc@5: 99.71 time: 1.3388
+[2021-10-26 18:27:54] epoch 18 learning_rate 0.0001 
+[2021-10-26 18:28:06] train    Loss: 0.0112 Acc@1: 99.98 Acc@5: 100.00 time: 11.7388
+[2021-10-26 18:28:07] validate Loss: 0.2391 Acc@1: 93.96 Acc@5: 99.67 time: 1.3683
+[2021-10-26 18:28:07] epoch 19 learning_rate 0.0001 
+[2021-10-26 18:28:19] train    Loss: 0.0112 Acc@1: 99.99 Acc@5: 100.00 time: 11.7867
+[2021-10-26 18:28:20] validate Loss: 0.2384 Acc@1: 93.93 Acc@5: 99.68 time: 1.3902
+[2021-10-26 18:28:20] epoch 20 learning_rate 0.0001 
+[2021-10-26 18:28:32] train    Loss: 0.0114 Acc@1: 99.98 Acc@5: 100.00 time: 11.7561
+[2021-10-26 18:28:33] validate Loss: 0.2385 Acc@1: 93.98 Acc@5: 99.70 time: 1.3271
+[2021-10-26 18:28:33] epoch 21 learning_rate 0.0001 
+[2021-10-26 18:28:45] train    Loss: 0.0113 Acc@1: 99.99 Acc@5: 100.00 time: 11.8052
+[2021-10-26 18:28:46] validate Loss: 0.2392 Acc@1: 93.95 Acc@5: 99.68 time: 1.3707
+[2021-10-26 18:28:46] epoch 22 learning_rate 0.0001 
+[2021-10-26 18:28:58] train    Loss: 0.0116 Acc@1: 99.98 Acc@5: 100.00 time: 11.7054
+[2021-10-26 18:28:59] validate Loss: 0.2380 Acc@1: 93.97 Acc@5: 99.68 time: 1.3788
+[2021-10-26 18:29:00] epoch 23 learning_rate 0.0001 
+[2021-10-26 18:29:11] train    Loss: 0.0116 Acc@1: 99.99 Acc@5: 100.00 time: 11.8614
+[2021-10-26 18:29:13] validate Loss: 0.2397 Acc@1: 93.91 Acc@5: 99.70 time: 1.3896
+[2021-10-26 18:29:13] epoch 24 learning_rate 0.0001 
+[2021-10-26 18:29:25] train    Loss: 0.0118 Acc@1: 99.98 Acc@5: 100.00 time: 11.8277
+[2021-10-26 18:29:26] validate Loss: 0.2396 Acc@1: 93.91 Acc@5: 99.72 time: 1.3586
+[2021-10-26 18:29:26] epoch 25 learning_rate 0.0001 
+[2021-10-26 18:29:38] train    Loss: 0.0117 Acc@1: 99.99 Acc@5: 100.00 time: 11.6368
+[2021-10-26 18:29:39] validate Loss: 0.2388 Acc@1: 93.98 Acc@5: 99.71 time: 1.3855
+[2021-10-26 18:29:39] epoch 26 learning_rate 0.0001 
+[2021-10-26 18:29:50] train    Loss: 0.0119 Acc@1: 99.98 Acc@5: 100.00 time: 11.5086
+[2021-10-26 18:29:52] validate Loss: 0.2396 Acc@1: 93.96 Acc@5: 99.70 time: 1.3854
+[2021-10-26 18:29:52] epoch 27 learning_rate 0.0001 
+[2021-10-26 18:30:04] train    Loss: 0.0120 Acc@1: 99.99 Acc@5: 100.00 time: 11.9985
+[2021-10-26 18:30:05] validate Loss: 0.2385 Acc@1: 93.92 Acc@5: 99.67 time: 1.3456
+[2021-10-26 18:30:05] epoch 28 learning_rate 0.0001 
+[2021-10-26 18:30:17] train    Loss: 0.0121 Acc@1: 99.99 Acc@5: 100.00 time: 11.7474
+[2021-10-26 18:30:18] validate Loss: 0.2393 Acc@1: 93.95 Acc@5: 99.70 time: 1.3524
+[2021-10-26 18:30:18] epoch 29 learning_rate 0.0001 
+[2021-10-26 18:30:30] train    Loss: 0.0121 Acc@1: 99.99 Acc@5: 100.00 time: 11.7199
+[2021-10-26 18:30:31] validate Loss: 0.2378 Acc@1: 93.87 Acc@5: 99.69 time: 1.3540
+[2021-10-26 18:30:31] ===> conv_id 10 bestacc 94.0000
+[2021-10-26 18:30:31] ===> pruning layer 9
+[2021-10-26 18:30:31] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov10.pt
+[2021-10-26 18:30:31] loading rank_conv/vgg_16_bn/dis_mtx9.npy
+[2021-10-26 18:30:32] storing rank_conv/vgg_16_bn/rank_conv9.npy
+[2021-10-26 18:30:32] loading rank_conv/vgg_16_bn/rank_conv9.npy
+[2021-10-26 18:30:32] epoch 0 learning_rate 0.001 
+[2021-10-26 18:30:44] train    Loss: 0.0076 Acc@1: 99.97 Acc@5: 100.00 time: 11.6874
+[2021-10-26 18:30:45] validate Loss: 0.2500 Acc@1: 93.78 Acc@5: 99.68 time: 1.3734
+[2021-10-26 18:30:45] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov9.pt
+[2021-10-26 18:30:45] epoch 1 learning_rate 0.001 
+[2021-10-26 18:30:57] train    Loss: 0.0078 Acc@1: 99.97 Acc@5: 100.00 time: 11.7387
+[2021-10-26 18:30:59] validate Loss: 0.2471 Acc@1: 93.82 Acc@5: 99.66 time: 1.3807
+[2021-10-26 18:30:59] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov9.pt
+[2021-10-26 18:30:59] epoch 2 learning_rate 0.001 
+[2021-10-26 18:31:11] train    Loss: 0.0084 Acc@1: 99.98 Acc@5: 100.00 time: 11.7715
+[2021-10-26 18:31:12] validate Loss: 0.2476 Acc@1: 93.72 Acc@5: 99.69 time: 1.3314
+[2021-10-26 18:31:12] epoch 3 learning_rate 0.001 
+[2021-10-26 18:31:24] train    Loss: 0.0096 Acc@1: 99.98 Acc@5: 100.00 time: 11.7181
+[2021-10-26 18:31:25] validate Loss: 0.2467 Acc@1: 93.82 Acc@5: 99.73 time: 1.3767
+[2021-10-26 18:31:25] epoch 4 learning_rate 0.001 
+[2021-10-26 18:31:37] train    Loss: 0.0105 Acc@1: 99.98 Acc@5: 100.00 time: 11.7392
+[2021-10-26 18:31:38] validate Loss: 0.2453 Acc@1: 93.81 Acc@5: 99.67 time: 1.3391
+[2021-10-26 18:31:38] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:31:50] train    Loss: 0.0109 Acc@1: 99.97 Acc@5: 100.00 time: 11.8185
+[2021-10-26 18:31:51] validate Loss: 0.2452 Acc@1: 93.91 Acc@5: 99.73 time: 1.3433
+[2021-10-26 18:31:51] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov9.pt
+[2021-10-26 18:31:51] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:32:03] train    Loss: 0.0109 Acc@1: 99.99 Acc@5: 100.00 time: 11.7828
+[2021-10-26 18:32:04] validate Loss: 0.2455 Acc@1: 93.81 Acc@5: 99.73 time: 1.3181
+[2021-10-26 18:32:04] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:32:16] train    Loss: 0.0110 Acc@1: 99.99 Acc@5: 100.00 time: 11.8498
+[2021-10-26 18:32:18] validate Loss: 0.2450 Acc@1: 93.84 Acc@5: 99.73 time: 1.4147
+[2021-10-26 18:32:18] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:32:29] train    Loss: 0.0112 Acc@1: 99.98 Acc@5: 100.00 time: 11.6052
+[2021-10-26 18:32:31] validate Loss: 0.2451 Acc@1: 93.76 Acc@5: 99.71 time: 1.3701
+[2021-10-26 18:32:31] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:32:42] train    Loss: 0.0111 Acc@1: 99.99 Acc@5: 100.00 time: 11.6967
+[2021-10-26 18:32:44] validate Loss: 0.2460 Acc@1: 93.75 Acc@5: 99.70 time: 1.3294
+[2021-10-26 18:32:44] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:32:55] train    Loss: 0.0112 Acc@1: 99.99 Acc@5: 100.00 time: 11.7003
+[2021-10-26 18:32:57] validate Loss: 0.2452 Acc@1: 93.88 Acc@5: 99.72 time: 1.3570
+[2021-10-26 18:32:57] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:33:09] train    Loss: 0.0113 Acc@1: 99.99 Acc@5: 100.00 time: 11.7254
+[2021-10-26 18:33:10] validate Loss: 0.2445 Acc@1: 93.86 Acc@5: 99.70 time: 1.3925
+[2021-10-26 18:33:10] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:33:22] train    Loss: 0.0115 Acc@1: 99.98 Acc@5: 100.00 time: 11.8278
+[2021-10-26 18:33:23] validate Loss: 0.2447 Acc@1: 93.84 Acc@5: 99.70 time: 1.3681
+[2021-10-26 18:33:23] epoch 13 learning_rate 0.0001 
+[2021-10-26 18:33:35] train    Loss: 0.0116 Acc@1: 99.98 Acc@5: 100.00 time: 11.8374
+[2021-10-26 18:33:36] validate Loss: 0.2440 Acc@1: 93.90 Acc@5: 99.71 time: 1.3787
+[2021-10-26 18:33:36] epoch 14 learning_rate 0.0001 
+[2021-10-26 18:33:48] train    Loss: 0.0116 Acc@1: 99.98 Acc@5: 100.00 time: 11.9608
+[2021-10-26 18:33:50] validate Loss: 0.2457 Acc@1: 93.89 Acc@5: 99.68 time: 1.3747
+[2021-10-26 18:33:50] epoch 15 learning_rate 0.0001 
+[2021-10-26 18:34:01] train    Loss: 0.0117 Acc@1: 99.98 Acc@5: 100.00 time: 11.7268
+[2021-10-26 18:34:03] validate Loss: 0.2440 Acc@1: 93.89 Acc@5: 99.67 time: 1.3288
+[2021-10-26 18:34:03] epoch 16 learning_rate 0.0001 
+[2021-10-26 18:34:15] train    Loss: 0.0118 Acc@1: 99.99 Acc@5: 100.00 time: 11.8025
+[2021-10-26 18:34:16] validate Loss: 0.2435 Acc@1: 93.89 Acc@5: 99.72 time: 1.3241
+[2021-10-26 18:34:16] epoch 17 learning_rate 0.0001 
+[2021-10-26 18:34:28] train    Loss: 0.0119 Acc@1: 99.98 Acc@5: 100.00 time: 12.1410
+[2021-10-26 18:34:29] validate Loss: 0.2449 Acc@1: 93.89 Acc@5: 99.70 time: 1.3256
+[2021-10-26 18:34:29] epoch 18 learning_rate 0.0001 
+[2021-10-26 18:34:41] train    Loss: 0.0120 Acc@1: 99.98 Acc@5: 100.00 time: 11.8341
+[2021-10-26 18:34:43] validate Loss: 0.2453 Acc@1: 93.80 Acc@5: 99.63 time: 1.3488
+[2021-10-26 18:34:43] epoch 19 learning_rate 0.0001 
+[2021-10-26 18:34:55] train    Loss: 0.0120 Acc@1: 99.99 Acc@5: 100.00 time: 12.0013
+[2021-10-26 18:34:56] validate Loss: 0.2450 Acc@1: 93.90 Acc@5: 99.70 time: 1.3540
+[2021-10-26 18:34:56] epoch 20 learning_rate 0.0001 
+[2021-10-26 18:35:08] train    Loss: 0.0122 Acc@1: 99.98 Acc@5: 100.00 time: 11.8188
+[2021-10-26 18:35:09] validate Loss: 0.2454 Acc@1: 93.87 Acc@5: 99.66 time: 1.3654
+[2021-10-26 18:35:09] epoch 21 learning_rate 0.0001 
+[2021-10-26 18:35:21] train    Loss: 0.0123 Acc@1: 99.99 Acc@5: 100.00 time: 11.7946
+[2021-10-26 18:35:22] validate Loss: 0.2446 Acc@1: 93.87 Acc@5: 99.68 time: 1.3755
+[2021-10-26 18:35:22] epoch 22 learning_rate 0.0001 
+[2021-10-26 18:35:34] train    Loss: 0.0124 Acc@1: 99.98 Acc@5: 100.00 time: 11.9226
+[2021-10-26 18:35:36] validate Loss: 0.2445 Acc@1: 93.83 Acc@5: 99.71 time: 1.3732
+[2021-10-26 18:35:36] epoch 23 learning_rate 0.0001 
+[2021-10-26 18:35:47] train    Loss: 0.0123 Acc@1: 99.99 Acc@5: 100.00 time: 11.7577
+[2021-10-26 18:35:49] validate Loss: 0.2449 Acc@1: 93.95 Acc@5: 99.71 time: 1.3938
+[2021-10-26 18:35:49] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov9.pt
+[2021-10-26 18:35:49] epoch 24 learning_rate 0.0001 
+[2021-10-26 18:36:01] train    Loss: 0.0124 Acc@1: 99.99 Acc@5: 100.00 time: 11.9884
+[2021-10-26 18:36:02] validate Loss: 0.2438 Acc@1: 93.88 Acc@5: 99.69 time: 1.3698
+[2021-10-26 18:36:02] epoch 25 learning_rate 0.0001 
+[2021-10-26 18:36:14] train    Loss: 0.0124 Acc@1: 99.99 Acc@5: 100.00 time: 11.8254
+[2021-10-26 18:36:16] validate Loss: 0.2441 Acc@1: 93.89 Acc@5: 99.69 time: 1.3869
+[2021-10-26 18:36:16] epoch 26 learning_rate 0.0001 
+[2021-10-26 18:36:27] train    Loss: 0.0129 Acc@1: 99.97 Acc@5: 100.00 time: 11.8096
+[2021-10-26 18:36:29] validate Loss: 0.2452 Acc@1: 93.84 Acc@5: 99.72 time: 1.3747
+[2021-10-26 18:36:29] epoch 27 learning_rate 0.0001 
+[2021-10-26 18:36:40] train    Loss: 0.0126 Acc@1: 99.99 Acc@5: 100.00 time: 11.6707
+[2021-10-26 18:36:42] validate Loss: 0.2455 Acc@1: 93.80 Acc@5: 99.68 time: 1.3699
+[2021-10-26 18:36:42] epoch 28 learning_rate 0.0001 
+[2021-10-26 18:36:54] train    Loss: 0.0129 Acc@1: 99.98 Acc@5: 100.00 time: 11.8271
+[2021-10-26 18:36:55] validate Loss: 0.2443 Acc@1: 93.89 Acc@5: 99.69 time: 1.3689
+[2021-10-26 18:36:55] epoch 29 learning_rate 0.0001 
+[2021-10-26 18:37:07] train    Loss: 0.0132 Acc@1: 99.98 Acc@5: 100.00 time: 11.6221
+[2021-10-26 18:37:08] validate Loss: 0.2438 Acc@1: 93.87 Acc@5: 99.70 time: 1.3616
+[2021-10-26 18:37:08] ===> conv_id 9 bestacc 93.9500
+[2021-10-26 18:37:08] ===> pruning layer 8
+[2021-10-26 18:37:08] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov9.pt
+[2021-10-26 18:37:08] loading rank_conv/vgg_16_bn/dis_mtx8.npy
+[2021-10-26 18:37:09] storing rank_conv/vgg_16_bn/rank_conv8.npy
+[2021-10-26 18:37:09] loading rank_conv/vgg_16_bn/rank_conv8.npy
+[2021-10-26 18:37:09] epoch 0 learning_rate 0.001 
+[2021-10-26 18:37:21] train    Loss: 0.0180 Acc@1: 99.91 Acc@5: 100.00 time: 11.7852
+[2021-10-26 18:37:22] validate Loss: 0.2611 Acc@1: 93.37 Acc@5: 99.64 time: 1.3426
+[2021-10-26 18:37:22] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:37:22] epoch 1 learning_rate 0.001 
+[2021-10-26 18:37:34] train    Loss: 0.0158 Acc@1: 99.92 Acc@5: 100.00 time: 11.8286
+[2021-10-26 18:37:35] validate Loss: 0.2503 Acc@1: 93.58 Acc@5: 99.69 time: 1.3467
+[2021-10-26 18:37:35] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:37:35] epoch 2 learning_rate 0.001 
+[2021-10-26 18:37:47] train    Loss: 0.0158 Acc@1: 99.95 Acc@5: 100.00 time: 11.8487
+[2021-10-26 18:37:49] validate Loss: 0.2552 Acc@1: 93.62 Acc@5: 99.67 time: 1.3180
+[2021-10-26 18:37:49] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:37:49] epoch 3 learning_rate 0.001 
+[2021-10-26 18:38:01] train    Loss: 0.0162 Acc@1: 99.95 Acc@5: 100.00 time: 11.8220
+[2021-10-26 18:38:02] validate Loss: 0.2590 Acc@1: 93.57 Acc@5: 99.67 time: 1.3679
+[2021-10-26 18:38:02] epoch 4 learning_rate 0.001 
+[2021-10-26 18:38:14] train    Loss: 0.0165 Acc@1: 99.96 Acc@5: 100.00 time: 11.8404
+[2021-10-26 18:38:15] validate Loss: 0.2564 Acc@1: 93.59 Acc@5: 99.66 time: 1.3496
+[2021-10-26 18:38:15] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:38:27] train    Loss: 0.0162 Acc@1: 99.97 Acc@5: 100.00 time: 11.7905
+[2021-10-26 18:38:28] validate Loss: 0.2573 Acc@1: 93.60 Acc@5: 99.65 time: 1.3338
+[2021-10-26 18:38:28] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:38:40] train    Loss: 0.0166 Acc@1: 99.97 Acc@5: 100.00 time: 11.6795
+[2021-10-26 18:38:41] validate Loss: 0.2557 Acc@1: 93.64 Acc@5: 99.65 time: 1.3281
+[2021-10-26 18:38:42] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:38:42] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:38:53] train    Loss: 0.0163 Acc@1: 99.97 Acc@5: 100.00 time: 11.7213
+[2021-10-26 18:38:55] validate Loss: 0.2575 Acc@1: 93.66 Acc@5: 99.69 time: 1.3500
+[2021-10-26 18:38:55] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:38:55] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:39:06] train    Loss: 0.0162 Acc@1: 99.98 Acc@5: 100.00 time: 11.7027
+[2021-10-26 18:39:08] validate Loss: 0.2569 Acc@1: 93.71 Acc@5: 99.72 time: 1.3975
+[2021-10-26 18:39:08] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:39:08] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:39:20] train    Loss: 0.0165 Acc@1: 99.98 Acc@5: 100.00 time: 11.9224
+[2021-10-26 18:39:21] validate Loss: 0.2558 Acc@1: 93.68 Acc@5: 99.67 time: 1.3421
+[2021-10-26 18:39:21] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:39:33] train    Loss: 0.0164 Acc@1: 99.97 Acc@5: 100.00 time: 11.8848
+[2021-10-26 18:39:35] validate Loss: 0.2583 Acc@1: 93.61 Acc@5: 99.70 time: 1.3762
+[2021-10-26 18:39:35] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:39:46] train    Loss: 0.0164 Acc@1: 99.98 Acc@5: 100.00 time: 11.9113
+[2021-10-26 18:39:48] validate Loss: 0.2561 Acc@1: 93.64 Acc@5: 99.70 time: 1.3737
+[2021-10-26 18:39:48] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:40:00] train    Loss: 0.0162 Acc@1: 99.99 Acc@5: 100.00 time: 11.9090
+[2021-10-26 18:40:01] validate Loss: 0.2556 Acc@1: 93.75 Acc@5: 99.66 time: 1.3759
+[2021-10-26 18:40:01] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:40:01] epoch 13 learning_rate 0.0001 
+[2021-10-26 18:40:13] train    Loss: 0.0165 Acc@1: 99.98 Acc@5: 100.00 time: 11.8506
+[2021-10-26 18:40:15] validate Loss: 0.2565 Acc@1: 93.72 Acc@5: 99.65 time: 1.3956
+[2021-10-26 18:40:15] epoch 14 learning_rate 0.0001 
+[2021-10-26 18:40:26] train    Loss: 0.0164 Acc@1: 99.98 Acc@5: 100.00 time: 11.8213
+[2021-10-26 18:40:28] validate Loss: 0.2560 Acc@1: 93.67 Acc@5: 99.68 time: 1.3950
+[2021-10-26 18:40:28] epoch 15 learning_rate 0.0001 
+[2021-10-26 18:40:40] train    Loss: 0.0165 Acc@1: 99.98 Acc@5: 100.00 time: 11.8806
+[2021-10-26 18:40:41] validate Loss: 0.2557 Acc@1: 93.58 Acc@5: 99.62 time: 1.3353
+[2021-10-26 18:40:41] epoch 16 learning_rate 0.0001 
+[2021-10-26 18:40:53] train    Loss: 0.0166 Acc@1: 99.97 Acc@5: 100.00 time: 11.7330
+[2021-10-26 18:40:54] validate Loss: 0.2552 Acc@1: 93.62 Acc@5: 99.68 time: 1.3906
+[2021-10-26 18:40:54] epoch 17 learning_rate 0.0001 
+[2021-10-26 18:41:06] train    Loss: 0.0163 Acc@1: 99.99 Acc@5: 100.00 time: 11.8272
+[2021-10-26 18:41:07] validate Loss: 0.2535 Acc@1: 93.73 Acc@5: 99.65 time: 1.3238
+[2021-10-26 18:41:07] epoch 18 learning_rate 0.0001 
+[2021-10-26 18:41:19] train    Loss: 0.0163 Acc@1: 99.98 Acc@5: 100.00 time: 11.7856
+[2021-10-26 18:41:20] validate Loss: 0.2539 Acc@1: 93.66 Acc@5: 99.69 time: 1.3674
+[2021-10-26 18:41:20] epoch 19 learning_rate 0.0001 
+[2021-10-26 18:41:32] train    Loss: 0.0164 Acc@1: 99.98 Acc@5: 100.00 time: 11.8541
+[2021-10-26 18:41:34] validate Loss: 0.2557 Acc@1: 93.74 Acc@5: 99.72 time: 1.4110
+[2021-10-26 18:41:34] epoch 20 learning_rate 0.0001 
+[2021-10-26 18:41:45] train    Loss: 0.0167 Acc@1: 99.98 Acc@5: 100.00 time: 11.5600
+[2021-10-26 18:41:47] validate Loss: 0.2544 Acc@1: 93.64 Acc@5: 99.67 time: 1.3839
+[2021-10-26 18:41:47] epoch 21 learning_rate 0.0001 
+[2021-10-26 18:41:58] train    Loss: 0.0167 Acc@1: 99.98 Acc@5: 100.00 time: 11.7503
+[2021-10-26 18:42:00] validate Loss: 0.2556 Acc@1: 93.67 Acc@5: 99.69 time: 1.4004
+[2021-10-26 18:42:00] epoch 22 learning_rate 0.0001 
+[2021-10-26 18:42:12] train    Loss: 0.0166 Acc@1: 99.98 Acc@5: 100.00 time: 11.7246
+[2021-10-26 18:42:13] validate Loss: 0.2554 Acc@1: 93.71 Acc@5: 99.70 time: 1.3768
+[2021-10-26 18:42:13] epoch 23 learning_rate 0.0001 
+[2021-10-26 18:42:25] train    Loss: 0.0166 Acc@1: 99.98 Acc@5: 100.00 time: 11.6320
+[2021-10-26 18:42:26] validate Loss: 0.2541 Acc@1: 93.75 Acc@5: 99.64 time: 1.3719
+[2021-10-26 18:42:26] epoch 24 learning_rate 0.0001 
+[2021-10-26 18:42:38] train    Loss: 0.0168 Acc@1: 99.98 Acc@5: 100.00 time: 11.7605
+[2021-10-26 18:42:39] validate Loss: 0.2543 Acc@1: 93.79 Acc@5: 99.66 time: 1.3961
+[2021-10-26 18:42:39] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:42:39] epoch 25 learning_rate 0.0001 
+[2021-10-26 18:42:51] train    Loss: 0.0168 Acc@1: 99.98 Acc@5: 100.00 time: 11.7075
+[2021-10-26 18:42:52] validate Loss: 0.2561 Acc@1: 93.64 Acc@5: 99.69 time: 1.3552
+[2021-10-26 18:42:52] epoch 26 learning_rate 0.0001 
+[2021-10-26 18:43:04] train    Loss: 0.0165 Acc@1: 99.99 Acc@5: 100.00 time: 11.6993
+[2021-10-26 18:43:05] validate Loss: 0.2536 Acc@1: 93.74 Acc@5: 99.65 time: 1.3657
+[2021-10-26 18:43:05] epoch 27 learning_rate 0.0001 
+[2021-10-26 18:43:17] train    Loss: 0.0167 Acc@1: 99.98 Acc@5: 100.00 time: 11.8188
+[2021-10-26 18:43:19] validate Loss: 0.2547 Acc@1: 93.66 Acc@5: 99.69 time: 1.3439
+[2021-10-26 18:43:19] epoch 28 learning_rate 0.0001 
+[2021-10-26 18:43:30] train    Loss: 0.0167 Acc@1: 99.98 Acc@5: 100.00 time: 11.7616
+[2021-10-26 18:43:32] validate Loss: 0.2561 Acc@1: 93.74 Acc@5: 99.66 time: 1.3689
+[2021-10-26 18:43:32] epoch 29 learning_rate 0.0001 
+[2021-10-26 18:43:44] train    Loss: 0.0169 Acc@1: 99.99 Acc@5: 100.00 time: 11.8127
+[2021-10-26 18:43:45] validate Loss: 0.2552 Acc@1: 93.73 Acc@5: 99.65 time: 1.3515
+[2021-10-26 18:43:45] ===> conv_id 8 bestacc 93.7900
+[2021-10-26 18:43:45] ===> pruning layer 7
+[2021-10-26 18:43:45] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov8.pt
+[2021-10-26 18:43:45] loading rank_conv/vgg_16_bn/dis_mtx7.npy
+[2021-10-26 18:43:46] storing rank_conv/vgg_16_bn/rank_conv7.npy
+[2021-10-26 18:43:46] loading rank_conv/vgg_16_bn/rank_conv7.npy
+[2021-10-26 18:43:46] epoch 0 learning_rate 0.001 
+[2021-10-26 18:43:58] train    Loss: 0.0207 Acc@1: 99.88 Acc@5: 100.00 time: 11.8963
+[2021-10-26 18:43:59] validate Loss: 0.2757 Acc@1: 93.37 Acc@5: 99.55 time: 1.3743
+[2021-10-26 18:43:59] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:43:59] epoch 1 learning_rate 0.001 
+[2021-10-26 18:44:11] train    Loss: 0.0199 Acc@1: 99.91 Acc@5: 100.00 time: 11.9848
+[2021-10-26 18:44:13] validate Loss: 0.2678 Acc@1: 93.72 Acc@5: 99.61 time: 1.3712
+[2021-10-26 18:44:13] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:44:13] epoch 2 learning_rate 0.001 
+[2021-10-26 18:44:25] train    Loss: 0.0193 Acc@1: 99.93 Acc@5: 100.00 time: 11.8486
+[2021-10-26 18:44:26] validate Loss: 0.2744 Acc@1: 93.52 Acc@5: 99.62 time: 1.3936
+[2021-10-26 18:44:26] epoch 3 learning_rate 0.001 
+[2021-10-26 18:44:38] train    Loss: 0.0203 Acc@1: 99.89 Acc@5: 100.00 time: 11.8068
+[2021-10-26 18:44:39] validate Loss: 0.2719 Acc@1: 93.45 Acc@5: 99.59 time: 1.3430
+[2021-10-26 18:44:39] epoch 4 learning_rate 0.001 
+[2021-10-26 18:44:51] train    Loss: 0.0197 Acc@1: 99.94 Acc@5: 100.00 time: 11.7707
+[2021-10-26 18:44:52] validate Loss: 0.2700 Acc@1: 93.56 Acc@5: 99.56 time: 1.3302
+[2021-10-26 18:44:52] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:45:04] train    Loss: 0.0192 Acc@1: 99.94 Acc@5: 100.00 time: 11.7737
+[2021-10-26 18:45:06] validate Loss: 0.2634 Acc@1: 93.74 Acc@5: 99.63 time: 1.3642
+[2021-10-26 18:45:06] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:45:06] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:45:18] train    Loss: 0.0188 Acc@1: 99.95 Acc@5: 100.00 time: 11.8737
+[2021-10-26 18:45:19] validate Loss: 0.2644 Acc@1: 93.82 Acc@5: 99.58 time: 1.3344
+[2021-10-26 18:45:19] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:45:19] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:45:31] train    Loss: 0.0188 Acc@1: 99.94 Acc@5: 100.00 time: 11.8334
+[2021-10-26 18:45:32] validate Loss: 0.2633 Acc@1: 93.72 Acc@5: 99.56 time: 1.3338
+[2021-10-26 18:45:32] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:45:44] train    Loss: 0.0183 Acc@1: 99.96 Acc@5: 100.00 time: 11.8839
+[2021-10-26 18:45:46] validate Loss: 0.2648 Acc@1: 93.77 Acc@5: 99.60 time: 1.3849
+[2021-10-26 18:45:46] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:45:57] train    Loss: 0.0183 Acc@1: 99.97 Acc@5: 100.00 time: 11.8001
+[2021-10-26 18:45:59] validate Loss: 0.2641 Acc@1: 93.77 Acc@5: 99.61 time: 1.3640
+[2021-10-26 18:45:59] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:46:11] train    Loss: 0.0181 Acc@1: 99.97 Acc@5: 100.00 time: 11.8179
+[2021-10-26 18:46:12] validate Loss: 0.2642 Acc@1: 93.76 Acc@5: 99.61 time: 1.3915
+[2021-10-26 18:46:12] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:46:24] train    Loss: 0.0181 Acc@1: 99.98 Acc@5: 100.00 time: 11.8674
+[2021-10-26 18:46:25] validate Loss: 0.2645 Acc@1: 93.80 Acc@5: 99.55 time: 1.3993
+[2021-10-26 18:46:25] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:46:37] train    Loss: 0.0183 Acc@1: 99.97 Acc@5: 100.00 time: 11.7563
+[2021-10-26 18:46:38] validate Loss: 0.2641 Acc@1: 93.82 Acc@5: 99.56 time: 1.3770
+[2021-10-26 18:46:38] epoch 13 learning_rate 0.0001 
+[2021-10-26 18:46:50] train    Loss: 0.0183 Acc@1: 99.97 Acc@5: 100.00 time: 11.8992
+[2021-10-26 18:46:52] validate Loss: 0.2618 Acc@1: 93.81 Acc@5: 99.59 time: 1.3541
+[2021-10-26 18:46:52] epoch 14 learning_rate 0.0001 
+[2021-10-26 18:47:04] train    Loss: 0.0183 Acc@1: 99.98 Acc@5: 100.00 time: 12.1232
+[2021-10-26 18:47:05] validate Loss: 0.2614 Acc@1: 93.82 Acc@5: 99.57 time: 1.3575
+[2021-10-26 18:47:05] epoch 15 learning_rate 0.0001 
+[2021-10-26 18:47:17] train    Loss: 0.0185 Acc@1: 99.96 Acc@5: 100.00 time: 11.8522
+[2021-10-26 18:47:18] validate Loss: 0.2633 Acc@1: 93.79 Acc@5: 99.58 time: 1.3350
+[2021-10-26 18:47:18] epoch 16 learning_rate 0.0001 
+[2021-10-26 18:47:30] train    Loss: 0.0184 Acc@1: 99.97 Acc@5: 100.00 time: 11.8692
+[2021-10-26 18:47:32] validate Loss: 0.2614 Acc@1: 93.70 Acc@5: 99.58 time: 1.3736
+[2021-10-26 18:47:32] epoch 17 learning_rate 0.0001 
+[2021-10-26 18:47:43] train    Loss: 0.0180 Acc@1: 99.98 Acc@5: 100.00 time: 11.8573
+[2021-10-26 18:47:45] validate Loss: 0.2632 Acc@1: 93.86 Acc@5: 99.60 time: 1.3550
+[2021-10-26 18:47:45] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:47:45] epoch 18 learning_rate 0.0001 
+[2021-10-26 18:47:57] train    Loss: 0.0183 Acc@1: 99.96 Acc@5: 100.00 time: 11.9487
+[2021-10-26 18:47:58] validate Loss: 0.2619 Acc@1: 93.72 Acc@5: 99.58 time: 1.4165
+[2021-10-26 18:47:58] epoch 19 learning_rate 0.0001 
+[2021-10-26 18:48:10] train    Loss: 0.0186 Acc@1: 99.97 Acc@5: 100.00 time: 11.9371
+[2021-10-26 18:48:12] validate Loss: 0.2611 Acc@1: 93.82 Acc@5: 99.64 time: 1.3548
+[2021-10-26 18:48:12] epoch 20 learning_rate 0.0001 
+[2021-10-26 18:48:23] train    Loss: 0.0183 Acc@1: 99.98 Acc@5: 100.00 time: 11.8581
+[2021-10-26 18:48:25] validate Loss: 0.2630 Acc@1: 93.81 Acc@5: 99.58 time: 1.3537
+[2021-10-26 18:48:25] epoch 21 learning_rate 0.0001 
+[2021-10-26 18:48:37] train    Loss: 0.0182 Acc@1: 99.97 Acc@5: 100.00 time: 11.8163
+[2021-10-26 18:48:38] validate Loss: 0.2614 Acc@1: 93.82 Acc@5: 99.62 time: 1.3554
+[2021-10-26 18:48:38] epoch 22 learning_rate 0.0001 
+[2021-10-26 18:48:50] train    Loss: 0.0183 Acc@1: 99.99 Acc@5: 100.00 time: 11.7563
+[2021-10-26 18:48:51] validate Loss: 0.2632 Acc@1: 93.75 Acc@5: 99.58 time: 1.3622
+[2021-10-26 18:48:51] epoch 23 learning_rate 0.0001 
+[2021-10-26 18:49:03] train    Loss: 0.0185 Acc@1: 99.96 Acc@5: 100.00 time: 11.7500
+[2021-10-26 18:49:04] validate Loss: 0.2623 Acc@1: 93.75 Acc@5: 99.65 time: 1.4171
+[2021-10-26 18:49:04] epoch 24 learning_rate 0.0001 
+[2021-10-26 18:49:16] train    Loss: 0.0183 Acc@1: 99.98 Acc@5: 100.00 time: 11.9108
+[2021-10-26 18:49:18] validate Loss: 0.2623 Acc@1: 93.71 Acc@5: 99.58 time: 1.3756
+[2021-10-26 18:49:18] epoch 25 learning_rate 0.0001 
+[2021-10-26 18:49:29] train    Loss: 0.0182 Acc@1: 99.98 Acc@5: 100.00 time: 11.8263
+[2021-10-26 18:49:31] validate Loss: 0.2617 Acc@1: 93.85 Acc@5: 99.58 time: 1.3948
+[2021-10-26 18:49:31] epoch 26 learning_rate 0.0001 
+[2021-10-26 18:49:43] train    Loss: 0.0181 Acc@1: 99.98 Acc@5: 100.00 time: 11.7934
+[2021-10-26 18:49:44] validate Loss: 0.2615 Acc@1: 93.79 Acc@5: 99.59 time: 1.3705
+[2021-10-26 18:49:44] epoch 27 learning_rate 0.0001 
+[2021-10-26 18:49:56] train    Loss: 0.0182 Acc@1: 99.98 Acc@5: 100.00 time: 11.9154
+[2021-10-26 18:49:57] validate Loss: 0.2601 Acc@1: 93.86 Acc@5: 99.60 time: 1.3593
+[2021-10-26 18:49:57] epoch 28 learning_rate 0.0001 
+[2021-10-26 18:50:09] train    Loss: 0.0182 Acc@1: 99.98 Acc@5: 100.00 time: 11.6597
+[2021-10-26 18:50:10] validate Loss: 0.2602 Acc@1: 93.86 Acc@5: 99.56 time: 1.3577
+[2021-10-26 18:50:10] epoch 29 learning_rate 0.0001 
+[2021-10-26 18:50:22] train    Loss: 0.0182 Acc@1: 99.98 Acc@5: 100.00 time: 11.7747
+[2021-10-26 18:50:23] validate Loss: 0.2605 Acc@1: 93.91 Acc@5: 99.62 time: 1.3725
+[2021-10-26 18:50:24] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:50:24] ===> conv_id 7 bestacc 93.9100
+[2021-10-26 18:50:24] ===> pruning layer 6
+[2021-10-26 18:50:24] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov7.pt
+[2021-10-26 18:50:24] loading rank_conv/vgg_16_bn/dis_mtx6.npy
+[2021-10-26 18:50:24] storing rank_conv/vgg_16_bn/rank_conv6.npy
+[2021-10-26 18:50:24] loading rank_conv/vgg_16_bn/rank_conv6.npy
+[2021-10-26 18:50:24] epoch 0 learning_rate 0.001 
+[2021-10-26 18:50:36] train    Loss: 0.0285 Acc@1: 99.67 Acc@5: 100.00 time: 11.7373
+[2021-10-26 18:50:37] validate Loss: 0.2890 Acc@1: 92.77 Acc@5: 99.46 time: 1.3434
+[2021-10-26 18:50:37] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:50:37] epoch 1 learning_rate 0.001 
+[2021-10-26 18:50:49] train    Loss: 0.0265 Acc@1: 99.72 Acc@5: 100.00 time: 11.7416
+[2021-10-26 18:50:50] validate Loss: 0.2911 Acc@1: 92.93 Acc@5: 99.56 time: 1.3419
+[2021-10-26 18:50:50] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:50:50] epoch 2 learning_rate 0.001 
+[2021-10-26 18:51:02] train    Loss: 0.0262 Acc@1: 99.73 Acc@5: 100.00 time: 11.7525
+[2021-10-26 18:51:04] validate Loss: 0.2860 Acc@1: 93.01 Acc@5: 99.54 time: 1.3197
+[2021-10-26 18:51:04] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:51:04] epoch 3 learning_rate 0.001 
+[2021-10-26 18:51:15] train    Loss: 0.0272 Acc@1: 99.72 Acc@5: 100.00 time: 11.6316
+[2021-10-26 18:51:17] validate Loss: 0.2964 Acc@1: 92.84 Acc@5: 99.50 time: 1.3367
+[2021-10-26 18:51:17] epoch 4 learning_rate 0.001 
+[2021-10-26 18:51:28] train    Loss: 0.0267 Acc@1: 99.71 Acc@5: 100.00 time: 11.8397
+[2021-10-26 18:51:30] validate Loss: 0.2993 Acc@1: 92.74 Acc@5: 99.50 time: 1.3636
+[2021-10-26 18:51:30] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:51:42] train    Loss: 0.0234 Acc@1: 99.83 Acc@5: 100.00 time: 11.7129
+[2021-10-26 18:51:43] validate Loss: 0.2910 Acc@1: 92.94 Acc@5: 99.48 time: 1.3630
+[2021-10-26 18:51:43] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:51:55] train    Loss: 0.0216 Acc@1: 99.89 Acc@5: 100.00 time: 11.6636
+[2021-10-26 18:51:56] validate Loss: 0.2862 Acc@1: 93.10 Acc@5: 99.49 time: 1.3784
+[2021-10-26 18:51:56] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:51:56] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:52:08] train    Loss: 0.0213 Acc@1: 99.89 Acc@5: 100.00 time: 11.7336
+[2021-10-26 18:52:09] validate Loss: 0.2873 Acc@1: 93.13 Acc@5: 99.54 time: 1.3952
+[2021-10-26 18:52:09] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:52:09] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:52:21] train    Loss: 0.0208 Acc@1: 99.92 Acc@5: 100.00 time: 11.6509
+[2021-10-26 18:52:23] validate Loss: 0.2847 Acc@1: 93.28 Acc@5: 99.55 time: 1.3850
+[2021-10-26 18:52:23] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:52:23] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:52:34] train    Loss: 0.0209 Acc@1: 99.93 Acc@5: 100.00 time: 11.6452
+[2021-10-26 18:52:36] validate Loss: 0.2851 Acc@1: 93.33 Acc@5: 99.57 time: 1.3612
+[2021-10-26 18:52:36] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:52:36] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:52:48] train    Loss: 0.0208 Acc@1: 99.91 Acc@5: 100.00 time: 11.7440
+[2021-10-26 18:52:49] validate Loss: 0.2858 Acc@1: 93.25 Acc@5: 99.53 time: 1.3274
+[2021-10-26 18:52:49] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:53:01] train    Loss: 0.0204 Acc@1: 99.93 Acc@5: 100.00 time: 11.7738
+[2021-10-26 18:53:02] validate Loss: 0.2825 Acc@1: 93.36 Acc@5: 99.52 time: 1.3572
+[2021-10-26 18:53:02] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:53:02] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:53:14] train    Loss: 0.0201 Acc@1: 99.94 Acc@5: 100.00 time: 11.7461
+[2021-10-26 18:53:15] validate Loss: 0.2835 Acc@1: 93.37 Acc@5: 99.51 time: 1.3978
+[2021-10-26 18:53:16] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:53:16] epoch 13 learning_rate 0.0001 
+[2021-10-26 18:53:27] train    Loss: 0.0200 Acc@1: 99.92 Acc@5: 100.00 time: 11.8258
+[2021-10-26 18:53:29] validate Loss: 0.2826 Acc@1: 93.32 Acc@5: 99.55 time: 1.3634
+[2021-10-26 18:53:29] epoch 14 learning_rate 0.0001 
+[2021-10-26 18:53:41] train    Loss: 0.0198 Acc@1: 99.94 Acc@5: 100.00 time: 11.7574
+[2021-10-26 18:53:42] validate Loss: 0.2831 Acc@1: 93.32 Acc@5: 99.53 time: 1.3643
+[2021-10-26 18:53:42] epoch 15 learning_rate 0.0001 
+[2021-10-26 18:53:54] train    Loss: 0.0199 Acc@1: 99.95 Acc@5: 100.00 time: 11.7274
+[2021-10-26 18:53:55] validate Loss: 0.2821 Acc@1: 93.24 Acc@5: 99.52 time: 1.4076
+[2021-10-26 18:53:55] epoch 16 learning_rate 0.0001 
+[2021-10-26 18:54:07] train    Loss: 0.0196 Acc@1: 99.94 Acc@5: 100.00 time: 11.8154
+[2021-10-26 18:54:08] validate Loss: 0.2819 Acc@1: 93.33 Acc@5: 99.52 time: 1.3728
+[2021-10-26 18:54:08] epoch 17 learning_rate 0.0001 
+[2021-10-26 18:54:20] train    Loss: 0.0198 Acc@1: 99.95 Acc@5: 100.00 time: 11.7412
+[2021-10-26 18:54:21] validate Loss: 0.2824 Acc@1: 93.42 Acc@5: 99.56 time: 1.3491
+[2021-10-26 18:54:22] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:54:22] epoch 18 learning_rate 0.0001 
+[2021-10-26 18:54:33] train    Loss: 0.0195 Acc@1: 99.94 Acc@5: 100.00 time: 11.7447
+[2021-10-26 18:54:35] validate Loss: 0.2831 Acc@1: 93.27 Acc@5: 99.54 time: 1.3740
+[2021-10-26 18:54:35] epoch 19 learning_rate 0.0001 
+[2021-10-26 18:54:47] train    Loss: 0.0192 Acc@1: 99.95 Acc@5: 100.00 time: 11.8119
+[2021-10-26 18:54:48] validate Loss: 0.2810 Acc@1: 93.26 Acc@5: 99.54 time: 1.3512
+[2021-10-26 18:54:48] epoch 20 learning_rate 0.0001 
+[2021-10-26 18:55:00] train    Loss: 0.0195 Acc@1: 99.96 Acc@5: 100.00 time: 11.7260
+[2021-10-26 18:55:01] validate Loss: 0.2812 Acc@1: 93.33 Acc@5: 99.55 time: 1.3810
+[2021-10-26 18:55:01] epoch 21 learning_rate 0.0001 
+[2021-10-26 18:55:13] train    Loss: 0.0191 Acc@1: 99.96 Acc@5: 100.00 time: 11.7751
+[2021-10-26 18:55:14] validate Loss: 0.2822 Acc@1: 93.28 Acc@5: 99.49 time: 1.3711
+[2021-10-26 18:55:14] epoch 22 learning_rate 0.0001 
+[2021-10-26 18:55:26] train    Loss: 0.0196 Acc@1: 99.94 Acc@5: 100.00 time: 11.6719
+[2021-10-26 18:55:27] validate Loss: 0.2828 Acc@1: 93.29 Acc@5: 99.52 time: 1.3744
+[2021-10-26 18:55:27] epoch 23 learning_rate 0.0001 
+[2021-10-26 18:55:39] train    Loss: 0.0194 Acc@1: 99.95 Acc@5: 100.00 time: 11.7109
+[2021-10-26 18:55:40] validate Loss: 0.2848 Acc@1: 93.23 Acc@5: 99.52 time: 1.3641
+[2021-10-26 18:55:40] epoch 24 learning_rate 0.0001 
+[2021-10-26 18:55:52] train    Loss: 0.0195 Acc@1: 99.96 Acc@5: 100.00 time: 11.8877
+[2021-10-26 18:55:54] validate Loss: 0.2811 Acc@1: 93.39 Acc@5: 99.50 time: 1.3837
+[2021-10-26 18:55:54] epoch 25 learning_rate 0.0001 
+[2021-10-26 18:56:05] train    Loss: 0.0194 Acc@1: 99.95 Acc@5: 100.00 time: 11.7328
+[2021-10-26 18:56:07] validate Loss: 0.2810 Acc@1: 93.47 Acc@5: 99.53 time: 1.3771
+[2021-10-26 18:56:07] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:56:07] epoch 26 learning_rate 0.0001 
+[2021-10-26 18:56:19] train    Loss: 0.0190 Acc@1: 99.97 Acc@5: 100.00 time: 11.6964
+[2021-10-26 18:56:20] validate Loss: 0.2800 Acc@1: 93.36 Acc@5: 99.51 time: 1.3380
+[2021-10-26 18:56:20] epoch 27 learning_rate 0.0001 
+[2021-10-26 18:56:32] train    Loss: 0.0194 Acc@1: 99.96 Acc@5: 100.00 time: 11.6922
+[2021-10-26 18:56:33] validate Loss: 0.2820 Acc@1: 93.38 Acc@5: 99.59 time: 1.3762
+[2021-10-26 18:56:33] epoch 28 learning_rate 0.0001 
+[2021-10-26 18:56:45] train    Loss: 0.0196 Acc@1: 99.94 Acc@5: 100.00 time: 11.7203
+[2021-10-26 18:56:46] validate Loss: 0.2791 Acc@1: 93.37 Acc@5: 99.54 time: 1.3759
+[2021-10-26 18:56:46] epoch 29 learning_rate 0.0001 
+[2021-10-26 18:56:58] train    Loss: 0.0190 Acc@1: 99.97 Acc@5: 100.00 time: 11.7415
+[2021-10-26 18:56:59] validate Loss: 0.2808 Acc@1: 93.42 Acc@5: 99.56 time: 1.3372
+[2021-10-26 18:56:59] ===> conv_id 6 bestacc 93.4700
+[2021-10-26 18:56:59] ===> pruning layer 5
+[2021-10-26 18:56:59] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov6.pt
+[2021-10-26 18:56:59] loading rank_conv/vgg_16_bn/dis_mtx5.npy
+[2021-10-26 18:57:00] storing rank_conv/vgg_16_bn/rank_conv5.npy
+[2021-10-26 18:57:00] loading rank_conv/vgg_16_bn/rank_conv5.npy
+[2021-10-26 18:57:00] epoch 0 learning_rate 0.001 
+[2021-10-26 18:57:11] train    Loss: 0.0502 Acc@1: 98.97 Acc@5: 99.99 time: 11.4725
+[2021-10-26 18:57:12] validate Loss: 0.2939 Acc@1: 92.52 Acc@5: 99.54 time: 1.3107
+[2021-10-26 18:57:12] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 18:57:12] epoch 1 learning_rate 0.001 
+[2021-10-26 18:57:24] train    Loss: 0.0427 Acc@1: 99.22 Acc@5: 100.00 time: 11.6608
+[2021-10-26 18:57:26] validate Loss: 0.3194 Acc@1: 92.14 Acc@5: 99.38 time: 1.4501
+[2021-10-26 18:57:26] epoch 2 learning_rate 0.001 
+[2021-10-26 18:57:37] train    Loss: 0.0419 Acc@1: 99.25 Acc@5: 100.00 time: 11.7497
+[2021-10-26 18:57:39] validate Loss: 0.3334 Acc@1: 91.87 Acc@5: 99.43 time: 1.3855
+[2021-10-26 18:57:39] epoch 3 learning_rate 0.001 
+[2021-10-26 18:57:51] train    Loss: 0.0423 Acc@1: 99.25 Acc@5: 100.00 time: 11.7666
+[2021-10-26 18:57:52] validate Loss: 0.3059 Acc@1: 92.48 Acc@5: 99.55 time: 1.3551
+[2021-10-26 18:57:52] epoch 4 learning_rate 0.001 
+[2021-10-26 18:58:04] train    Loss: 0.0419 Acc@1: 99.24 Acc@5: 100.00 time: 11.6998
+[2021-10-26 18:58:05] validate Loss: 0.3016 Acc@1: 92.47 Acc@5: 99.45 time: 1.3388
+[2021-10-26 18:58:05] epoch 5 learning_rate 0.0001 
+[2021-10-26 18:58:17] train    Loss: 0.0305 Acc@1: 99.60 Acc@5: 100.00 time: 11.7503
+[2021-10-26 18:58:18] validate Loss: 0.2848 Acc@1: 92.97 Acc@5: 99.61 time: 1.3378
+[2021-10-26 18:58:18] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 18:58:18] epoch 6 learning_rate 0.0001 
+[2021-10-26 18:58:30] train    Loss: 0.0265 Acc@1: 99.73 Acc@5: 100.00 time: 11.8256
+[2021-10-26 18:58:31] validate Loss: 0.2833 Acc@1: 93.02 Acc@5: 99.62 time: 1.4019
+[2021-10-26 18:58:32] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 18:58:32] epoch 7 learning_rate 0.0001 
+[2021-10-26 18:58:43] train    Loss: 0.0261 Acc@1: 99.77 Acc@5: 100.00 time: 11.6694
+[2021-10-26 18:58:45] validate Loss: 0.2819 Acc@1: 93.06 Acc@5: 99.59 time: 1.3854
+[2021-10-26 18:58:45] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 18:58:45] epoch 8 learning_rate 0.0001 
+[2021-10-26 18:58:57] train    Loss: 0.0255 Acc@1: 99.76 Acc@5: 100.00 time: 11.7892
+[2021-10-26 18:58:58] validate Loss: 0.2800 Acc@1: 93.04 Acc@5: 99.63 time: 1.3606
+[2021-10-26 18:58:58] epoch 9 learning_rate 0.0001 
+[2021-10-26 18:59:10] train    Loss: 0.0237 Acc@1: 99.82 Acc@5: 100.00 time: 11.9745
+[2021-10-26 18:59:11] validate Loss: 0.2809 Acc@1: 93.13 Acc@5: 99.58 time: 1.4348
+[2021-10-26 18:59:12] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 18:59:12] epoch 10 learning_rate 0.0001 
+[2021-10-26 18:59:23] train    Loss: 0.0230 Acc@1: 99.86 Acc@5: 100.00 time: 11.8129
+[2021-10-26 18:59:25] validate Loss: 0.2798 Acc@1: 93.15 Acc@5: 99.64 time: 1.3821
+[2021-10-26 18:59:25] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 18:59:25] epoch 11 learning_rate 0.0001 
+[2021-10-26 18:59:37] train    Loss: 0.0232 Acc@1: 99.84 Acc@5: 100.00 time: 11.7723
+[2021-10-26 18:59:38] validate Loss: 0.2817 Acc@1: 93.09 Acc@5: 99.57 time: 1.3327
+[2021-10-26 18:59:38] epoch 12 learning_rate 0.0001 
+[2021-10-26 18:59:50] train    Loss: 0.0237 Acc@1: 99.82 Acc@5: 100.00 time: 11.9509
+[2021-10-26 18:59:51] validate Loss: 0.2824 Acc@1: 93.15 Acc@5: 99.56 time: 1.3573
+[2021-10-26 18:59:51] epoch 13 learning_rate 0.0001 
+[2021-10-26 19:00:03] train    Loss: 0.0218 Acc@1: 99.91 Acc@5: 100.00 time: 11.7579
+[2021-10-26 19:00:05] validate Loss: 0.2782 Acc@1: 93.22 Acc@5: 99.54 time: 1.3399
+[2021-10-26 19:00:05] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 19:00:05] epoch 14 learning_rate 0.0001 
+[2021-10-26 19:00:16] train    Loss: 0.0217 Acc@1: 99.90 Acc@5: 100.00 time: 11.7492
+[2021-10-26 19:00:18] validate Loss: 0.2804 Acc@1: 93.21 Acc@5: 99.59 time: 1.3217
+[2021-10-26 19:00:18] epoch 15 learning_rate 0.0001 
+[2021-10-26 19:00:29] train    Loss: 0.0219 Acc@1: 99.90 Acc@5: 100.00 time: 11.6147
+[2021-10-26 19:00:31] validate Loss: 0.2807 Acc@1: 93.21 Acc@5: 99.61 time: 1.3633
+[2021-10-26 19:00:31] epoch 16 learning_rate 0.0001 
+[2021-10-26 19:00:42] train    Loss: 0.0216 Acc@1: 99.89 Acc@5: 100.00 time: 11.7334
+[2021-10-26 19:00:44] validate Loss: 0.2811 Acc@1: 93.24 Acc@5: 99.55 time: 1.3139
+[2021-10-26 19:00:44] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 19:00:44] epoch 17 learning_rate 0.0001 
+[2021-10-26 19:00:56] train    Loss: 0.0210 Acc@1: 99.91 Acc@5: 100.00 time: 11.8003
+[2021-10-26 19:00:57] validate Loss: 0.2793 Acc@1: 93.25 Acc@5: 99.58 time: 1.3503
+[2021-10-26 19:00:57] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 19:00:57] epoch 18 learning_rate 0.0001 
+[2021-10-26 19:01:09] train    Loss: 0.0210 Acc@1: 99.91 Acc@5: 100.00 time: 11.7900
+[2021-10-26 19:01:10] validate Loss: 0.2817 Acc@1: 93.22 Acc@5: 99.62 time: 1.3842
+[2021-10-26 19:01:10] epoch 19 learning_rate 0.0001 
+[2021-10-26 19:01:22] train    Loss: 0.0212 Acc@1: 99.92 Acc@5: 100.00 time: 11.7987
+[2021-10-26 19:01:24] validate Loss: 0.2812 Acc@1: 93.24 Acc@5: 99.62 time: 1.3216
+[2021-10-26 19:01:24] epoch 20 learning_rate 0.0001 
+[2021-10-26 19:01:35] train    Loss: 0.0211 Acc@1: 99.91 Acc@5: 100.00 time: 11.8717
+[2021-10-26 19:01:37] validate Loss: 0.2826 Acc@1: 93.37 Acc@5: 99.59 time: 1.3623
+[2021-10-26 19:01:37] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 19:01:37] epoch 21 learning_rate 0.0001 
+[2021-10-26 19:01:49] train    Loss: 0.0209 Acc@1: 99.94 Acc@5: 100.00 time: 11.7032
+[2021-10-26 19:01:50] validate Loss: 0.2835 Acc@1: 93.27 Acc@5: 99.61 time: 1.3284
+[2021-10-26 19:01:50] epoch 22 learning_rate 0.0001 
+[2021-10-26 19:02:02] train    Loss: 0.0209 Acc@1: 99.92 Acc@5: 100.00 time: 11.7235
+[2021-10-26 19:02:03] validate Loss: 0.2813 Acc@1: 93.31 Acc@5: 99.60 time: 1.3650
+[2021-10-26 19:02:03] epoch 23 learning_rate 0.0001 
+[2021-10-26 19:02:15] train    Loss: 0.0210 Acc@1: 99.89 Acc@5: 100.00 time: 11.8669
+[2021-10-26 19:02:16] validate Loss: 0.2817 Acc@1: 93.25 Acc@5: 99.61 time: 1.3511
+[2021-10-26 19:02:16] epoch 24 learning_rate 0.0001 
+[2021-10-26 19:02:28] train    Loss: 0.0212 Acc@1: 99.91 Acc@5: 100.00 time: 11.7613
+[2021-10-26 19:02:30] validate Loss: 0.2827 Acc@1: 93.24 Acc@5: 99.61 time: 1.3680
+[2021-10-26 19:02:30] epoch 25 learning_rate 0.0001 
+[2021-10-26 19:02:41] train    Loss: 0.0204 Acc@1: 99.94 Acc@5: 100.00 time: 11.6407
+[2021-10-26 19:02:43] validate Loss: 0.2828 Acc@1: 93.23 Acc@5: 99.60 time: 1.3745
+[2021-10-26 19:02:43] epoch 26 learning_rate 0.0001 
+[2021-10-26 19:02:54] train    Loss: 0.0202 Acc@1: 99.95 Acc@5: 100.00 time: 11.7245
+[2021-10-26 19:02:56] validate Loss: 0.2820 Acc@1: 93.21 Acc@5: 99.62 time: 1.3834
+[2021-10-26 19:02:56] epoch 27 learning_rate 0.0001 
+[2021-10-26 19:03:07] train    Loss: 0.0203 Acc@1: 99.92 Acc@5: 100.00 time: 11.7494
+[2021-10-26 19:03:09] validate Loss: 0.2830 Acc@1: 93.24 Acc@5: 99.57 time: 1.3564
+[2021-10-26 19:03:09] epoch 28 learning_rate 0.0001 
+[2021-10-26 19:03:21] train    Loss: 0.0203 Acc@1: 99.93 Acc@5: 100.00 time: 11.7845
+[2021-10-26 19:03:22] validate Loss: 0.2831 Acc@1: 93.37 Acc@5: 99.54 time: 1.3542
+[2021-10-26 19:03:22] epoch 29 learning_rate 0.0001 
+[2021-10-26 19:03:34] train    Loss: 0.0200 Acc@1: 99.94 Acc@5: 100.00 time: 11.9750
+[2021-10-26 19:03:35] validate Loss: 0.2824 Acc@1: 93.32 Acc@5: 99.60 time: 1.3295
+[2021-10-26 19:03:35] ===> conv_id 5 bestacc 93.3700
+[2021-10-26 19:03:35] ===> pruning layer 4
+[2021-10-26 19:03:35] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov5.pt
+[2021-10-26 19:03:35] loading rank_conv/vgg_16_bn/dis_mtx4.npy
+[2021-10-26 19:03:36] storing rank_conv/vgg_16_bn/rank_conv4.npy
+[2021-10-26 19:03:36] loading rank_conv/vgg_16_bn/rank_conv4.npy
+[2021-10-26 19:03:36] epoch 0 learning_rate 0.001 
+[2021-10-26 19:03:47] train    Loss: 0.0597 Acc@1: 98.63 Acc@5: 99.98 time: 11.6977
+[2021-10-26 19:03:49] validate Loss: 0.3536 Acc@1: 90.98 Acc@5: 99.30 time: 1.3658
+[2021-10-26 19:03:49] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:03:49] epoch 1 learning_rate 0.001 
+[2021-10-26 19:04:01] train    Loss: 0.0561 Acc@1: 98.84 Acc@5: 99.99 time: 11.8601
+[2021-10-26 19:04:02] validate Loss: 0.3311 Acc@1: 91.66 Acc@5: 99.43 time: 1.3350
+[2021-10-26 19:04:02] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:04:02] epoch 2 learning_rate 0.001 
+[2021-10-26 19:04:14] train    Loss: 0.0588 Acc@1: 98.71 Acc@5: 99.99 time: 11.8631
+[2021-10-26 19:04:15] validate Loss: 0.3076 Acc@1: 91.72 Acc@5: 99.48 time: 1.3640
+[2021-10-26 19:04:16] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:04:16] epoch 3 learning_rate 0.001 
+[2021-10-26 19:04:27] train    Loss: 0.0581 Acc@1: 98.72 Acc@5: 99.99 time: 11.7017
+[2021-10-26 19:04:29] validate Loss: 0.3261 Acc@1: 91.57 Acc@5: 99.57 time: 1.3294
+[2021-10-26 19:04:29] epoch 4 learning_rate 0.001 
+[2021-10-26 19:04:40] train    Loss: 0.0564 Acc@1: 98.81 Acc@5: 99.99 time: 11.8275
+[2021-10-26 19:04:42] validate Loss: 0.3150 Acc@1: 91.97 Acc@5: 99.50 time: 1.3273
+[2021-10-26 19:04:42] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:04:42] epoch 5 learning_rate 0.0001 
+[2021-10-26 19:04:53] train    Loss: 0.0379 Acc@1: 99.38 Acc@5: 100.00 time: 11.4876
+[2021-10-26 19:04:55] validate Loss: 0.2875 Acc@1: 92.73 Acc@5: 99.61 time: 1.3287
+[2021-10-26 19:04:55] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:04:55] epoch 6 learning_rate 0.0001 
+[2021-10-26 19:05:07] train    Loss: 0.0312 Acc@1: 99.63 Acc@5: 100.00 time: 11.6975
+[2021-10-26 19:05:08] validate Loss: 0.2815 Acc@1: 92.75 Acc@5: 99.64 time: 1.3543
+[2021-10-26 19:05:08] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:05:08] epoch 7 learning_rate 0.0001 
+[2021-10-26 19:05:20] train    Loss: 0.0288 Acc@1: 99.69 Acc@5: 100.00 time: 11.8361
+[2021-10-26 19:05:21] validate Loss: 0.2800 Acc@1: 92.97 Acc@5: 99.61 time: 1.3521
+[2021-10-26 19:05:22] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:05:22] epoch 8 learning_rate 0.0001 
+[2021-10-26 19:05:33] train    Loss: 0.0282 Acc@1: 99.70 Acc@5: 100.00 time: 11.6546
+[2021-10-26 19:05:35] validate Loss: 0.2792 Acc@1: 93.00 Acc@5: 99.60 time: 1.3603
+[2021-10-26 19:05:35] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:05:35] epoch 9 learning_rate 0.0001 
+[2021-10-26 19:05:46] train    Loss: 0.0259 Acc@1: 99.76 Acc@5: 100.00 time: 11.6874
+[2021-10-26 19:05:48] validate Loss: 0.2792 Acc@1: 93.14 Acc@5: 99.60 time: 1.3725
+[2021-10-26 19:05:48] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:05:48] epoch 10 learning_rate 0.0001 
+[2021-10-26 19:06:00] train    Loss: 0.0261 Acc@1: 99.76 Acc@5: 100.00 time: 11.7618
+[2021-10-26 19:06:01] validate Loss: 0.2787 Acc@1: 93.03 Acc@5: 99.60 time: 1.3827
+[2021-10-26 19:06:01] epoch 11 learning_rate 0.0001 
+[2021-10-26 19:06:13] train    Loss: 0.0253 Acc@1: 99.79 Acc@5: 100.00 time: 11.6854
+[2021-10-26 19:06:14] validate Loss: 0.2777 Acc@1: 93.13 Acc@5: 99.59 time: 1.3373
+[2021-10-26 19:06:14] epoch 12 learning_rate 0.0001 
+[2021-10-26 19:06:26] train    Loss: 0.0237 Acc@1: 99.83 Acc@5: 100.00 time: 11.6727
+[2021-10-26 19:06:27] validate Loss: 0.2763 Acc@1: 93.22 Acc@5: 99.63 time: 1.3859
+[2021-10-26 19:06:27] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:06:27] epoch 13 learning_rate 0.0001 
+[2021-10-26 19:06:39] train    Loss: 0.0242 Acc@1: 99.83 Acc@5: 100.00 time: 11.7189
+[2021-10-26 19:06:41] validate Loss: 0.2788 Acc@1: 93.28 Acc@5: 99.61 time: 1.3973
+[2021-10-26 19:06:41] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:06:41] epoch 14 learning_rate 0.0001 
+[2021-10-26 19:06:52] train    Loss: 0.0238 Acc@1: 99.83 Acc@5: 100.00 time: 11.7577
+[2021-10-26 19:06:54] validate Loss: 0.2785 Acc@1: 93.22 Acc@5: 99.65 time: 1.4174
+[2021-10-26 19:06:54] epoch 15 learning_rate 0.0001 
+[2021-10-26 19:07:06] train    Loss: 0.0231 Acc@1: 99.84 Acc@5: 100.00 time: 11.6373
+[2021-10-26 19:07:07] validate Loss: 0.2783 Acc@1: 93.27 Acc@5: 99.64 time: 1.3364
+[2021-10-26 19:07:07] epoch 16 learning_rate 0.0001 
+[2021-10-26 19:07:19] train    Loss: 0.0232 Acc@1: 99.85 Acc@5: 100.00 time: 11.8782
+[2021-10-26 19:07:20] validate Loss: 0.2802 Acc@1: 93.20 Acc@5: 99.64 time: 1.3769
+[2021-10-26 19:07:20] epoch 17 learning_rate 0.0001 
+[2021-10-26 19:07:32] train    Loss: 0.0228 Acc@1: 99.86 Acc@5: 100.00 time: 11.7786
+[2021-10-26 19:07:33] validate Loss: 0.2808 Acc@1: 93.31 Acc@5: 99.61 time: 1.3862
+[2021-10-26 19:07:34] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:07:34] epoch 18 learning_rate 0.0001 
+[2021-10-26 19:07:45] train    Loss: 0.0221 Acc@1: 99.89 Acc@5: 100.00 time: 11.8182
+[2021-10-26 19:07:47] validate Loss: 0.2822 Acc@1: 93.17 Acc@5: 99.59 time: 1.3766
+[2021-10-26 19:07:47] epoch 19 learning_rate 0.0001 
+[2021-10-26 19:07:58] train    Loss: 0.0224 Acc@1: 99.87 Acc@5: 100.00 time: 11.7736
+[2021-10-26 19:08:00] validate Loss: 0.2821 Acc@1: 93.21 Acc@5: 99.61 time: 1.3731
+[2021-10-26 19:08:00] epoch 20 learning_rate 0.0001 
+[2021-10-26 19:08:12] train    Loss: 0.0220 Acc@1: 99.90 Acc@5: 100.00 time: 11.7617
+[2021-10-26 19:08:13] validate Loss: 0.2811 Acc@1: 93.48 Acc@5: 99.58 time: 1.3731
+[2021-10-26 19:08:13] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:08:13] epoch 21 learning_rate 0.0001 
+[2021-10-26 19:08:25] train    Loss: 0.0222 Acc@1: 99.88 Acc@5: 100.00 time: 11.7390
+[2021-10-26 19:08:26] validate Loss: 0.2831 Acc@1: 93.23 Acc@5: 99.69 time: 1.4238
+[2021-10-26 19:08:26] epoch 22 learning_rate 0.0001 
+[2021-10-26 19:08:38] train    Loss: 0.0220 Acc@1: 99.88 Acc@5: 100.00 time: 11.7956
+[2021-10-26 19:08:40] validate Loss: 0.2820 Acc@1: 93.32 Acc@5: 99.59 time: 1.3801
+[2021-10-26 19:08:40] epoch 23 learning_rate 0.0001 
+[2021-10-26 19:08:51] train    Loss: 0.0216 Acc@1: 99.90 Acc@5: 100.00 time: 11.8462
+[2021-10-26 19:08:53] validate Loss: 0.2829 Acc@1: 93.37 Acc@5: 99.59 time: 1.3615
+[2021-10-26 19:08:53] epoch 24 learning_rate 0.0001 
+[2021-10-26 19:09:04] train    Loss: 0.0218 Acc@1: 99.90 Acc@5: 100.00 time: 11.6973
+[2021-10-26 19:09:06] validate Loss: 0.2817 Acc@1: 93.29 Acc@5: 99.55 time: 1.3859
+[2021-10-26 19:09:06] epoch 25 learning_rate 0.0001 
+[2021-10-26 19:09:18] train    Loss: 0.0215 Acc@1: 99.90 Acc@5: 100.00 time: 11.7266
+[2021-10-26 19:09:19] validate Loss: 0.2797 Acc@1: 93.37 Acc@5: 99.59 time: 1.3752
+[2021-10-26 19:09:19] epoch 26 learning_rate 0.0001 
+[2021-10-26 19:09:31] train    Loss: 0.0218 Acc@1: 99.89 Acc@5: 100.00 time: 11.5904
+[2021-10-26 19:09:32] validate Loss: 0.2816 Acc@1: 93.37 Acc@5: 99.59 time: 1.3502
+[2021-10-26 19:09:32] epoch 27 learning_rate 0.0001 
+[2021-10-26 19:09:44] train    Loss: 0.0216 Acc@1: 99.90 Acc@5: 100.00 time: 11.8211
+[2021-10-26 19:09:45] validate Loss: 0.2795 Acc@1: 93.46 Acc@5: 99.56 time: 1.3572
+[2021-10-26 19:09:45] epoch 28 learning_rate 0.0001 
+[2021-10-26 19:09:57] train    Loss: 0.0216 Acc@1: 99.90 Acc@5: 100.00 time: 11.8390
+[2021-10-26 19:09:58] validate Loss: 0.2807 Acc@1: 93.41 Acc@5: 99.54 time: 1.3494
+[2021-10-26 19:09:58] epoch 29 learning_rate 0.0001 
+[2021-10-26 19:10:10] train    Loss: 0.0215 Acc@1: 99.90 Acc@5: 100.00 time: 11.8060
+[2021-10-26 19:10:11] validate Loss: 0.2829 Acc@1: 93.35 Acc@5: 99.53 time: 1.3964
+[2021-10-26 19:10:11] ===> conv_id 4 bestacc 93.4800
+[2021-10-26 19:10:11] ===> pruning layer 3
+[2021-10-26 19:10:12] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov4.pt
+[2021-10-26 19:10:12] loading rank_conv/vgg_16_bn/dis_mtx3.npy
+[2021-10-26 19:10:12] storing rank_conv/vgg_16_bn/rank_conv3.npy
+[2021-10-26 19:10:12] loading rank_conv/vgg_16_bn/rank_conv3.npy
+[2021-10-26 19:10:12] epoch 0 learning_rate 0.001 
+[2021-10-26 19:10:24] train    Loss: 0.0786 Acc@1: 98.01 Acc@5: 99.97 time: 11.7533
+[2021-10-26 19:10:25] validate Loss: 0.3544 Acc@1: 90.62 Acc@5: 99.43 time: 1.3299
+[2021-10-26 19:10:25] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:10:25] epoch 1 learning_rate 0.001 
+[2021-10-26 19:10:37] train    Loss: 0.0764 Acc@1: 98.12 Acc@5: 99.98 time: 11.7926
+[2021-10-26 19:10:38] validate Loss: 0.3270 Acc@1: 91.40 Acc@5: 99.40 time: 1.3652
+[2021-10-26 19:10:39] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:10:39] epoch 2 learning_rate 0.001 
+[2021-10-26 19:10:50] train    Loss: 0.0756 Acc@1: 98.17 Acc@5: 99.97 time: 11.8440
+[2021-10-26 19:10:52] validate Loss: 0.3252 Acc@1: 91.31 Acc@5: 99.54 time: 1.3626
+[2021-10-26 19:10:52] epoch 3 learning_rate 0.001 
+[2021-10-26 19:11:04] train    Loss: 0.0685 Acc@1: 98.41 Acc@5: 99.98 time: 11.7815
+[2021-10-26 19:11:05] validate Loss: 0.3201 Acc@1: 91.84 Acc@5: 99.47 time: 1.4141
+[2021-10-26 19:11:05] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:11:05] epoch 4 learning_rate 0.001 
+[2021-10-26 19:11:17] train    Loss: 0.0707 Acc@1: 98.30 Acc@5: 99.99 time: 11.8344
+[2021-10-26 19:11:18] validate Loss: 0.3608 Acc@1: 90.39 Acc@5: 99.31 time: 1.3475
+[2021-10-26 19:11:18] epoch 5 learning_rate 0.0001 
+[2021-10-26 19:11:30] train    Loss: 0.0505 Acc@1: 99.00 Acc@5: 99.99 time: 11.7778
+[2021-10-26 19:11:31] validate Loss: 0.2901 Acc@1: 92.41 Acc@5: 99.70 time: 1.3809
+[2021-10-26 19:11:32] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:11:32] epoch 6 learning_rate 0.0001 
+[2021-10-26 19:11:43] train    Loss: 0.0375 Acc@1: 99.39 Acc@5: 100.00 time: 11.7564
+[2021-10-26 19:11:45] validate Loss: 0.2843 Acc@1: 92.61 Acc@5: 99.72 time: 1.4079
+[2021-10-26 19:11:45] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:11:45] epoch 7 learning_rate 0.0001 
+[2021-10-26 19:11:57] train    Loss: 0.0334 Acc@1: 99.55 Acc@5: 100.00 time: 11.8971
+[2021-10-26 19:11:58] validate Loss: 0.2832 Acc@1: 92.88 Acc@5: 99.72 time: 1.3839
+[2021-10-26 19:11:58] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:11:58] epoch 8 learning_rate 0.0001 
+[2021-10-26 19:12:10] train    Loss: 0.0308 Acc@1: 99.61 Acc@5: 100.00 time: 11.8237
+[2021-10-26 19:12:12] validate Loss: 0.2859 Acc@1: 92.74 Acc@5: 99.72 time: 1.3736
+[2021-10-26 19:12:12] epoch 9 learning_rate 0.0001 
+[2021-10-26 19:12:23] train    Loss: 0.0286 Acc@1: 99.72 Acc@5: 100.00 time: 11.8362
+[2021-10-26 19:12:25] validate Loss: 0.2832 Acc@1: 92.88 Acc@5: 99.72 time: 1.4074
+[2021-10-26 19:12:25] epoch 10 learning_rate 0.0001 
+[2021-10-26 19:12:37] train    Loss: 0.0286 Acc@1: 99.68 Acc@5: 100.00 time: 11.6778
+[2021-10-26 19:12:38] validate Loss: 0.2827 Acc@1: 92.96 Acc@5: 99.75 time: 1.3457
+[2021-10-26 19:12:38] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:12:38] epoch 11 learning_rate 0.0001 
+[2021-10-26 19:12:50] train    Loss: 0.0290 Acc@1: 99.68 Acc@5: 100.00 time: 11.9822
+[2021-10-26 19:12:51] validate Loss: 0.2800 Acc@1: 93.03 Acc@5: 99.69 time: 1.3401
+[2021-10-26 19:12:52] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:12:52] epoch 12 learning_rate 0.0001 
+[2021-10-26 19:13:03] train    Loss: 0.0270 Acc@1: 99.73 Acc@5: 100.00 time: 11.8711
+[2021-10-26 19:13:05] validate Loss: 0.2793 Acc@1: 93.23 Acc@5: 99.73 time: 1.4101
+[2021-10-26 19:13:05] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:13:05] epoch 13 learning_rate 0.0001 
+[2021-10-26 19:13:17] train    Loss: 0.0264 Acc@1: 99.78 Acc@5: 100.00 time: 11.8830
+[2021-10-26 19:13:18] validate Loss: 0.2786 Acc@1: 93.22 Acc@5: 99.75 time: 1.3534
+[2021-10-26 19:13:18] epoch 14 learning_rate 0.0001 
+[2021-10-26 19:13:30] train    Loss: 0.0262 Acc@1: 99.77 Acc@5: 100.00 time: 11.8387
+[2021-10-26 19:13:31] validate Loss: 0.2811 Acc@1: 93.06 Acc@5: 99.72 time: 1.3325
+[2021-10-26 19:13:31] epoch 15 learning_rate 0.0001 
+[2021-10-26 19:13:43] train    Loss: 0.0246 Acc@1: 99.83 Acc@5: 100.00 time: 11.8908
+[2021-10-26 19:13:45] validate Loss: 0.2806 Acc@1: 93.12 Acc@5: 99.76 time: 1.3885
+[2021-10-26 19:13:45] epoch 16 learning_rate 0.0001 
+[2021-10-26 19:13:57] train    Loss: 0.0243 Acc@1: 99.83 Acc@5: 100.00 time: 11.8485
+[2021-10-26 19:13:58] validate Loss: 0.2810 Acc@1: 93.18 Acc@5: 99.71 time: 1.3801
+[2021-10-26 19:13:58] epoch 17 learning_rate 0.0001 
+[2021-10-26 19:14:10] train    Loss: 0.0244 Acc@1: 99.82 Acc@5: 100.00 time: 11.9112
+[2021-10-26 19:14:11] validate Loss: 0.2835 Acc@1: 93.17 Acc@5: 99.69 time: 1.3626
+[2021-10-26 19:14:11] epoch 18 learning_rate 0.0001 
+[2021-10-26 19:14:23] train    Loss: 0.0237 Acc@1: 99.85 Acc@5: 100.00 time: 11.7904
+[2021-10-26 19:14:24] validate Loss: 0.2841 Acc@1: 93.06 Acc@5: 99.74 time: 1.3739
+[2021-10-26 19:14:24] epoch 19 learning_rate 0.0001 
+[2021-10-26 19:14:36] train    Loss: 0.0233 Acc@1: 99.84 Acc@5: 100.00 time: 11.9290
+[2021-10-26 19:14:38] validate Loss: 0.2849 Acc@1: 93.18 Acc@5: 99.75 time: 1.3674
+[2021-10-26 19:14:38] epoch 20 learning_rate 0.0001 
+[2021-10-26 19:14:49] train    Loss: 0.0234 Acc@1: 99.85 Acc@5: 100.00 time: 11.6875
+[2021-10-26 19:14:51] validate Loss: 0.2881 Acc@1: 93.00 Acc@5: 99.71 time: 1.4073
+[2021-10-26 19:14:51] epoch 21 learning_rate 0.0001 
+[2021-10-26 19:15:03] train    Loss: 0.0226 Acc@1: 99.88 Acc@5: 100.00 time: 11.7584
+[2021-10-26 19:15:04] validate Loss: 0.2884 Acc@1: 92.96 Acc@5: 99.67 time: 1.4091
+[2021-10-26 19:15:04] epoch 22 learning_rate 0.0001 
+[2021-10-26 19:15:16] train    Loss: 0.0228 Acc@1: 99.88 Acc@5: 100.00 time: 11.7853
+[2021-10-26 19:15:17] validate Loss: 0.2861 Acc@1: 93.05 Acc@5: 99.70 time: 1.3781
+[2021-10-26 19:15:17] epoch 23 learning_rate 0.0001 
+[2021-10-26 19:15:29] train    Loss: 0.0233 Acc@1: 99.86 Acc@5: 100.00 time: 11.9130
+[2021-10-26 19:15:30] validate Loss: 0.2872 Acc@1: 93.21 Acc@5: 99.71 time: 1.3716
+[2021-10-26 19:15:30] epoch 24 learning_rate 0.0001 
+[2021-10-26 19:15:42] train    Loss: 0.0234 Acc@1: 99.83 Acc@5: 100.00 time: 11.8135
+[2021-10-26 19:15:44] validate Loss: 0.2839 Acc@1: 93.18 Acc@5: 99.60 time: 1.3800
+[2021-10-26 19:15:44] epoch 25 learning_rate 0.0001 
+[2021-10-26 19:15:55] train    Loss: 0.0227 Acc@1: 99.87 Acc@5: 100.00 time: 11.7089
+[2021-10-26 19:15:57] validate Loss: 0.2809 Acc@1: 93.20 Acc@5: 99.66 time: 1.4032
+[2021-10-26 19:15:57] epoch 26 learning_rate 0.0001 
+[2021-10-26 19:16:08] train    Loss: 0.0221 Acc@1: 99.89 Acc@5: 100.00 time: 11.6793
+[2021-10-26 19:16:10] validate Loss: 0.2809 Acc@1: 93.29 Acc@5: 99.66 time: 1.3685
+[2021-10-26 19:16:10] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:16:10] epoch 27 learning_rate 0.0001 
+[2021-10-26 19:16:22] train    Loss: 0.0217 Acc@1: 99.89 Acc@5: 100.00 time: 11.7850
+[2021-10-26 19:16:23] validate Loss: 0.2822 Acc@1: 93.29 Acc@5: 99.66 time: 1.3596
+[2021-10-26 19:16:23] epoch 28 learning_rate 0.0001 
+[2021-10-26 19:16:35] train    Loss: 0.0217 Acc@1: 99.89 Acc@5: 100.00 time: 11.8723
+[2021-10-26 19:16:36] validate Loss: 0.2853 Acc@1: 93.28 Acc@5: 99.74 time: 1.3274
+[2021-10-26 19:16:36] epoch 29 learning_rate 0.0001 
+[2021-10-26 19:16:48] train    Loss: 0.0220 Acc@1: 99.89 Acc@5: 100.00 time: 11.8845
+[2021-10-26 19:16:50] validate Loss: 0.2862 Acc@1: 93.16 Acc@5: 99.65 time: 1.3477
+[2021-10-26 19:16:50] ===> conv_id 3 bestacc 93.2900
+[2021-10-26 19:16:50] ===> pruning layer 2
+[2021-10-26 19:16:50] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov3.pt
+[2021-10-26 19:16:50] loading rank_conv/vgg_16_bn/dis_mtx2.npy
+[2021-10-26 19:16:50] storing rank_conv/vgg_16_bn/rank_conv2.npy
+[2021-10-26 19:16:50] loading rank_conv/vgg_16_bn/rank_conv2.npy
+[2021-10-26 19:16:50] epoch 0 learning_rate 0.001 
+[2021-10-26 19:17:02] train    Loss: 0.0887 Acc@1: 97.70 Acc@5: 99.97 time: 11.8605
+[2021-10-26 19:17:03] validate Loss: 0.3441 Acc@1: 90.67 Acc@5: 99.41 time: 1.3530
+[2021-10-26 19:17:03] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:17:03] epoch 1 learning_rate 0.001 
+[2021-10-26 19:17:15] train    Loss: 0.0924 Acc@1: 97.59 Acc@5: 99.97 time: 11.7837
+[2021-10-26 19:17:16] validate Loss: 0.3395 Acc@1: 90.85 Acc@5: 99.63 time: 1.4122
+[2021-10-26 19:17:17] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:17:17] epoch 2 learning_rate 0.001 
+[2021-10-26 19:17:28] train    Loss: 0.0891 Acc@1: 97.70 Acc@5: 99.98 time: 11.8320
+[2021-10-26 19:17:30] validate Loss: 0.3370 Acc@1: 90.79 Acc@5: 99.49 time: 1.3584
+[2021-10-26 19:17:30] epoch 3 learning_rate 0.001 
+[2021-10-26 19:17:42] train    Loss: 0.0886 Acc@1: 97.70 Acc@5: 99.98 time: 11.8245
+[2021-10-26 19:17:43] validate Loss: 0.3323 Acc@1: 90.65 Acc@5: 99.52 time: 1.3725
+[2021-10-26 19:17:43] epoch 4 learning_rate 0.001 
+[2021-10-26 19:17:55] train    Loss: 0.0908 Acc@1: 97.66 Acc@5: 99.97 time: 11.8390
+[2021-10-26 19:17:56] validate Loss: 0.3605 Acc@1: 89.72 Acc@5: 99.46 time: 1.3563
+[2021-10-26 19:17:56] epoch 5 learning_rate 0.0001 
+[2021-10-26 19:18:08] train    Loss: 0.0555 Acc@1: 98.84 Acc@5: 99.99 time: 11.5226
+[2021-10-26 19:18:09] validate Loss: 0.2755 Acc@1: 92.53 Acc@5: 99.67 time: 1.3705
+[2021-10-26 19:18:09] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:18:09] epoch 6 learning_rate 0.0001 
+[2021-10-26 19:18:21] train    Loss: 0.0424 Acc@1: 99.26 Acc@5: 100.00 time: 11.8011
+[2021-10-26 19:18:23] validate Loss: 0.2749 Acc@1: 92.63 Acc@5: 99.64 time: 1.3854
+[2021-10-26 19:18:23] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:18:23] epoch 7 learning_rate 0.0001 
+[2021-10-26 19:18:34] train    Loss: 0.0363 Acc@1: 99.49 Acc@5: 100.00 time: 11.7273
+[2021-10-26 19:18:36] validate Loss: 0.2736 Acc@1: 92.92 Acc@5: 99.69 time: 1.3846
+[2021-10-26 19:18:36] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:18:36] epoch 8 learning_rate 0.0001 
+[2021-10-26 19:18:48] train    Loss: 0.0353 Acc@1: 99.49 Acc@5: 100.00 time: 11.8193
+[2021-10-26 19:18:49] validate Loss: 0.2729 Acc@1: 92.97 Acc@5: 99.66 time: 1.3684
+[2021-10-26 19:18:49] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:18:49] epoch 9 learning_rate 0.0001 
+[2021-10-26 19:19:01] train    Loss: 0.0323 Acc@1: 99.57 Acc@5: 100.00 time: 11.9059
+[2021-10-26 19:19:03] validate Loss: 0.2740 Acc@1: 92.87 Acc@5: 99.67 time: 1.4054
+[2021-10-26 19:19:03] epoch 10 learning_rate 0.0001 
+[2021-10-26 19:19:14] train    Loss: 0.0321 Acc@1: 99.60 Acc@5: 100.00 time: 11.7412
+[2021-10-26 19:19:16] validate Loss: 0.2698 Acc@1: 93.09 Acc@5: 99.64 time: 1.3574
+[2021-10-26 19:19:16] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:19:16] epoch 11 learning_rate 0.0001 
+[2021-10-26 19:19:28] train    Loss: 0.0288 Acc@1: 99.69 Acc@5: 100.00 time: 11.7369
+[2021-10-26 19:19:29] validate Loss: 0.2715 Acc@1: 93.19 Acc@5: 99.67 time: 1.3649
+[2021-10-26 19:19:29] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:19:29] epoch 12 learning_rate 0.0001 
+[2021-10-26 19:19:41] train    Loss: 0.0289 Acc@1: 99.68 Acc@5: 100.00 time: 11.7503
+[2021-10-26 19:19:42] validate Loss: 0.2730 Acc@1: 93.12 Acc@5: 99.67 time: 1.3217
+[2021-10-26 19:19:42] epoch 13 learning_rate 0.0001 
+[2021-10-26 19:19:54] train    Loss: 0.0275 Acc@1: 99.74 Acc@5: 100.00 time: 11.9143
+[2021-10-26 19:19:56] validate Loss: 0.2732 Acc@1: 93.17 Acc@5: 99.66 time: 1.3635
+[2021-10-26 19:19:56] epoch 14 learning_rate 0.0001 
+[2021-10-26 19:20:07] train    Loss: 0.0261 Acc@1: 99.78 Acc@5: 100.00 time: 11.7572
+[2021-10-26 19:20:09] validate Loss: 0.2753 Acc@1: 93.16 Acc@5: 99.70 time: 1.3480
+[2021-10-26 19:20:09] epoch 15 learning_rate 0.0001 
+[2021-10-26 19:20:20] train    Loss: 0.0264 Acc@1: 99.78 Acc@5: 100.00 time: 11.6610
+[2021-10-26 19:20:22] validate Loss: 0.2737 Acc@1: 93.11 Acc@5: 99.69 time: 1.3377
+[2021-10-26 19:20:22] epoch 16 learning_rate 0.0001 
+[2021-10-26 19:20:34] train    Loss: 0.0253 Acc@1: 99.81 Acc@5: 100.00 time: 11.8897
+[2021-10-26 19:20:35] validate Loss: 0.2733 Acc@1: 93.14 Acc@5: 99.69 time: 1.3570
+[2021-10-26 19:20:35] epoch 17 learning_rate 0.0001 
+[2021-10-26 19:20:47] train    Loss: 0.0256 Acc@1: 99.77 Acc@5: 100.00 time: 11.6964
+[2021-10-26 19:20:48] validate Loss: 0.2741 Acc@1: 93.20 Acc@5: 99.67 time: 1.3767
+[2021-10-26 19:20:48] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:20:48] epoch 18 learning_rate 0.0001 
+[2021-10-26 19:21:00] train    Loss: 0.0252 Acc@1: 99.82 Acc@5: 100.00 time: 11.7251
+[2021-10-26 19:21:01] validate Loss: 0.2751 Acc@1: 93.22 Acc@5: 99.66 time: 1.3495
+[2021-10-26 19:21:01] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:21:01] epoch 19 learning_rate 0.0001 
+[2021-10-26 19:21:13] train    Loss: 0.0243 Acc@1: 99.84 Acc@5: 100.00 time: 11.7649
+[2021-10-26 19:21:15] validate Loss: 0.2744 Acc@1: 93.27 Acc@5: 99.65 time: 1.3229
+[2021-10-26 19:21:15] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:21:15] epoch 20 learning_rate 0.0001 
+[2021-10-26 19:21:26] train    Loss: 0.0242 Acc@1: 99.84 Acc@5: 100.00 time: 11.7045
+[2021-10-26 19:21:28] validate Loss: 0.2725 Acc@1: 93.35 Acc@5: 99.66 time: 1.3495
+[2021-10-26 19:21:28] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:21:28] epoch 21 learning_rate 0.0001 
+[2021-10-26 19:21:40] train    Loss: 0.0246 Acc@1: 99.81 Acc@5: 100.00 time: 11.9502
+[2021-10-26 19:21:41] validate Loss: 0.2703 Acc@1: 93.34 Acc@5: 99.67 time: 1.3285
+[2021-10-26 19:21:41] epoch 22 learning_rate 0.0001 
+[2021-10-26 19:21:53] train    Loss: 0.0239 Acc@1: 99.84 Acc@5: 100.00 time: 12.0302
+[2021-10-26 19:21:55] validate Loss: 0.2739 Acc@1: 93.30 Acc@5: 99.69 time: 1.3677
+[2021-10-26 19:21:55] epoch 23 learning_rate 0.0001 
+[2021-10-26 19:22:06] train    Loss: 0.0228 Acc@1: 99.88 Acc@5: 100.00 time: 11.7533
+[2021-10-26 19:22:08] validate Loss: 0.2750 Acc@1: 93.20 Acc@5: 99.68 time: 1.3507
+[2021-10-26 19:22:08] epoch 24 learning_rate 0.0001 
+[2021-10-26 19:22:19] train    Loss: 0.0231 Acc@1: 99.84 Acc@5: 100.00 time: 11.7092
+[2021-10-26 19:22:21] validate Loss: 0.2757 Acc@1: 93.16 Acc@5: 99.68 time: 1.3425
+[2021-10-26 19:22:21] epoch 25 learning_rate 0.0001 
+[2021-10-26 19:22:33] train    Loss: 0.0228 Acc@1: 99.86 Acc@5: 100.00 time: 11.7969
+[2021-10-26 19:22:34] validate Loss: 0.2789 Acc@1: 93.21 Acc@5: 99.69 time: 1.3617
+[2021-10-26 19:22:34] epoch 26 learning_rate 0.0001 
+[2021-10-26 19:22:46] train    Loss: 0.0218 Acc@1: 99.91 Acc@5: 100.00 time: 11.7650
+[2021-10-26 19:22:47] validate Loss: 0.2782 Acc@1: 93.17 Acc@5: 99.68 time: 1.3623
+[2021-10-26 19:22:47] epoch 27 learning_rate 0.0001 
+[2021-10-26 19:22:59] train    Loss: 0.0229 Acc@1: 99.86 Acc@5: 100.00 time: 11.9826
+[2021-10-26 19:23:01] validate Loss: 0.2795 Acc@1: 93.26 Acc@5: 99.72 time: 1.3953
+[2021-10-26 19:23:01] epoch 28 learning_rate 0.0001 
+[2021-10-26 19:23:12] train    Loss: 0.0227 Acc@1: 99.86 Acc@5: 100.00 time: 11.7051
+[2021-10-26 19:23:14] validate Loss: 0.2773 Acc@1: 93.33 Acc@5: 99.62 time: 1.3550
+[2021-10-26 19:23:14] epoch 29 learning_rate 0.0001 
+[2021-10-26 19:23:25] train    Loss: 0.0221 Acc@1: 99.90 Acc@5: 100.00 time: 11.8043
+[2021-10-26 19:23:27] validate Loss: 0.2773 Acc@1: 93.33 Acc@5: 99.73 time: 1.3593
+[2021-10-26 19:23:27] ===> conv_id 2 bestacc 93.3500
+[2021-10-26 19:23:27] ===> pruning layer 1
+[2021-10-26 19:23:27] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov2.pt
+[2021-10-26 19:23:27] loading rank_conv/vgg_16_bn/dis_mtx1.npy
+[2021-10-26 19:23:27] storing rank_conv/vgg_16_bn/rank_conv1.npy
+[2021-10-26 19:23:27] loading rank_conv/vgg_16_bn/rank_conv1.npy
+[2021-10-26 19:23:27] epoch 0 learning_rate 0.001 
+[2021-10-26 19:23:39] train    Loss: 0.0980 Acc@1: 97.44 Acc@5: 99.96 time: 11.7897
+[2021-10-26 19:23:40] validate Loss: 0.3475 Acc@1: 90.28 Acc@5: 99.42 time: 1.3810
+[2021-10-26 19:23:40] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:23:40] epoch 1 learning_rate 0.001 
+[2021-10-26 19:23:52] train    Loss: 0.1002 Acc@1: 97.35 Acc@5: 99.96 time: 11.7556
+[2021-10-26 19:23:53] validate Loss: 0.3628 Acc@1: 90.15 Acc@5: 99.48 time: 1.3493
+[2021-10-26 19:23:53] epoch 2 learning_rate 0.001 
+[2021-10-26 19:24:05] train    Loss: 0.0989 Acc@1: 97.41 Acc@5: 99.97 time: 11.7426
+[2021-10-26 19:24:07] validate Loss: 0.3717 Acc@1: 89.75 Acc@5: 99.38 time: 1.3651
+[2021-10-26 19:24:07] epoch 3 learning_rate 0.001 
+[2021-10-26 19:24:18] train    Loss: 0.1021 Acc@1: 97.22 Acc@5: 99.96 time: 11.7508
+[2021-10-26 19:24:20] validate Loss: 0.3678 Acc@1: 89.91 Acc@5: 99.39 time: 1.3794
+[2021-10-26 19:24:20] epoch 4 learning_rate 0.001 
+[2021-10-26 19:24:31] train    Loss: 0.0967 Acc@1: 97.37 Acc@5: 99.97 time: 11.8124
+[2021-10-26 19:24:33] validate Loss: 0.3568 Acc@1: 90.27 Acc@5: 99.34 time: 1.3615
+[2021-10-26 19:24:33] epoch 5 learning_rate 0.0001 
+[2021-10-26 19:24:45] train    Loss: 0.0600 Acc@1: 98.62 Acc@5: 99.99 time: 11.7565
+[2021-10-26 19:24:46] validate Loss: 0.2819 Acc@1: 92.32 Acc@5: 99.67 time: 1.3897
+[2021-10-26 19:24:46] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:24:46] epoch 6 learning_rate 0.0001 
+[2021-10-26 19:24:58] train    Loss: 0.0428 Acc@1: 99.26 Acc@5: 100.00 time: 11.8566
+[2021-10-26 19:24:59] validate Loss: 0.2732 Acc@1: 92.73 Acc@5: 99.65 time: 1.3917
+[2021-10-26 19:25:00] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:25:00] epoch 7 learning_rate 0.0001 
+[2021-10-26 19:25:11] train    Loss: 0.0382 Acc@1: 99.40 Acc@5: 100.00 time: 11.7642
+[2021-10-26 19:25:13] validate Loss: 0.2717 Acc@1: 92.74 Acc@5: 99.70 time: 1.3575
+[2021-10-26 19:25:13] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:25:13] epoch 8 learning_rate 0.0001 
+[2021-10-26 19:25:25] train    Loss: 0.0334 Acc@1: 99.58 Acc@5: 100.00 time: 11.8218
+[2021-10-26 19:25:26] validate Loss: 0.2738 Acc@1: 92.87 Acc@5: 99.66 time: 1.3404
+[2021-10-26 19:25:26] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:25:26] epoch 9 learning_rate 0.0001 
+[2021-10-26 19:25:38] train    Loss: 0.0336 Acc@1: 99.56 Acc@5: 100.00 time: 11.6850
+[2021-10-26 19:25:39] validate Loss: 0.2722 Acc@1: 93.05 Acc@5: 99.68 time: 1.3409
+[2021-10-26 19:25:39] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:25:39] epoch 10 learning_rate 0.0001 
+[2021-10-26 19:25:51] train    Loss: 0.0322 Acc@1: 99.61 Acc@5: 100.00 time: 11.8896
+[2021-10-26 19:25:53] validate Loss: 0.2716 Acc@1: 93.06 Acc@5: 99.67 time: 1.3603
+[2021-10-26 19:25:53] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:25:53] epoch 11 learning_rate 0.0001 
+[2021-10-26 19:26:05] train    Loss: 0.0296 Acc@1: 99.66 Acc@5: 99.99 time: 11.7145
+[2021-10-26 19:26:06] validate Loss: 0.2733 Acc@1: 93.02 Acc@5: 99.68 time: 1.3697
+[2021-10-26 19:26:06] epoch 12 learning_rate 0.0001 
+[2021-10-26 19:26:18] train    Loss: 0.0287 Acc@1: 99.69 Acc@5: 100.00 time: 11.7794
+[2021-10-26 19:26:19] validate Loss: 0.2743 Acc@1: 93.18 Acc@5: 99.69 time: 1.3969
+[2021-10-26 19:26:19] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:26:19] epoch 13 learning_rate 0.0001 
+[2021-10-26 19:26:31] train    Loss: 0.0289 Acc@1: 99.67 Acc@5: 100.00 time: 11.7247
+[2021-10-26 19:26:32] validate Loss: 0.2776 Acc@1: 93.05 Acc@5: 99.70 time: 1.3886
+[2021-10-26 19:26:32] epoch 14 learning_rate 0.0001 
+[2021-10-26 19:26:44] train    Loss: 0.0277 Acc@1: 99.74 Acc@5: 100.00 time: 11.6694
+[2021-10-26 19:26:46] validate Loss: 0.2774 Acc@1: 93.16 Acc@5: 99.67 time: 1.3803
+[2021-10-26 19:26:46] epoch 15 learning_rate 0.0001 
+[2021-10-26 19:26:57] train    Loss: 0.0268 Acc@1: 99.78 Acc@5: 100.00 time: 11.7228
+[2021-10-26 19:26:59] validate Loss: 0.2775 Acc@1: 93.05 Acc@5: 99.71 time: 1.3595
+[2021-10-26 19:26:59] epoch 16 learning_rate 0.0001 
+[2021-10-26 19:27:10] train    Loss: 0.0254 Acc@1: 99.82 Acc@5: 100.00 time: 11.5832
+[2021-10-26 19:27:12] validate Loss: 0.2744 Acc@1: 93.15 Acc@5: 99.69 time: 1.4023
+[2021-10-26 19:27:12] epoch 17 learning_rate 0.0001 
+[2021-10-26 19:27:24] train    Loss: 0.0265 Acc@1: 99.75 Acc@5: 100.00 time: 11.9131
+[2021-10-26 19:27:25] validate Loss: 0.2771 Acc@1: 93.11 Acc@5: 99.67 time: 1.4077
+[2021-10-26 19:27:25] epoch 18 learning_rate 0.0001 
+[2021-10-26 19:27:37] train    Loss: 0.0253 Acc@1: 99.79 Acc@5: 100.00 time: 11.9751
+[2021-10-26 19:27:38] validate Loss: 0.2771 Acc@1: 93.18 Acc@5: 99.66 time: 1.3957
+[2021-10-26 19:27:38] epoch 19 learning_rate 0.0001 
+[2021-10-26 19:27:50] train    Loss: 0.0253 Acc@1: 99.80 Acc@5: 100.00 time: 11.7780
+[2021-10-26 19:27:51] validate Loss: 0.2761 Acc@1: 93.08 Acc@5: 99.67 time: 1.3353
+[2021-10-26 19:27:51] epoch 20 learning_rate 0.0001 
+[2021-10-26 19:28:03] train    Loss: 0.0254 Acc@1: 99.80 Acc@5: 100.00 time: 11.7338
+[2021-10-26 19:28:04] validate Loss: 0.2781 Acc@1: 93.09 Acc@5: 99.67 time: 1.3517
+[2021-10-26 19:28:04] epoch 21 learning_rate 0.0001 
+[2021-10-26 19:28:16] train    Loss: 0.0242 Acc@1: 99.84 Acc@5: 100.00 time: 11.7380
+[2021-10-26 19:28:18] validate Loss: 0.2793 Acc@1: 93.20 Acc@5: 99.72 time: 1.3463
+[2021-10-26 19:28:18] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:28:18] epoch 22 learning_rate 0.0001 
+[2021-10-26 19:28:30] train    Loss: 0.0231 Acc@1: 99.87 Acc@5: 100.00 time: 11.8568
+[2021-10-26 19:28:31] validate Loss: 0.2767 Acc@1: 93.19 Acc@5: 99.66 time: 1.3536
+[2021-10-26 19:28:31] epoch 23 learning_rate 0.0001 
+[2021-10-26 19:28:43] train    Loss: 0.0237 Acc@1: 99.84 Acc@5: 100.00 time: 11.6351
+[2021-10-26 19:28:44] validate Loss: 0.2766 Acc@1: 93.24 Acc@5: 99.64 time: 1.3577
+[2021-10-26 19:28:44] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:28:44] epoch 24 learning_rate 0.0001 
+[2021-10-26 19:28:56] train    Loss: 0.0233 Acc@1: 99.87 Acc@5: 100.00 time: 11.8019
+[2021-10-26 19:28:57] validate Loss: 0.2784 Acc@1: 93.15 Acc@5: 99.66 time: 1.3398
+[2021-10-26 19:28:57] epoch 25 learning_rate 0.0001 
+[2021-10-26 19:29:09] train    Loss: 0.0235 Acc@1: 99.82 Acc@5: 100.00 time: 11.9007
+[2021-10-26 19:29:11] validate Loss: 0.2798 Acc@1: 93.00 Acc@5: 99.64 time: 1.3696
+[2021-10-26 19:29:11] epoch 26 learning_rate 0.0001 
+[2021-10-26 19:29:22] train    Loss: 0.0232 Acc@1: 99.86 Acc@5: 100.00 time: 11.8434
+[2021-10-26 19:29:24] validate Loss: 0.2778 Acc@1: 93.08 Acc@5: 99.69 time: 1.3799
+[2021-10-26 19:29:24] epoch 27 learning_rate 0.0001 
+[2021-10-26 19:29:36] train    Loss: 0.0228 Acc@1: 99.88 Acc@5: 100.00 time: 11.9714
+[2021-10-26 19:29:37] validate Loss: 0.2814 Acc@1: 93.22 Acc@5: 99.61 time: 1.3866
+[2021-10-26 19:29:37] epoch 28 learning_rate 0.0001 
+[2021-10-26 19:29:49] train    Loss: 0.0222 Acc@1: 99.89 Acc@5: 100.00 time: 11.9886
+[2021-10-26 19:29:50] validate Loss: 0.2807 Acc@1: 93.22 Acc@5: 99.69 time: 1.3420
+[2021-10-26 19:29:50] epoch 29 learning_rate 0.0001 
+[2021-10-26 19:30:02] train    Loss: 0.0228 Acc@1: 99.87 Acc@5: 100.00 time: 11.7799
+[2021-10-26 19:30:04] validate Loss: 0.2822 Acc@1: 93.23 Acc@5: 99.63 time: 1.3601
+[2021-10-26 19:30:04] ===> conv_id 1 bestacc 93.2400
+[2021-10-26 19:30:04] ===> pruning layer 0
+[2021-10-26 19:30:04] loading checkpoint:/pruned_checkpoint/vgg_16_bn_cov1.pt
+[2021-10-26 19:30:04] loading rank_conv/vgg_16_bn/dis_mtx0.npy
+[2021-10-26 19:30:04] storing rank_conv/vgg_16_bn/rank_conv0.npy
+[2021-10-26 19:30:04] loading rank_conv/vgg_16_bn/rank_conv0.npy
+[2021-10-26 19:30:04] epoch 0 learning_rate 0.001 
+[2021-10-26 19:30:16] train    Loss: 0.2015 Acc@1: 94.03 Acc@5: 99.81 time: 11.7604
+[2021-10-26 19:30:17] validate Loss: 0.4763 Acc@1: 86.47 Acc@5: 99.32 time: 1.3851
+[2021-10-26 19:30:17] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:30:17] epoch 1 learning_rate 0.001 
+[2021-10-26 19:30:29] train    Loss: 0.1420 Acc@1: 95.88 Acc@5: 99.96 time: 11.8098
+[2021-10-26 19:30:30] validate Loss: 0.3728 Acc@1: 89.51 Acc@5: 99.29 time: 1.3822
+[2021-10-26 19:30:31] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:30:31] epoch 2 learning_rate 0.001 
+[2021-10-26 19:30:42] train    Loss: 0.1257 Acc@1: 96.35 Acc@5: 99.95 time: 11.8040
+[2021-10-26 19:30:44] validate Loss: 0.3970 Acc@1: 88.97 Acc@5: 99.40 time: 1.3479
+[2021-10-26 19:30:44] epoch 3 learning_rate 0.001 
+[2021-10-26 19:30:56] train    Loss: 0.1246 Acc@1: 96.42 Acc@5: 99.95 time: 11.7917
+[2021-10-26 19:30:57] validate Loss: 0.3681 Acc@1: 89.43 Acc@5: 99.42 time: 1.3821
+[2021-10-26 19:30:57] epoch 4 learning_rate 0.001 
+[2021-10-26 19:31:09] train    Loss: 0.1141 Acc@1: 96.87 Acc@5: 99.97 time: 11.7603
+[2021-10-26 19:31:10] validate Loss: 0.3868 Acc@1: 89.24 Acc@5: 99.41 time: 1.3446
+[2021-10-26 19:31:10] epoch 5 learning_rate 0.0001 
+[2021-10-26 19:31:22] train    Loss: 0.0658 Acc@1: 98.46 Acc@5: 99.99 time: 11.8198
+[2021-10-26 19:31:23] validate Loss: 0.2712 Acc@1: 92.46 Acc@5: 99.61 time: 1.3417
+[2021-10-26 19:31:23] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:31:23] epoch 6 learning_rate 0.0001 
+[2021-10-26 19:31:35] train    Loss: 0.0461 Acc@1: 99.15 Acc@5: 100.00 time: 11.7126
+[2021-10-26 19:31:36] validate Loss: 0.2732 Acc@1: 92.42 Acc@5: 99.67 time: 1.3657
+[2021-10-26 19:31:36] epoch 7 learning_rate 0.0001 
+[2021-10-26 19:31:48] train    Loss: 0.0424 Acc@1: 99.30 Acc@5: 100.00 time: 11.6659
+[2021-10-26 19:31:49] validate Loss: 0.2723 Acc@1: 92.58 Acc@5: 99.63 time: 1.3782
+[2021-10-26 19:31:50] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:31:50] epoch 8 learning_rate 0.0001 
+[2021-10-26 19:32:01] train    Loss: 0.0393 Acc@1: 99.37 Acc@5: 100.00 time: 11.8061
+[2021-10-26 19:32:03] validate Loss: 0.2743 Acc@1: 92.58 Acc@5: 99.71 time: 1.3946
+[2021-10-26 19:32:03] epoch 9 learning_rate 0.0001 
+[2021-10-26 19:32:15] train    Loss: 0.0363 Acc@1: 99.47 Acc@5: 100.00 time: 11.8303
+[2021-10-26 19:32:16] validate Loss: 0.2710 Acc@1: 92.69 Acc@5: 99.63 time: 1.4071
+[2021-10-26 19:32:16] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:32:16] epoch 10 learning_rate 0.0001 
+[2021-10-26 19:32:28] train    Loss: 0.0341 Acc@1: 99.54 Acc@5: 100.00 time: 11.7832
+[2021-10-26 19:32:29] validate Loss: 0.2763 Acc@1: 92.62 Acc@5: 99.69 time: 1.3141
+[2021-10-26 19:32:29] epoch 11 learning_rate 0.0001 
+[2021-10-26 19:32:41] train    Loss: 0.0333 Acc@1: 99.57 Acc@5: 100.00 time: 11.9935
+[2021-10-26 19:32:43] validate Loss: 0.2745 Acc@1: 92.61 Acc@5: 99.64 time: 1.3709
+[2021-10-26 19:32:43] epoch 12 learning_rate 0.0001 
+[2021-10-26 19:32:55] train    Loss: 0.0319 Acc@1: 99.60 Acc@5: 100.00 time: 11.8303
+[2021-10-26 19:32:56] validate Loss: 0.2729 Acc@1: 92.82 Acc@5: 99.63 time: 1.4197
+[2021-10-26 19:32:56] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:32:56] epoch 13 learning_rate 0.0001 
+[2021-10-26 19:33:08] train    Loss: 0.0300 Acc@1: 99.66 Acc@5: 100.00 time: 11.7226
+[2021-10-26 19:33:09] validate Loss: 0.2729 Acc@1: 92.91 Acc@5: 99.65 time: 1.3626
+[2021-10-26 19:33:09] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:33:09] epoch 14 learning_rate 0.0001 
+[2021-10-26 19:33:21] train    Loss: 0.0288 Acc@1: 99.70 Acc@5: 100.00 time: 11.9754
+[2021-10-26 19:33:23] validate Loss: 0.2738 Acc@1: 92.88 Acc@5: 99.64 time: 1.3622
+[2021-10-26 19:33:23] epoch 15 learning_rate 0.0001 
+[2021-10-26 19:33:34] train    Loss: 0.0275 Acc@1: 99.77 Acc@5: 100.00 time: 11.6764
+[2021-10-26 19:33:36] validate Loss: 0.2773 Acc@1: 92.88 Acc@5: 99.63 time: 1.3684
+[2021-10-26 19:33:36] epoch 16 learning_rate 0.0001 
+[2021-10-26 19:33:48] train    Loss: 0.0282 Acc@1: 99.72 Acc@5: 100.00 time: 11.8020
+[2021-10-26 19:33:49] validate Loss: 0.2802 Acc@1: 92.71 Acc@5: 99.69 time: 1.3536
+[2021-10-26 19:33:49] epoch 17 learning_rate 0.0001 
+[2021-10-26 19:34:01] train    Loss: 0.0278 Acc@1: 99.74 Acc@5: 100.00 time: 11.7777
+[2021-10-26 19:34:02] validate Loss: 0.2776 Acc@1: 92.85 Acc@5: 99.64 time: 1.3307
+[2021-10-26 19:34:02] epoch 18 learning_rate 0.0001 
+[2021-10-26 19:34:14] train    Loss: 0.0277 Acc@1: 99.72 Acc@5: 100.00 time: 11.7658
+[2021-10-26 19:34:15] validate Loss: 0.2777 Acc@1: 92.80 Acc@5: 99.71 time: 1.3674
+[2021-10-26 19:34:15] epoch 19 learning_rate 0.0001 
+[2021-10-26 19:34:27] train    Loss: 0.0268 Acc@1: 99.75 Acc@5: 100.00 time: 11.8578
+[2021-10-26 19:34:29] validate Loss: 0.2807 Acc@1: 92.87 Acc@5: 99.67 time: 1.4086
+[2021-10-26 19:34:29] epoch 20 learning_rate 0.0001 
+[2021-10-26 19:34:41] train    Loss: 0.0262 Acc@1: 99.77 Acc@5: 100.00 time: 12.2285
+[2021-10-26 19:34:42] validate Loss: 0.2831 Acc@1: 92.97 Acc@5: 99.65 time: 1.3882
+[2021-10-26 19:34:42] storing checkpoint:/pruned_checkpoint/vgg_16_bn_cov0.pt
+[2021-10-26 19:34:42] epoch 21 learning_rate 0.0001 
+[2021-10-26 19:34:54] train    Loss: 0.0251 Acc@1: 99.82 Acc@5: 100.00 time: 11.7957
+[2021-10-26 19:34:56] validate Loss: 0.2834 Acc@1: 92.86 Acc@5: 99.69 time: 1.3707
+[2021-10-26 19:34:56] epoch 22 learning_rate 0.0001 
+[2021-10-26 19:35:07] train    Loss: 0.0244 Acc@1: 99.84 Acc@5: 100.00 time: 11.8090
+[2021-10-26 19:35:09] validate Loss: 0.2848 Acc@1: 92.80 Acc@5: 99.61 time: 1.3704
+[2021-10-26 19:35:09] epoch 23 learning_rate 0.0001 
+[2021-10-26 19:35:21] train    Loss: 0.0255 Acc@1: 99.80 Acc@5: 100.00 time: 11.8353
+[2021-10-26 19:35:22] validate Loss: 0.2848 Acc@1: 92.86 Acc@5: 99.65 time: 1.3719
+[2021-10-26 19:35:22] epoch 24 learning_rate 0.0001 
+[2021-10-26 19:35:34] train    Loss: 0.0244 Acc@1: 99.82 Acc@5: 100.00 time: 11.9250
+[2021-10-26 19:35:35] validate Loss: 0.2841 Acc@1: 92.97 Acc@5: 99.67 time: 1.3699
+[2021-10-26 19:35:35] epoch 25 learning_rate 0.0001 
+[2021-10-26 19:35:47] train    Loss: 0.0252 Acc@1: 99.82 Acc@5: 100.00 time: 11.8357
+[2021-10-26 19:35:48] validate Loss: 0.2872 Acc@1: 92.93 Acc@5: 99.67 time: 1.3621
+[2021-10-26 19:35:48] epoch 26 learning_rate 0.0001 
+[2021-10-26 19:36:00] train    Loss: 0.0245 Acc@1: 99.82 Acc@5: 100.00 time: 11.9228
+[2021-10-26 19:36:02] validate Loss: 0.2854 Acc@1: 92.89 Acc@5: 99.59 time: 1.3828
+[2021-10-26 19:36:02] epoch 27 learning_rate 0.0001 
+[2021-10-26 19:36:14] train    Loss: 0.0244 Acc@1: 99.82 Acc@5: 100.00 time: 11.8899
+[2021-10-26 19:36:15] validate Loss: 0.2877 Acc@1: 92.80 Acc@5: 99.65 time: 1.3881
+[2021-10-26 19:36:15] epoch 28 learning_rate 0.0001 
+[2021-10-26 19:36:27] train    Loss: 0.0246 Acc@1: 99.82 Acc@5: 100.00 time: 11.8123
+[2021-10-26 19:36:28] validate Loss: 0.2845 Acc@1: 92.87 Acc@5: 99.64 time: 1.3608
+[2021-10-26 19:36:28] epoch 29 learning_rate 0.0001 
+[2021-10-26 19:36:40] train    Loss: 0.0232 Acc@1: 99.87 Acc@5: 100.00 time: 11.8058
+[2021-10-26 19:36:41] validate Loss: 0.2861 Acc@1: 92.87 Acc@5: 99.68 time: 1.3661
+[2021-10-26 19:36:41] ===> conv_id 0 bestacc 92.9700
+[2021-10-26 19:36:41] [94.07, 94.0, 93.95, 93.79, 93.91, 93.47, 93.37, 93.48, 93.29, 93.35, 93.24, 92.97]
+[2021-10-26 19:36:41] [44, 51, 102, 102, 204, 179, 179, 307, 76, 76, 76, 76]
+[2021-10-26 19:36:45] VGG(
+  (features): Sequential(
+    (conv0): Conv2d(3, 44, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm0): BatchNorm2d(44, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu0): ReLU(inplace=True)
+    (conv1): Conv2d(44, 51, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm1): BatchNorm2d(51, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU(inplace=True)
+    (pool0): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv3): Conv2d(51, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm3): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu3): ReLU(inplace=True)
+    (conv4): Conv2d(102, 102, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm4): BatchNorm2d(102, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu4): ReLU(inplace=True)
+    (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv6): Conv2d(102, 204, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm6): BatchNorm2d(204, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu6): ReLU(inplace=True)
+    (conv7): Conv2d(204, 179, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm7): BatchNorm2d(179, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu7): ReLU(inplace=True)
+    (conv8): Conv2d(179, 179, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm8): BatchNorm2d(179, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu8): ReLU(inplace=True)
+    (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv10): Conv2d(179, 307, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm10): BatchNorm2d(307, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu10): ReLU(inplace=True)
+    (conv11): Conv2d(307, 76, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm11): BatchNorm2d(76, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu11): ReLU(inplace=True)
+    (conv12): Conv2d(76, 76, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm12): BatchNorm2d(76, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu12): ReLU(inplace=True)
+    (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv14): Conv2d(76, 76, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm14): BatchNorm2d(76, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu14): ReLU(inplace=True)
+    (conv15): Conv2d(76, 76, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm15): BatchNorm2d(76, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu15): ReLU(inplace=True)
+    (conv16): Conv2d(76, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (norm16): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu16): ReLU(inplace=True)
+  )
+  (classifier): Sequential(
+    (linear1): Linear(in_features=512, out_features=512, bias=True)
+    (norm1): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu1): ReLU(inplace=True)
+    (linear2): Linear(in_features=512, out_features=10, bias=True)
+  )
+)
+[2021-10-26 19:36:45] storing pruned_model:/finally_pruned_model/vgg_16_bn_1.pt
+[2021-10-26 19:36:46] validate Loss: 0.2831 Acc@1: 92.97 Acc@5: 99.65 time: 1.1923
+[2021-10-26 19:36:46] finally model  Acc@1: 92.97 Acc@5: 99.65 flops: 124103872.0 params:2451610.0

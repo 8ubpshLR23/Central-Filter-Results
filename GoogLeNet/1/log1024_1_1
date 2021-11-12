@@ -1,0 +1,514 @@
+[2021-10-24 16:19:08] args:Namespace(ablation_id=0, arch='googlenet', batch_size=128, compress_rate='[0.2]+[0.7]*15+[0.8]*9+[0.,0.4,0.]', data_dir='/home/featurize/data', dataset='CIFAR10', epochs=1, from_scratch=False, gpu=0, input_size=32, job_dir='/home/featurize/work/CCCrank10', lr=0.001, lr_decay_step='5,10', momentum=0.9, num_workers=2, pretrained=False, resume='pre_train_model/CIFAR-10/googlenet.pt', save_id=1, start_cov=-1, weight_decay=0.0)
+[2021-10-24 16:19:08] loading checkpoint:pre_train_model/CIFAR-10/googlenet.pt
+[2021-10-24 16:19:08] loading rank_conv/googlenet/dis_mtx0.npy
+[2021-10-24 16:19:08] storing rank_conv/googlenet/rank_conv0.npy
+[2021-10-24 16:19:08] loading rank_conv/googlenet/rank_conv0.npy
+[2021-10-24 16:19:13] validate Loss: 0.2843 Acc@1: 92.25 Acc@5: 99.72 time: 4.6943
+[2021-10-24 16:19:13] adjusting filter: inception_a3.branch1x1.0.weight
+[2021-10-24 16:19:13] adjusting filter: inception_a3.branch3x3.0.weight
+[2021-10-24 16:19:13] adjusting filter: inception_a3.branch5x5.0.weight
+[2021-10-24 16:19:13] adjusting filter: inception_a3.branch_pool.1.weight
+[2021-10-24 16:19:17] validate Loss: 0.1890 Acc@1: 94.78 Acc@5: 99.77 time: 4.5596
+[2021-10-24 16:19:17] epoch 0 learning_rate 0.001 
+[2021-10-24 16:20:24] train    Loss: 0.0015 Acc@1: 100.00 Acc@5: 100.00 time: 66.3906
+[2021-10-24 16:20:28] validate Loss: 0.1857 Acc@1: 94.87 Acc@5: 99.81 time: 4.6597
+[2021-10-24 16:20:29] storing checkpoint:/pruned_checkpoint/googlenet_cov0.pt
+[2021-10-24 16:20:29] ===> the first layer conv1 bestacc 94.8700
+[2021-10-24 16:20:29] loading checkpoint:/pruned_checkpoint/googlenet_cov0.pt
+[2021-10-24 16:20:29] loading rank_conv/googlenet/dis_mtx1.npy
+[2021-10-24 16:20:29] storing rank_conv/googlenet/rank_conv1_3.npy
+[2021-10-24 16:20:29] loading rank_conv/googlenet/dis_mtx2.npy
+[2021-10-24 16:20:29] storing rank_conv/googlenet/rank_conv1_5_1.npy
+[2021-10-24 16:20:29] adjusting filter: inception_a3.branch5x5.6.weight
+[2021-10-24 16:20:29] loading rank_conv/googlenet/dis_mtx3.npy
+[2021-10-24 16:20:29] storing rank_conv/googlenet/rank_conv1_5_2.npy
+[2021-10-24 16:20:29] loading rank_conv/googlenet/rank_conv1_3.npy
+[2021-10-24 16:20:29] loading rank_conv/googlenet/rank_conv1_5_1.npy
+[2021-10-24 16:20:29] loading rank_conv/googlenet/rank_conv1_5_2.npy
+[2021-10-24 16:20:34] validate Loss: 2.9933 Acc@1: 31.30 Acc@5: 79.14 time: 4.6329
+[2021-10-24 16:20:34] adjusting filter: inception_b3.branch1x1.0.weight
+[2021-10-24 16:20:34] adjusting filter: inception_b3.branch3x3.0.weight
+[2021-10-24 16:20:34] adjusting filter: inception_b3.branch5x5.0.weight
+[2021-10-24 16:20:34] adjusting filter: inception_b3.branch_pool.1.weight
+[2021-10-24 16:20:39] validate Loss: 2.1827 Acc@1: 47.55 Acc@5: 90.95 time: 4.6311
+[2021-10-24 16:20:39] epoch 0 learning_rate 0.001 
+[2021-10-24 16:21:45] train    Loss: 0.0111 Acc@1: 99.77 Acc@5: 100.00 time: 66.7619
+[2021-10-24 16:21:50] validate Loss: 0.2205 Acc@1: 93.87 Acc@5: 99.77 time: 4.6515
+[2021-10-24 16:21:50] storing checkpoint:/pruned_checkpoint/googlenet_cov1.pt
+[2021-10-24 16:21:50] ===> inception_id 1 best_acc 93.8700
+[2021-10-24 16:21:50] loading checkpoint:/pruned_checkpoint/googlenet_cov1.pt
+[2021-10-24 16:21:50] loading rank_conv/googlenet/dis_mtx4.npy
+[2021-10-24 16:21:51] storing rank_conv/googlenet/rank_conv2_3.npy
+[2021-10-24 16:21:51] loading rank_conv/googlenet/dis_mtx5.npy
+[2021-10-24 16:21:51] storing rank_conv/googlenet/rank_conv2_5_1.npy
+[2021-10-24 16:21:51] adjusting filter: inception_b3.branch5x5.6.weight
+[2021-10-24 16:21:51] loading rank_conv/googlenet/dis_mtx6.npy
+[2021-10-24 16:21:51] storing rank_conv/googlenet/rank_conv2_5_2.npy
+[2021-10-24 16:21:51] loading rank_conv/googlenet/rank_conv2_3.npy
+[2021-10-24 16:21:51] loading rank_conv/googlenet/rank_conv2_5_1.npy
+[2021-10-24 16:21:51] loading rank_conv/googlenet/rank_conv2_5_2.npy
+[2021-10-24 16:21:55] validate Loss: 4.9988 Acc@1: 12.72 Acc@5: 56.34 time: 4.6327
+[2021-10-24 16:21:55] adjusting filter: inception_a4.branch1x1.0.weight
+[2021-10-24 16:21:56] adjusting filter: inception_a4.branch3x3.0.weight
+[2021-10-24 16:21:56] adjusting filter: inception_a4.branch5x5.0.weight
+[2021-10-24 16:21:56] adjusting filter: inception_a4.branch_pool.1.weight
+[2021-10-24 16:22:01] validate Loss: 5.3378 Acc@1: 12.73 Acc@5: 56.58 time: 4.6503
+[2021-10-24 16:22:01] epoch 0 learning_rate 0.001 
+[2021-10-24 16:23:08] train    Loss: 0.0324 Acc@1: 99.01 Acc@5: 100.00 time: 66.9591
+[2021-10-24 16:23:13] validate Loss: 0.2319 Acc@1: 93.44 Acc@5: 99.77 time: 4.6104
+[2021-10-24 16:23:13] storing checkpoint:/pruned_checkpoint/googlenet_cov2.pt
+[2021-10-24 16:23:13] ===> inception_id 2 best_acc 93.4400
+[2021-10-24 16:23:13] loading checkpoint:/pruned_checkpoint/googlenet_cov2.pt
+[2021-10-24 16:23:13] loading rank_conv/googlenet/dis_mtx7.npy
+[2021-10-24 16:23:13] storing rank_conv/googlenet/rank_conv3_3.npy
+[2021-10-24 16:23:13] loading rank_conv/googlenet/dis_mtx8.npy
+[2021-10-24 16:23:13] storing rank_conv/googlenet/rank_conv3_5_1.npy
+[2021-10-24 16:23:13] adjusting filter: inception_a4.branch5x5.6.weight
+[2021-10-24 16:23:13] loading rank_conv/googlenet/dis_mtx9.npy
+[2021-10-24 16:23:13] storing rank_conv/googlenet/rank_conv3_5_2.npy
+[2021-10-24 16:23:13] loading rank_conv/googlenet/rank_conv3_3.npy
+[2021-10-24 16:23:13] loading rank_conv/googlenet/rank_conv3_5_1.npy
+[2021-10-24 16:23:13] loading rank_conv/googlenet/rank_conv3_5_2.npy
+[2021-10-24 16:23:18] validate Loss: 1.3878 Acc@1: 65.88 Acc@5: 94.41 time: 4.6523
+[2021-10-24 16:23:18] adjusting filter: inception_b4.branch1x1.0.weight
+[2021-10-24 16:23:18] adjusting filter: inception_b4.branch3x3.0.weight
+[2021-10-24 16:23:19] adjusting filter: inception_b4.branch5x5.0.weight
+[2021-10-24 16:23:19] adjusting filter: inception_b4.branch_pool.1.weight
+[2021-10-24 16:23:24] validate Loss: 1.2945 Acc@1: 68.16 Acc@5: 95.12 time: 4.6460
+[2021-10-24 16:23:24] epoch 0 learning_rate 0.001 
+[2021-10-24 16:24:30] train    Loss: 0.0463 Acc@1: 98.52 Acc@5: 100.00 time: 66.7523
+[2021-10-24 16:24:35] validate Loss: 0.2522 Acc@1: 92.94 Acc@5: 99.78 time: 4.6103
+[2021-10-24 16:24:35] storing checkpoint:/pruned_checkpoint/googlenet_cov3.pt
+[2021-10-24 16:24:35] ===> inception_id 3 best_acc 92.9400
+[2021-10-24 16:24:35] loading checkpoint:/pruned_checkpoint/googlenet_cov3.pt
+[2021-10-24 16:24:35] loading rank_conv/googlenet/dis_mtx10.npy
+[2021-10-24 16:24:35] storing rank_conv/googlenet/rank_conv4_3.npy
+[2021-10-24 16:24:35] loading rank_conv/googlenet/dis_mtx11.npy
+[2021-10-24 16:24:35] storing rank_conv/googlenet/rank_conv4_5_1.npy
+[2021-10-24 16:24:35] adjusting filter: inception_b4.branch5x5.6.weight
+[2021-10-24 16:24:36] loading rank_conv/googlenet/dis_mtx12.npy
+[2021-10-24 16:24:36] storing rank_conv/googlenet/rank_conv4_5_2.npy
+[2021-10-24 16:24:36] loading rank_conv/googlenet/rank_conv4_3.npy
+[2021-10-24 16:24:36] loading rank_conv/googlenet/rank_conv4_5_1.npy
+[2021-10-24 16:24:36] loading rank_conv/googlenet/rank_conv4_5_2.npy
+[2021-10-24 16:24:40] validate Loss: 0.6844 Acc@1: 81.68 Acc@5: 98.77 time: 4.6612
+[2021-10-24 16:24:40] adjusting filter: inception_c4.branch1x1.0.weight
+[2021-10-24 16:24:41] adjusting filter: inception_c4.branch3x3.0.weight
+[2021-10-24 16:24:41] adjusting filter: inception_c4.branch5x5.0.weight
+[2021-10-24 16:24:41] adjusting filter: inception_c4.branch_pool.1.weight
+[2021-10-24 16:24:46] validate Loss: 0.6469 Acc@1: 82.72 Acc@5: 98.99 time: 4.6305
+[2021-10-24 16:24:46] epoch 0 learning_rate 0.001 
+[2021-10-24 16:25:52] train    Loss: 0.0419 Acc@1: 98.72 Acc@5: 100.00 time: 66.6553
+[2021-10-24 16:25:57] validate Loss: 0.2583 Acc@1: 92.54 Acc@5: 99.75 time: 4.6459
+[2021-10-24 16:25:57] storing checkpoint:/pruned_checkpoint/googlenet_cov4.pt
+[2021-10-24 16:25:57] ===> inception_id 4 best_acc 92.5400
+[2021-10-24 16:25:57] loading checkpoint:/pruned_checkpoint/googlenet_cov4.pt
+[2021-10-24 16:25:57] loading rank_conv/googlenet/dis_mtx13.npy
+[2021-10-24 16:25:58] storing rank_conv/googlenet/rank_conv5_3.npy
+[2021-10-24 16:25:58] loading rank_conv/googlenet/dis_mtx14.npy
+[2021-10-24 16:25:58] storing rank_conv/googlenet/rank_conv5_5_1.npy
+[2021-10-24 16:25:58] adjusting filter: inception_c4.branch5x5.6.weight
+[2021-10-24 16:25:58] loading rank_conv/googlenet/dis_mtx15.npy
+[2021-10-24 16:25:58] storing rank_conv/googlenet/rank_conv5_5_2.npy
+[2021-10-24 16:25:58] loading rank_conv/googlenet/rank_conv5_3.npy
+[2021-10-24 16:25:58] loading rank_conv/googlenet/rank_conv5_5_1.npy
+[2021-10-24 16:25:58] loading rank_conv/googlenet/rank_conv5_5_2.npy
+[2021-10-24 16:26:02] validate Loss: 0.6071 Acc@1: 83.55 Acc@5: 98.67 time: 4.6097
+[2021-10-24 16:26:02] adjusting filter: inception_d4.branch1x1.0.weight
+[2021-10-24 16:26:03] adjusting filter: inception_d4.branch3x3.0.weight
+[2021-10-24 16:26:03] adjusting filter: inception_d4.branch5x5.0.weight
+[2021-10-24 16:26:03] adjusting filter: inception_d4.branch_pool.1.weight
+[2021-10-24 16:26:08] validate Loss: 0.5276 Acc@1: 85.97 Acc@5: 99.14 time: 4.6346
+[2021-10-24 16:26:08] epoch 0 learning_rate 0.001 
+[2021-10-24 16:27:14] train    Loss: 0.0451 Acc@1: 98.63 Acc@5: 100.00 time: 66.5172
+[2021-10-24 16:27:19] validate Loss: 0.2576 Acc@1: 92.60 Acc@5: 99.81 time: 4.6187
+[2021-10-24 16:27:19] storing checkpoint:/pruned_checkpoint/googlenet_cov5.pt
+[2021-10-24 16:27:19] ===> inception_id 5 best_acc 92.6000
+[2021-10-24 16:27:19] loading checkpoint:/pruned_checkpoint/googlenet_cov5.pt
+[2021-10-24 16:27:19] loading rank_conv/googlenet/dis_mtx16.npy
+[2021-10-24 16:27:20] storing rank_conv/googlenet/rank_conv6_3.npy
+[2021-10-24 16:27:20] loading rank_conv/googlenet/dis_mtx17.npy
+[2021-10-24 16:27:20] storing rank_conv/googlenet/rank_conv6_5_1.npy
+[2021-10-24 16:27:20] adjusting filter: inception_d4.branch5x5.6.weight
+[2021-10-24 16:27:20] loading rank_conv/googlenet/dis_mtx18.npy
+[2021-10-24 16:27:20] storing rank_conv/googlenet/rank_conv6_5_2.npy
+[2021-10-24 16:27:20] loading rank_conv/googlenet/rank_conv6_3.npy
+[2021-10-24 16:27:20] loading rank_conv/googlenet/rank_conv6_5_1.npy
+[2021-10-24 16:27:20] loading rank_conv/googlenet/rank_conv6_5_2.npy
+[2021-10-24 16:27:24] validate Loss: 0.9065 Acc@1: 77.32 Acc@5: 97.79 time: 4.5883
+[2021-10-24 16:27:24] adjusting filter: inception_e4.branch1x1.0.weight
+[2021-10-24 16:27:25] adjusting filter: inception_e4.branch3x3.0.weight
+[2021-10-24 16:27:26] adjusting filter: inception_e4.branch5x5.0.weight
+[2021-10-24 16:27:26] adjusting filter: inception_e4.branch_pool.1.weight
+[2021-10-24 16:27:31] validate Loss: 0.8759 Acc@1: 78.36 Acc@5: 97.99 time: 4.6730
+[2021-10-24 16:27:31] epoch 0 learning_rate 0.001 
+[2021-10-24 16:28:38] train    Loss: 0.0636 Acc@1: 97.93 Acc@5: 99.99 time: 66.4263
+[2021-10-24 16:28:42] validate Loss: 0.2648 Acc@1: 92.44 Acc@5: 99.77 time: 4.6304
+[2021-10-24 16:28:42] storing checkpoint:/pruned_checkpoint/googlenet_cov6.pt
+[2021-10-24 16:28:42] ===> inception_id 6 best_acc 92.4400
+[2021-10-24 16:28:43] loading checkpoint:/pruned_checkpoint/googlenet_cov6.pt
+[2021-10-24 16:28:43] loading rank_conv/googlenet/dis_mtx19.npy
+[2021-10-24 16:28:43] storing rank_conv/googlenet/rank_conv7_3.npy
+[2021-10-24 16:28:43] loading rank_conv/googlenet/dis_mtx20.npy
+[2021-10-24 16:28:43] storing rank_conv/googlenet/rank_conv7_5_1.npy
+[2021-10-24 16:28:43] adjusting filter: inception_e4.branch5x5.6.weight
+[2021-10-24 16:28:43] loading rank_conv/googlenet/dis_mtx21.npy
+[2021-10-24 16:28:43] storing rank_conv/googlenet/rank_conv7_5_2.npy
+[2021-10-24 16:28:43] loading rank_conv/googlenet/rank_conv7_3.npy
+[2021-10-24 16:28:43] loading rank_conv/googlenet/rank_conv7_5_1.npy
+[2021-10-24 16:28:43] loading rank_conv/googlenet/rank_conv7_5_2.npy
+[2021-10-24 16:28:48] validate Loss: 5.3353 Acc@1: 35.11 Acc@5: 92.01 time: 4.6222
+[2021-10-24 16:28:48] adjusting filter: inception_a5.branch1x1.0.weight
+[2021-10-24 16:28:49] adjusting filter: inception_a5.branch3x3.0.weight
+[2021-10-24 16:28:50] adjusting filter: inception_a5.branch5x5.0.weight
+[2021-10-24 16:28:50] adjusting filter: inception_a5.branch_pool.1.weight
+[2021-10-24 16:28:55] validate Loss: 5.3652 Acc@1: 36.13 Acc@5: 94.21 time: 4.6429
+[2021-10-24 16:28:55] epoch 0 learning_rate 0.001 
+[2021-10-24 16:30:02] train    Loss: 0.0650 Acc@1: 97.92 Acc@5: 99.99 time: 66.3782
+[2021-10-24 16:30:06] validate Loss: 0.2643 Acc@1: 92.51 Acc@5: 99.70 time: 4.5980
+[2021-10-24 16:30:06] storing checkpoint:/pruned_checkpoint/googlenet_cov7.pt
+[2021-10-24 16:30:06] ===> inception_id 7 best_acc 92.5100
+[2021-10-24 16:30:06] loading checkpoint:/pruned_checkpoint/googlenet_cov7.pt
+[2021-10-24 16:30:07] loading rank_conv/googlenet/dis_mtx22.npy
+[2021-10-24 16:30:07] storing rank_conv/googlenet/rank_conv8_3.npy
+[2021-10-24 16:30:07] loading rank_conv/googlenet/dis_mtx23.npy
+[2021-10-24 16:30:07] storing rank_conv/googlenet/rank_conv8_5_1.npy
+[2021-10-24 16:30:07] adjusting filter: inception_a5.branch5x5.6.weight
+[2021-10-24 16:30:07] loading rank_conv/googlenet/dis_mtx24.npy
+[2021-10-24 16:30:07] storing rank_conv/googlenet/rank_conv8_5_2.npy
+[2021-10-24 16:30:07] loading rank_conv/googlenet/rank_conv8_3.npy
+[2021-10-24 16:30:07] loading rank_conv/googlenet/rank_conv8_5_1.npy
+[2021-10-24 16:30:07] loading rank_conv/googlenet/rank_conv8_5_2.npy
+[2021-10-24 16:30:12] validate Loss: 0.3692 Acc@1: 88.47 Acc@5: 99.56 time: 4.6260
+[2021-10-24 16:30:12] adjusting filter: inception_b5.branch1x1.0.weight
+[2021-10-24 16:30:14] adjusting filter: inception_b5.branch3x3.0.weight
+[2021-10-24 16:30:15] adjusting filter: inception_b5.branch5x5.0.weight
+[2021-10-24 16:30:15] adjusting filter: inception_b5.branch_pool.1.weight
+[2021-10-24 16:30:21] validate Loss: 0.3685 Acc@1: 88.48 Acc@5: 99.56 time: 4.6423
+[2021-10-24 16:30:21] epoch 0 learning_rate 0.001 
+[2021-10-24 16:31:27] train    Loss: 0.0594 Acc@1: 98.21 Acc@5: 100.00 time: 66.2429
+[2021-10-24 16:31:32] validate Loss: 0.2752 Acc@1: 92.04 Acc@5: 99.65 time: 4.6273
+[2021-10-24 16:31:32] storing checkpoint:/pruned_checkpoint/googlenet_cov8.pt
+[2021-10-24 16:31:32] ===> inception_id 8 best_acc 92.0400
+[2021-10-24 16:31:32] loading checkpoint:/pruned_checkpoint/googlenet_cov8.pt
+[2021-10-24 16:31:32] loading rank_conv/googlenet/dis_mtx25.npy
+[2021-10-24 16:31:32] storing rank_conv/googlenet/rank_conv9_3.npy
+[2021-10-24 16:31:32] loading rank_conv/googlenet/dis_mtx26.npy
+[2021-10-24 16:31:32] storing rank_conv/googlenet/rank_conv9_5_1.npy
+[2021-10-24 16:31:32] adjusting filter: inception_b5.branch5x5.6.weight
+[2021-10-24 16:31:32] loading rank_conv/googlenet/dis_mtx27.npy
+[2021-10-24 16:31:32] storing rank_conv/googlenet/rank_conv9_5_2.npy
+[2021-10-24 16:31:32] loading rank_conv/googlenet/rank_conv9_3.npy
+[2021-10-24 16:31:32] loading rank_conv/googlenet/rank_conv9_5_1.npy
+[2021-10-24 16:31:32] loading rank_conv/googlenet/rank_conv9_5_2.npy
+[2021-10-24 16:31:37] validate Loss: 0.2756 Acc@1: 91.99 Acc@5: 99.62 time: 4.6019
+[2021-10-24 16:31:42] validate Loss: 0.2756 Acc@1: 91.99 Acc@5: 99.62 time: 4.6189
+[2021-10-24 16:31:42] epoch 0 learning_rate 0.001 
+[2021-10-24 16:32:48] train    Loss: 0.0392 Acc@1: 98.97 Acc@5: 99.99 time: 66.2278
+[2021-10-24 16:32:53] validate Loss: 0.2620 Acc@1: 92.57 Acc@5: 99.66 time: 4.6139
+[2021-10-24 16:32:53] storing checkpoint:/pruned_checkpoint/googlenet_cov9.pt
+[2021-10-24 16:32:53] ===> inception_id 9 best_acc 92.5700
+[2021-10-24 16:32:53] [94.87, 93.87, 93.44, 92.94, 92.54, 92.6, 92.44, 92.51, 92.04, 92.57]
+[2021-10-24 16:32:53] [0.2, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.0, 0.4, 0.0]
+[2021-10-24 16:33:16] GoogLeNet(
+  (pre_layers): Sequential(
+    (0): Conv2d(3, 153, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): BatchNorm2d(153, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+  )
+  (inception_a3): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(153, 64, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(153, 96, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(96, 38, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(38, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(153, 16, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(16, 9, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(9, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(9, 9, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(9, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(153, 32, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_b3): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(143, 128, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(143, 128, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(128, 57, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(57, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(143, 32, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(32, 28, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(28, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(28, 28, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(28, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(143, 64, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (maxpool1): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (maxpool2): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+  (inception_a4): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(277, 192, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(277, 96, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(96, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(96, 62, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(62, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(277, 16, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(16, 14, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(14, 14, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(14, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(277, 64, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_b4): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(332, 160, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(332, 112, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(112, 67, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(67, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(332, 24, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(24, 19, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(19, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(19, 19, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(19, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(332, 64, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_c4): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(310, 128, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(310, 128, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(128, 76, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(76, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(310, 24, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(24, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(24, 19, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(19, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(19, 19, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(19, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(310, 64, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_d4): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(287, 112, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(112, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(287, 144, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(144, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(144, 57, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(57, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(287, 32, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(32, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(12, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(287, 64, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_e4): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(245, 256, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(245, 160, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(160, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(245, 32, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(32, 25, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(25, 25, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(245, 128, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_a5): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(473, 256, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(473, 160, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(160, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(473, 32, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(32, 25, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(25, 25, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(25, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(473, 128, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (inception_b5): Inception(
+    (branch1x1): Sequential(
+      (0): Conv2d(473, 384, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+    )
+    (branch3x3): Sequential(
+      (0): Conv2d(473, 192, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+    )
+    (branch5x5): Sequential(
+      (0): Conv2d(473, 48, kernel_size=(1, 1), stride=(1, 1))
+      (1): BatchNorm2d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU(inplace=True)
+      (3): Conv2d(48, 76, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(76, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU(inplace=True)
+      (6): Conv2d(76, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (8): ReLU(inplace=True)
+    )
+    (branch_pool): Sequential(
+      (0): MaxPool2d(kernel_size=3, stride=1, padding=1, dilation=1, ceil_mode=False)
+      (1): Conv2d(473, 128, kernel_size=(1, 1), stride=(1, 1))
+      (2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (3): ReLU(inplace=True)
+    )
+  )
+  (avgpool): AvgPool2d(kernel_size=8, stride=1, padding=0)
+  (linear): Linear(in_features=1024, out_features=10, bias=True)
+)
+[2021-10-24 16:33:16] storing pruned_model:/finally_pruned_model/googlenet_1.pt
+[2021-10-24 16:33:19] validate Loss: 0.2620 Acc@1: 92.57 Acc@5: 99.66 time: 3.1212
+[2021-10-24 16:33:19] finally model  Acc@1: 92.57 Acc@5: 99.66 flops: 560037824.0 params:2726486.0

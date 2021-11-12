@@ -1,0 +1,101 @@
+[2021-10-29 13:21:33] args:Namespace(ablation_id=0, arch='googlenet', batch_size=128, compress_rate=None, data_dir='/home/featurize/data', dataset='CIFAR10', epochs=30, from_scratch=True, gpu=0, input_size=32, job_dir='/home/featurize/work/CCCrank10', lr=0.01, lr_decay_step='5,15', momentum=0.9, num_workers=2, pretrained=False, resume='finally_pruned_model/googlenet_1029_ab2_1.pt', save_id=1, start_cov=-1, weight_decay=0.005)
+[2021-10-29 13:21:33] loading checkpoint:finally_pruned_model/googlenet_1029_ab2_1.pt
+[2021-10-29 13:21:36] validate Loss: 0.2737 Acc@1: 92.12 Acc@5: 99.74 time: 3.1698
+[2021-10-29 13:21:36] epoch 0 learning_rate 0.01 
+[2021-10-29 13:22:25] train    Loss: 0.1985 Acc@1: 93.36 Acc@5: 99.91 time: 48.5472
+[2021-10-29 13:22:28] validate Loss: 0.4166 Acc@1: 86.32 Acc@5: 99.72 time: 3.0436
+[2021-10-29 13:22:28] storing checkpoint:/pruned_checkpoint/googlenet.pt
+[2021-10-29 13:22:28] epoch 1 learning_rate 0.01 
+[2021-10-29 13:23:16] train    Loss: 0.1618 Acc@1: 95.03 Acc@5: 99.97 time: 48.2241
+[2021-10-29 13:23:19] validate Loss: 0.5168 Acc@1: 83.28 Acc@5: 99.43 time: 3.0712
+[2021-10-29 13:23:19] epoch 2 learning_rate 0.01 
+[2021-10-29 13:24:08] train    Loss: 0.1804 Acc@1: 94.73 Acc@5: 99.95 time: 48.3876
+[2021-10-29 13:24:11] validate Loss: 0.4393 Acc@1: 85.27 Acc@5: 99.49 time: 3.0627
+[2021-10-29 13:24:11] epoch 3 learning_rate 0.01 
+[2021-10-29 13:25:00] train    Loss: 0.2158 Acc@1: 93.55 Acc@5: 99.93 time: 48.6765
+[2021-10-29 13:25:03] validate Loss: 0.7911 Acc@1: 74.89 Acc@5: 96.61 time: 3.0594
+[2021-10-29 13:25:03] epoch 4 learning_rate 0.01 
+[2021-10-29 13:25:51] train    Loss: 0.2496 Acc@1: 92.19 Acc@5: 99.87 time: 48.7536
+[2021-10-29 13:25:54] validate Loss: 0.4345 Acc@1: 85.53 Acc@5: 99.19 time: 3.0592
+[2021-10-29 13:25:54] epoch 5 learning_rate 0.001 
+[2021-10-29 13:26:43] train    Loss: 0.1281 Acc@1: 96.95 Acc@5: 99.99 time: 48.7104
+[2021-10-29 13:26:46] validate Loss: 0.1987 Acc@1: 93.71 Acc@5: 99.85 time: 3.0445
+[2021-10-29 13:26:46] storing checkpoint:/pruned_checkpoint/googlenet.pt
+[2021-10-29 13:26:46] epoch 6 learning_rate 0.001 
+[2021-10-29 13:27:35] train    Loss: 0.0880 Acc@1: 98.35 Acc@5: 99.99 time: 48.3840
+[2021-10-29 13:27:38] validate Loss: 0.1918 Acc@1: 94.00 Acc@5: 99.85 time: 3.0626
+[2021-10-29 13:27:38] storing checkpoint:/pruned_checkpoint/googlenet.pt
+[2021-10-29 13:27:38] epoch 7 learning_rate 0.001 
+[2021-10-29 13:28:27] train    Loss: 0.0745 Acc@1: 98.90 Acc@5: 100.00 time: 48.8346
+[2021-10-29 13:28:30] validate Loss: 0.1885 Acc@1: 93.99 Acc@5: 99.85 time: 3.0607
+[2021-10-29 13:28:30] epoch 8 learning_rate 0.001 
+[2021-10-29 13:29:18] train    Loss: 0.0649 Acc@1: 99.19 Acc@5: 100.00 time: 48.6723
+[2021-10-29 13:29:21] validate Loss: 0.1856 Acc@1: 94.20 Acc@5: 99.88 time: 3.0706
+[2021-10-29 13:29:22] storing checkpoint:/pruned_checkpoint/googlenet.pt
+[2021-10-29 13:29:22] epoch 9 learning_rate 0.001 
+[2021-10-29 13:30:10] train    Loss: 0.0586 Acc@1: 99.35 Acc@5: 100.00 time: 48.7850
+[2021-10-29 13:30:13] validate Loss: 0.1860 Acc@1: 94.11 Acc@5: 99.82 time: 3.0723
+[2021-10-29 13:30:13] epoch 10 learning_rate 0.001 
+[2021-10-29 13:31:02] train    Loss: 0.0532 Acc@1: 99.49 Acc@5: 100.00 time: 48.8061
+[2021-10-29 13:31:05] validate Loss: 0.1814 Acc@1: 94.28 Acc@5: 99.84 time: 3.0542
+[2021-10-29 13:31:05] storing checkpoint:/pruned_checkpoint/googlenet.pt
+[2021-10-29 13:31:05] epoch 11 learning_rate 0.001 
+[2021-10-29 13:31:54] train    Loss: 0.0503 Acc@1: 99.56 Acc@5: 100.00 time: 48.5506
+[2021-10-29 13:31:57] validate Loss: 0.1824 Acc@1: 94.13 Acc@5: 99.84 time: 3.0703
+[2021-10-29 13:31:57] epoch 12 learning_rate 0.001 
+[2021-10-29 13:32:46] train    Loss: 0.0465 Acc@1: 99.62 Acc@5: 100.00 time: 48.9805
+[2021-10-29 13:32:49] validate Loss: 0.1867 Acc@1: 93.96 Acc@5: 99.88 time: 3.1176
+[2021-10-29 13:32:49] epoch 13 learning_rate 0.001 
+[2021-10-29 13:33:38] train    Loss: 0.0440 Acc@1: 99.69 Acc@5: 100.00 time: 49.0452
+[2021-10-29 13:33:41] validate Loss: 0.1843 Acc@1: 94.11 Acc@5: 99.87 time: 3.1767
+[2021-10-29 13:33:41] epoch 14 learning_rate 0.001 
+[2021-10-29 13:34:30] train    Loss: 0.0425 Acc@1: 99.74 Acc@5: 100.00 time: 48.9805
+[2021-10-29 13:34:33] validate Loss: 0.1885 Acc@1: 93.99 Acc@5: 99.86 time: 3.1343
+[2021-10-29 13:34:33] epoch 15 learning_rate 0.0001 
+[2021-10-29 13:35:22] train    Loss: 0.0376 Acc@1: 99.83 Acc@5: 100.00 time: 48.9858
+[2021-10-29 13:35:26] validate Loss: 0.1817 Acc@1: 94.18 Acc@5: 99.84 time: 3.1247
+[2021-10-29 13:35:26] epoch 16 learning_rate 0.0001 
+[2021-10-29 13:36:15] train    Loss: 0.0360 Acc@1: 99.89 Acc@5: 100.00 time: 49.0069
+[2021-10-29 13:36:18] validate Loss: 0.1819 Acc@1: 94.04 Acc@5: 99.87 time: 3.1020
+[2021-10-29 13:36:18] epoch 17 learning_rate 0.0001 
+[2021-10-29 13:37:07] train    Loss: 0.0356 Acc@1: 99.85 Acc@5: 100.00 time: 48.9267
+[2021-10-29 13:37:10] validate Loss: 0.1828 Acc@1: 94.06 Acc@5: 99.84 time: 3.0711
+[2021-10-29 13:37:10] epoch 18 learning_rate 0.0001 
+[2021-10-29 13:37:59] train    Loss: 0.0349 Acc@1: 99.89 Acc@5: 100.00 time: 48.9843
+[2021-10-29 13:38:02] validate Loss: 0.1826 Acc@1: 94.02 Acc@5: 99.85 time: 3.1580
+[2021-10-29 13:38:02] epoch 19 learning_rate 0.0001 
+[2021-10-29 13:38:51] train    Loss: 0.0346 Acc@1: 99.90 Acc@5: 100.00 time: 48.9699
+[2021-10-29 13:38:54] validate Loss: 0.1810 Acc@1: 94.13 Acc@5: 99.87 time: 3.1092
+[2021-10-29 13:38:54] epoch 20 learning_rate 0.0001 
+[2021-10-29 13:39:43] train    Loss: 0.0347 Acc@1: 99.89 Acc@5: 100.00 time: 49.0563
+[2021-10-29 13:39:46] validate Loss: 0.1809 Acc@1: 94.07 Acc@5: 99.87 time: 3.1132
+[2021-10-29 13:39:46] epoch 21 learning_rate 0.0001 
+[2021-10-29 13:40:35] train    Loss: 0.0344 Acc@1: 99.91 Acc@5: 100.00 time: 49.0228
+[2021-10-29 13:40:38] validate Loss: 0.1806 Acc@1: 94.10 Acc@5: 99.85 time: 3.1689
+[2021-10-29 13:40:38] epoch 22 learning_rate 0.0001 
+[2021-10-29 13:41:27] train    Loss: 0.0342 Acc@1: 99.89 Acc@5: 100.00 time: 49.0203
+[2021-10-29 13:41:30] validate Loss: 0.1810 Acc@1: 94.17 Acc@5: 99.87 time: 3.1345
+[2021-10-29 13:41:30] epoch 23 learning_rate 0.0001 
+[2021-10-29 13:42:19] train    Loss: 0.0346 Acc@1: 99.88 Acc@5: 100.00 time: 48.9800
+[2021-10-29 13:42:22] validate Loss: 0.1805 Acc@1: 94.05 Acc@5: 99.86 time: 3.0858
+[2021-10-29 13:42:22] epoch 24 learning_rate 0.0001 
+[2021-10-29 13:43:11] train    Loss: 0.0340 Acc@1: 99.91 Acc@5: 100.00 time: 48.9902
+[2021-10-29 13:43:15] validate Loss: 0.1819 Acc@1: 94.02 Acc@5: 99.86 time: 3.1253
+[2021-10-29 13:43:15] epoch 25 learning_rate 0.0001 
+[2021-10-29 13:44:04] train    Loss: 0.0338 Acc@1: 99.89 Acc@5: 100.00 time: 48.9718
+[2021-10-29 13:44:07] validate Loss: 0.1814 Acc@1: 94.19 Acc@5: 99.87 time: 3.1543
+[2021-10-29 13:44:07] epoch 26 learning_rate 0.0001 
+[2021-10-29 13:44:56] train    Loss: 0.0340 Acc@1: 99.91 Acc@5: 100.00 time: 49.0309
+[2021-10-29 13:44:59] validate Loss: 0.1813 Acc@1: 94.23 Acc@5: 99.90 time: 3.1217
+[2021-10-29 13:44:59] epoch 27 learning_rate 0.0001 
+[2021-10-29 13:45:48] train    Loss: 0.0338 Acc@1: 99.89 Acc@5: 100.00 time: 49.0503
+[2021-10-29 13:45:51] validate Loss: 0.1805 Acc@1: 94.27 Acc@5: 99.84 time: 3.0960
+[2021-10-29 13:45:51] epoch 28 learning_rate 0.0001 
+[2021-10-29 13:46:40] train    Loss: 0.0330 Acc@1: 99.93 Acc@5: 100.00 time: 49.0236
+[2021-10-29 13:46:43] validate Loss: 0.1825 Acc@1: 94.13 Acc@5: 99.86 time: 3.1447
+[2021-10-29 13:46:43] epoch 29 learning_rate 0.0001 
+[2021-10-29 13:47:32] train    Loss: 0.0329 Acc@1: 99.91 Acc@5: 100.00 time: 49.0348
+[2021-10-29 13:47:35] validate Loss: 0.1815 Acc@1: 94.15 Acc@5: 99.85 time: 3.1239
+[2021-10-29 13:47:36] storing pruned_model:/finally_pruned_model/googlenet_1_fs.pt
+[2021-10-29 13:47:39] validate Loss: 0.1814 Acc@1: 94.28 Acc@5: 99.84 time: 3.1762
+[2021-10-29 13:47:39] finally model  Acc@1: 94.28 Acc@5: 99.84 flops: 560037824.0 params:2726486.0
